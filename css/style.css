@@ -31,8 +31,17 @@ header p {
 /* ================================================== */
 header {
     margin: 50px auto;
-    padding: 100px 0;
+    padding: 60px 0;
     background-color: cadetblue;
+}
+
+header .logo {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 50px auto;
+    background-image: url(../images/logo.png);
+    background-size: cover;
+    background-position: center center;
 }
 
 section {
@@ -46,12 +55,8 @@ footer {
 /* ================================================== */
 /* ===================== MODULE ===================== */
 /* ================================================== */
-btn {
-    
-}
-
-form {
-    
+.navbar-default .navbar-brand {
+    color: cadetblue;
 }
 
 .separator-header {
