@@ -2,7 +2,7 @@
 /* ====================== BASE ====================== */
 /* ================================================== */
 body {
-    
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -54,11 +54,11 @@ form {
     
 }
 
-hr {
+.separator-header {
     width: 150px;
-    height: 1px;
+    height: 2px;
     background-color: #fff;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 50px auto;
 }
 
 /* ================================================== */
