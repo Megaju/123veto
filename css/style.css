@@ -17,6 +17,12 @@ h1 {
     margin: 0 0 20px 0;
 }
 
+h3 {
+    padding:20px;
+    font-family: "Open" sans-serif;
+
+}
+
 p {
     
 }
@@ -31,14 +37,6 @@ img.avatar {
     width: 33%;
     margin: 40px auto;
     text-align: center;
-}
-
-ul > li > a
-    {color: white;
-}
-
-ul > li > a:hover
-    {color: rgba(30, 113, 180, 1);
 }
 
 i {color: #F58900;}
@@ -61,7 +59,7 @@ header .logo {
     background-position: center center;
 }
 
-#fond-orange {
+.fond-orange {
     background-color: #F58900;
 }
 
@@ -69,8 +67,7 @@ section {
 }
 
 .section-header {
-    background-color: /*#0a71b4*/ rgba(30, 113, 180, 0.8);
-    background-color: #4793C6;
+    background-color: #BCF53F;
     height: 90px;
     color: white;
 }
@@ -107,10 +104,18 @@ footer {
     padding: 0 0 20px 0;
 }
 
-.pad-40 {
+.pad-70 {
     padding: 70px;
 }
 
 /* ================================================== */
 /* ====================== STATE ===================== */
 /* ================================================== */
+
+/* ================================================== */
+/* ====================== STYLE PRESTATIONS ========= */
+/* ================================================== */
+
+.text-prestations {
+    text-align: justify;
+}
