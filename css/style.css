@@ -10,10 +10,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 30px;
+    text-transform: uppercase;
     text-align: center;
     color: #fff;
-    margin: 0 0 50px 0;
+    margin: 0 0 20px 0;
 }
 
 p {
@@ -22,7 +23,7 @@ p {
 
 header p {
     color: #fff;
-    font-weight: 700;
+    font-weight: 300;
     line-height: 30px;
 }
 
@@ -36,8 +37,8 @@ header {
 }
 
 header .logo {
-    width: 300px;
-    height: 200px;
+    width: 450px;
+    height: 240px;
     margin: 0 auto;
     background-image: url(../images/logo-veto.svg);
     background-size: 100%;
@@ -63,7 +64,7 @@ footer {
     width: 150px;
     height: 2px;
     background-color: #fff;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 20px auto;
 }
 
 /* ================================================== */
