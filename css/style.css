@@ -32,15 +32,15 @@ header p {
 header {
     margin: 50px auto;
     padding: 60px 0;
-    background-color: cadetblue;
+    background-color: #0a71b4;
 }
 
 header .logo {
-    width: 200px;
+    width: 300px;
     height: 200px;
-    margin: 0 auto 50px auto;
-    background-image: url(../images/logo.png);
-    background-size: cover;
+    margin: 0 auto;
+    background-image: url(../images/logo-veto.svg);
+    background-size: 100%;
     background-position: center center;
 }
 
@@ -56,7 +56,7 @@ footer {
 /* ===================== MODULE ===================== */
 /* ================================================== */
 .navbar-default .navbar-brand {
-    color: cadetblue;
+    color: #0a71b4;
 }
 
 .separator-header {
