@@ -29,9 +29,12 @@ header p {
 
 img.avatar {
     width: 33%;
-    margin: 40px auto;
+    margin: 60px auto;
     text-align: center;
 }
+
+ul > li > a {color: white;}
+ul > li > a:hover {color: rgba(30, 113, 180, 1);}
 
 /* ================================================== */
 /* ===================== LAYOUT ===================== */
@@ -57,7 +60,7 @@ section {
 }
 
 .section-header {
-    background-color: /*#0a71b4*/ rgba(30, 113, 180, 0.8);
+    background-color: /*#0a71b4*/ rgba(30, 113, 180, 1);
     height: 90px;
     color: white;
 }
@@ -73,8 +76,13 @@ footer {
 /* ================================================== */
 /* ===================== MODULE ===================== */
 /* ================================================== */
-.navbar-default .navbar-brand {
-    color: #0a71b4;
+.nav .navbar-default .navbar-brand {
+    color: white;
+}
+
+.nav-style {
+    background-color: rgba(10, 113, 180, 0.5);
+    color: white;
 }
 
 .separator-header {
@@ -89,7 +97,7 @@ footer {
 }
 
 .pad-40 {
-    padding: 40px;
+    padding: 60px;
 }
 
 /* ================================================== */
