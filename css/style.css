@@ -17,6 +17,12 @@ h1 {
     margin: 0 0 20px 0;
 }
 
+h3 {
+    padding:20px;
+    font-family: "Open" sans-serif;
+
+}
+
 p {
     
 }
@@ -53,7 +59,7 @@ header .logo {
     background-position: center center;
 }
 
-#fond-orange {
+.fond-orange {
     background-color: #F58900;
 }
 
@@ -61,7 +67,7 @@ section {
 }
 
 .section-header {
-    background-color: #4793C6;
+    background-color: #BCF53F;
     height: 90px;
     color: white;
 }
@@ -98,7 +104,7 @@ footer {
     padding: 0 0 20px 0;
 }
 
-.pad-40 {
+.pad-70 {
     padding: 70px;
 }
 
@@ -143,3 +149,11 @@ footer {
 /* ================================================== */
 /* ====================== STATE ===================== */
 /* ================================================== */
+
+/* ================================================== */
+/* ====================== STYLE PRESTATIONS ========= */
+/* ================================================== */
+
+.text-prestations {
+    text-align: justify;
+}
