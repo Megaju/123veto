@@ -2,10 +2,10 @@
 
 ## Bienvenue dans la créa du site de 123 VETO !
 
->Bon en vrai, je test pour la première fois
-la créa d'un fichier md.
+>_Bon en vrai_, je test pour la première fois
+la créa d'un **fichier md**.
 
->Faudra mettre les specs ici ça serait cool.
+>Faudra mettre les specs ici ça serait **cool**.
 
 [Lien google pour le test](www.google.fr)
 
