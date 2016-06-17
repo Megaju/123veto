@@ -226,7 +226,6 @@ footer {
 /* === fiches conseils === */
 .hover {
     box-sizing: border-box;
-    background-color: rgb(255, 0, 0);
     cursor: default;
     transition: all 0.4s ease-in-out;
 }
@@ -324,14 +323,17 @@ footer {
 /* ====================== STATE ===================== */
 /* ================================================== */
 
-a {
+a, a i {
   text-decoration: none;
   color: #F58900;
   font-family: "Open" sans-serif;
-  font-weight: 700; 
+  font-weight: 700;
+    transition: 0.2s;
 }
 
-a:hover {
+a:hover, a:hover i {
   text-decoration: none;
   color: rgba(10, 113, 180, 0.8);
+    transition: 0.2s;
 }
+
