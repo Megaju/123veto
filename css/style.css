@@ -229,6 +229,25 @@ footer {
     transition: all 0.4s linear;
 }
 
+/* --- Styles prestations ---*/
+
+.prestation {
+  padding: 100px 0px 0px 0px;
+}
+
+.prestation p {
+  margin: 0 0 200px 0;
+  text-align: justify;
+  font-size: 14px;
+}
+
+.nav-prestations {
+    position: fixed;
+    top: 10%;
+    right: 10px;
+    width: 60px;
+    z-index: 99;
+}
 
 /* ================================================== */
 /* ====================== STATE ===================== */
@@ -244,38 +263,3 @@ a {
 a:hover {
   text-decoration: none;
 }
-
-/* ================================================== */
-/* ====================== STYLE PRESTATIONS ========= */
-/* ================================================== */
-
-
-.prestation {
-  padding: 100px 0px 0px 0px;
-}
-
-.prestation p {
-  margin: 0 0 200px 0;
-  text-align: justify;
-  font-size: 14px;
-}
-
-.nav-prestations {
-    position: fixed;
-    top: 25%;
-    right: 10px;
-    width: 60px;
-    z-index: 99;
-}
-
-/* ================================================== */
-/* ====================== ID ENCRES ========= */
-/* ================================================== */
-
-#consultation {}
-#imagerie {}
-#analyse {}
-#chirurgie {}
-#hospitalisation {}
-#nac {}
-#tarifs {}
