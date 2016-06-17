@@ -90,8 +90,7 @@ footer {
 }
 
 .bloc-footer {
-  padding: 50px;$
-  display: flex;
+  padding: 50px;
 }
 
 /* ================================================== */
@@ -137,8 +136,9 @@ footer {
 .navbar-default .navbar-nav > .open > a:focus {
   color: #fff;
   background-color: #00a7ca;
-    background-image: none;
+  background-image: none;
 }
+
 .navbar-default .navbar-toggle {
   border-color: #00a7ca;
 }
