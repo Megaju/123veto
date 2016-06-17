@@ -10,3 +10,5 @@ la créa d'un **fichier md**.
 [Lien google pour le test](www.google.fr)
 
 ![Image test](http://wiki.lutece.paris.fr/lutece/image?resource_type=wiki_image&id=8)
+
+>**Les chamau c'est cool !** :camel: 
