@@ -1,11 +1,21 @@
 /* ================================================== */
+
+
 /* ====================== BASE ====================== */
+
+
 /* ================================================== */
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
 }
 
@@ -14,7 +24,7 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     color: #fff;
-    margin: 0 0 15px 0;
+    margin: 0 0 15px 0
 }
 
 h2 {
@@ -25,7 +35,6 @@ h3 {
     margin: auto auto 10px auto;
     font-family: "Open" sans-serif;
     color: #143143;
-
 }
 
 h4 {
@@ -46,7 +55,10 @@ img.avatar {
     text-align: center;
 }
 
-i {color: #F58900;}
+i {
+    color: #F58900;
+}
+
 
 /* ================================================== */
 /* ===================== LAYOUT ===================== */
@@ -64,9 +76,6 @@ header .logo {
     background-image: url(../images/logo-veto.svg);
     background-size: 100%;
     background-position: center center;
-}
-
-section {    
 }
 
 .section-header {
@@ -93,74 +102,92 @@ footer {
   padding: 50px;
 }
 
+
 /* ================================================== */
 /* ===================== MODULE ===================== */
 /* ================================================== */
+/* --- virer les margins des col-* en cas de besoin --- */
+.no-padding > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
 /* --- navigation principale --- */
 .navbar-default {
-  background-color: #f2f2f2;
-  border-color: #00a7ca;
+    background-color: #f2f2f2;
+    border-color: #00a7ca;
     background-image: none;
     font-weight: 700;
 }
+
 .navbar-default .navbar-brand {
-  color: #00a7ca;
+    color: #00a7ca;
     transition: 0.2s;
 }
+
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #003c4b;
+    color: #003c4b;
     transition: 0.2s;
 }
+
 .navbar-default .navbar-text {
-  color: #003c4b;
+    color: #003c4b;
 }
+
 .navbar-default .navbar-nav > li > a {
-  color: #003c4b;
+    color: #003c4b;
     transition: 0.2s;
 }
+
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #00a7ca;
+    color: #00a7ca;
     transition: 0.2s;
 }
+
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #fff;
   background-color: #143143;
-    background-image: none;
-}
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus {
-  color: #fff;
-  background-color: #00a7ca;
   background-image: none;
 }
 
-.navbar-default .navbar-toggle {
-  border-color: #00a7ca;
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: #00a7ca;
+    background-image: none;
 }
+
+.navbar-default .navbar-toggle {
+    border-color: #00a7ca;
+}
+
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #00a7ca;
+    background-color: #00a7ca;
 }
+
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #003c4b;
+    background-color: #003c4b;
 }
+
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #003c4b;
+    border-color: #003c4b;
 }
+
 .navbar-default .navbar-link {
-  color: #003c4b;
+    color: #003c4b;
 }
+
+
 .navbar-default .navbar-link:hover {
-  color: #fff;
+    color: #fff;
 }
-
-
 
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
@@ -176,6 +203,7 @@ footer {
     color: #fff;
     background-color: #00a7ca;
   }
+
 }
 
 .separator-header {
@@ -193,41 +221,76 @@ footer {
     padding: 70px;
 }
 
+
 /* === fiches conseils === */
-.hovereffect {
-    position: relative;
-    width: 100%;
-    height: 50%;
-    overflow: hidden;
-    text-align: center;
-    transition: all 0.4s linear;
+.hover {
+    box-sizing: border-box;
+    background-color: rgb(255, 0, 0);
+    cursor: default;
+    transition: all 0.4s ease-in-out;
 }
 
-.hovereffect .overlay {
-    position: absolute;
-    left: 25%;
-    top: 25%;
+.hover:hover img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
+}
+
+.overlay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    
     color: #fff;
     font-weight: 700;
-    font-size: 40px;
-    opacity: 0;
-    transition: 0.4s;
-}
-
-.hovereffect img {
-    padding: 0;
-    margin: 0;
-}
-
-.hovereffect:hover .overlay {
-    opacity: 1;
-}
-
-    /* zoom */
-.hovereffect:hover img {
-    -webkit-transform: scale(1.2);
+    text-transform: uppercase;
     
-    transition: all 0.4s linear;
+    
+    border: 1px solid #fff;
+    border-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.overlay h2 {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #fff;
+}
+
+.overlay button {
+    width: 75%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: all 0.8s ease-in-out;
+}
+
+.overlay:hover {
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+.hover .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hover,
+.hover .overlay {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hover,
+.hover h2 {
+    text-align: center;
 }
 
 /* --- Styles prestations ---*/
@@ -254,6 +317,7 @@ footer {
     width: 60px;
     z-index: 99;
 }
+
 
 /* ================================================== */
 /* ====================== STATE ===================== */
