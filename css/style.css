@@ -153,6 +153,8 @@ footer {
   color: #fff;
 }
 
+
+
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #003c4b;
@@ -167,6 +169,12 @@ footer {
     color: #fff;
     background-color: #00a7ca;
   }
+
+.nav-style {
+    background-color: #BCF53F;
+    color: white;
+}
+
 }
 
 .separator-header {
@@ -241,10 +249,15 @@ a:hover {
 /* ====================== STYLE PRESTATIONS ========= */
 /* ================================================== */
 
-.prestations {
-    margin: 70px 0px 50px 0px;
-    display: flex;
-    align-items: center;
+
+.prestation {
+  padding: 100px 0px 0px 0px;
+}
+
+.prestation p {
+  margin: 0 0 200px 0;
+  text-align: justify;
+  font-size: 14px;
 }
 
 .nav-prestations {
@@ -254,20 +267,6 @@ a:hover {
     width: 60px;
     z-index: 99;
 }
-
-.section-prestation {
-    position: relative;
-}
-
-.img-prestations {
-    width: 200px;
-    height: 100%;
-}
-
-.icone-prestation {
-  margin-right: 10px;
-}
-
 
 /* ================================================== */
 /* ====================== ID ENCRES ========= */
