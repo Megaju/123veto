@@ -59,10 +59,6 @@ header .logo {
     background-position: center center;
 }
 
-.fond-orange {
-    background-color: #F58900;
-}
-
 section {    
 }
 
@@ -77,7 +73,18 @@ section {
 }
 
 footer {
-    
+    background-color: rgba(10, 113, 180, 0.8);
+    height: 350px;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.bloc-footer {
+  padding: 50px;$
+  display: flex;
 }
 
 /* ================================================== */
@@ -144,11 +151,6 @@ footer {
 }
 .navbar-default .navbar-link:hover {
   color: #fff;
-}
-
-.nav-style {
-    background-color: #BCF53F;
-    color: white;
 }
 
 @media (max-width: 767px) {
@@ -224,6 +226,17 @@ footer {
 /* ====================== STATE ===================== */
 /* ================================================== */
 
+a {
+  text-decoration: none;
+  color: #F58900;
+  font-family: "Open" sans-serif;
+  font-weight: 700; 
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 /* ================================================== */
 /* ====================== STYLE PRESTATIONS ========= */
 /* ================================================== */
@@ -239,22 +252,23 @@ footer {
     top: 25%;
     right: 10px;
     width: 60px;
-    z-index: -1;
+    z-index: 99;
 }
 
 .section-prestation {
     position: relative;
 }
 
-.active {
-    background-color: blue;
-    color: blue;
-}
-
 .img-prestations {
     width: 200px;
     height: 100%;
 }
+
+.icone-prestation {
+  margin-right: 10px;
+}
+
+
 /* ================================================== */
 /* ====================== ID ENCRES ========= */
 /* ================================================== */

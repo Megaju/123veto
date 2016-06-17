@@ -12,16 +12,17 @@
     <!-- <Script JS> -->
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/navbar-transparent.js"></script>
     <!-- fonts -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css' />
-    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/font-awesome.css"/>
 </head>
 
 <body>
     <div class="container-fluid">
         <!-- menu de navigation -->
         <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid nav-style">
+            <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                         <span class="icon-bar"></span>
@@ -31,7 +32,7 @@
                     <a class="navbar-brand" href="#"><strong>123 VETO</strong></a>
                 </div>
                 <ul class="nav navbar-nav navbar-right" id="myNavbar">
-                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">HOME</a></li>
                     <li><a href="#">FICHES CONSEIL</a></li>
                     <li class="active"><a href="#">PRESTATION & TARIFS</a></li>
                     <li><a href="#">CONTACT</a></li>
@@ -43,29 +44,29 @@
         <header class="row">
             <div class="logo"></div>
 
-            <h1>123 VETO - Clinique Vétérinaire</h1>
+            <h1 id="startchange">123 VETO - Clinique Vétérinaire</h1>
 
             <div class="separator-header"></div>
 
             <p class="text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas.</p>
         </header>
 
-        <!-- section présentation de l'entreprise -->
+        <!-- section nav icones prestation-->
         <section class="row text-center">
-            <div fond-orange" class="section-header fond-orange">
+            <div fond-orange" class="section-header">
                 <h2 class="text-center">TARIFS ET PRESTATIONS</h2>
             </div>
         </section>
 
         <nav class="row nav-prestations">
             <div class="col-md-1 col-xs-1">
-                <i class="fa fa-2x fa-stethoscope"></i>
-                <i class="fa fa-2x fa-camera"></i>
-                <i class="fa fa-2x fa-medkit"></i>
-                <i class="fa fa-2x fa-heartbeat"></i>
-                <i class="fa fa-2x fa-hospital-o"></i>
-                <i class="fa fa-2x fa-paw"></i>
-                <i class="fa fa-2x fa-eur"></i>
+                <a href="#consultation"><i class="fa fa-2x fa-stethoscope"></i></a>
+                <a href="#imagerie"><i class="fa fa-2x fa-camera"></i></a>
+                <a href="#analyse"><i class="fa fa-2x fa-medkit"></i></a>
+                <a href="#chirurgie"><i class="fa fa-2x fa-heartbeat"></i></a>
+                <a href="#hospitalisation"><i class="fa fa-2x fa-hospital-o"></i></a>
+                <a href="#nac"><i class="fa fa-2x fa-paw"></i></a>
+                <a href="#tarifs"><i class="fa fa-2x fa-eur"></i></a>
             </div>
         </nav>
         <!--<div class="separator-objet"></div>-->
@@ -82,7 +83,7 @@
             </div>
             </div>
 
-            <div id="consultation" class="col-md-12 prestations">
+            <div id="imagerie" class="col-md-12 prestations">
             <div class="row">
                 <img src="images/veto.jpg" class="img-circle col-md-offset-1 col-md-1 img-prestations img-responsive">
             <div class="col-md-8 col-xs-10">
@@ -92,7 +93,7 @@
             </div>
             </div>
 
-            <div id="consultation" class="col-md-12 prestations">
+            <div id="analyse" class="col-md-12 prestations">
             <div class="row">
                 <img src="images/pension-nac.jpg" class="img-circle col-md-offset-1 col-md-1 img-prestations img-responsive">
             <div class="col-md-8 col-xs-10">
@@ -102,7 +103,7 @@
             </div>
             </div>
 
-            <div id="consultation" class="col-md-12 prestations">
+            <div id="chirurgie" class="col-md-12 prestations">
             <div class="row">
                 <img src="images/veto.jpg" class="img-circle col-md-offset-1 col-md-1 img-prestations img-responsive">
             <div class="col-md-8 col-xs-10">
@@ -112,7 +113,7 @@
             </div>
             </div>
 
-            <div id="consultation" class="col-md-12 prestations">
+            <div id="hospitalisation" class="col-md-12 prestations">
             <div class="row">
                 <img src="images/pension-nac.jpg" class="img-circle col-md-offset-1 col-md-1 img-prestations img-responsive">
             <div class="col-md-8 col-xs-10">
@@ -122,7 +123,7 @@
             </div>
             </div>
 
-            <div id="consultation" class="col-md-12 prestations">
+            <div id="nac" class="col-md-12 prestations">
             <div class="row">
                 <img src="images/veto.jpg" class="img-circle col-md-offset-1 col-md-1 img-prestations img-responsive">
             <div class="col-md-8 col-xs-10">
@@ -132,7 +133,7 @@
             </div>
             </div>
 
-            <div id="consultation" class="col-md-12 prestations">
+            <div id="tarifs" class="col-md-12 prestations">
             <div class="row">
                 <img src="images/pension-nac.jpg" class="img-circle col-md-offset-1 col-md-1 img-prestations img-responsive">
             <div class="col-md-8 col-xs-10">
@@ -145,8 +146,33 @@
 
 
         <!-- pied de page -->
-        <footer>
+        <footer class="row">
+            <div class="bloc-footer col-md-4">
+                <p>
+                    123 Véto clinique vétérinaire vous accueille du lundi au vendredi de 9h à 12h et de 14h à 19h et le samedi de 9h à 12h.</p><p>Les urgences sont assurées 24h/24 sur simple appel téléphonique.</p><p>tél : 02 99 55 55 55 - 06 55 55 55 55</p>
+                </p>
 
+                <p>
+                <a href="https://www.facebook.com/"><i class="fa fa-2x fa-facebook icone-prestation"></i></a>
+                <a href="https://twitter.com/"><i class="fa fa-2x fa-twitter icone-prestation"></i></a>
+                <a href="https://plus.google.com/"><i class="fa fa-2x fa-google-plus-official icone-prestation"></i></a>
+                </p>
+
+                <button type="button" class="btn btn-default">Plan d'accès</button>
+            </div>
+
+            <div class="bloc-footer col-md-4">
+                <p>Fil d'actualitées à gérer en Javascript</p>
+            </div>
+
+            <div class="bloc-footer col-md-4">
+                    <p>123 Véto :</p>
+                    <p class="liens-footer"><a href="#">Accueil</a></p>
+                    <p><a href="#">Fiches conseil</a></p>
+                    <p><a href="#">Prestation & tarifs</a></p>
+                    <p><a href="#">Contact & rendez-vous</a></p>
+                    <p><a href="#">Mentions légales</a></p>
+            </div>
         </footer>
     </div>
 </body>
