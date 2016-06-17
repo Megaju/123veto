@@ -176,12 +176,6 @@ footer {
     color: #fff;
     background-color: #00a7ca;
   }
-
-.nav-style {
-    background-color: #BCF53F;
-    color: white;
-}
-
 }
 
 .separator-header {
@@ -274,4 +268,5 @@ a {
 
 a:hover {
   text-decoration: none;
+  color: rgba(10, 113, 180, 0.8);
 }
