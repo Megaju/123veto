@@ -118,6 +118,7 @@ footer {
     border-color: #00a7ca;
     background-image: none;
     font-weight: 700;
+    z-index: 9998;
 }
 
 .navbar-default .navbar-brand {
