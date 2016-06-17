@@ -17,14 +17,14 @@ h1 {
     margin: 0 0 15px 0;
 }
 
+h2 {
+    font-size: 2em;
+}
+
 h3 {
     margin:20px auto 20px auto;
     font-family: "Open" sans-serif;
 
-}
-
-p {
-    
 }
 
 header p {
@@ -146,6 +146,7 @@ footer {
   color: #fff;
 }
 
+
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: #003c4b;
@@ -160,6 +161,10 @@ footer {
     color: #fff;
     background-color: #00a7ca;
   }
+
+.nav-style {
+    background-color: #BCF53F;
+    color: white;
 }
 
 .separator-header {
@@ -223,9 +228,41 @@ footer {
 /* ====================== STYLE PRESTATIONS ========= */
 /* ================================================== */
 
-/*.icone_prestation:hover {
-    background-color: black;
-}*/
-
-.icone_prestation {
+.prestations {
+    margin: 70px 0px 50px 0px;
+    display: flex;
+    align-items: center;
 }
+
+.nav-prestations {
+    position: fixed;
+    top: 25%;
+    right: 10px;
+    width: 60px;
+    z-index: -1;
+}
+
+.section-prestation {
+    position: relative;
+}
+
+.active {
+    background-color: blue;
+    color: blue;
+}
+
+.img-prestations {
+    width: 200px;
+    height: 100%;
+}
+/* ================================================== */
+/* ====================== ID ENCRES ========= */
+/* ================================================== */
+
+#consultation {}
+#imagerie {}
+#analyse {}
+#chirurgie {}
+#hospitalisation {}
+#nac {}
+#tarifs {}
