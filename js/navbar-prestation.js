@@ -1,16 +1,15 @@
 $(document).ready(function () {
     var scroll_start = 0;
-    var startchange = $('#startchange');
+    var startchange = $('#navbar-prestation');
     var offset = startchange.offset();
     if (startchange.length) {
         $(document).scroll(function () {
             scroll_start = $(this).scrollTop();
             if (scroll_start > offset.top) {
-                $('.navbar-default').css('opacity', '0.5');
-                $('.navbar-default').css('transition', '0.5s');
+                $('.nav-prestations').css('opacity', '1');
+                $('.nav-prestations').css('transition', '0.5s');
             } else {
-                $(".navbar-default").css('opacity', '1');
-                $('.navbar-default').css('transition', '0.5s');
+                $(".nav-prestations").css('opacity', '0');
             }
         });
     }
