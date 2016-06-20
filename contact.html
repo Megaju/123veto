@@ -57,28 +57,61 @@
         </div>
         
         <div class="row">
-            <form class="col-md-8 col-md-offset-4">
-                Votre nom:<br/>
-                <input tupe="text" name="name"/><br/>
-                Votre mail:<br/>
-                <input type="email"/><br/>
-                Votre message:<br/>
-                <textarea name="message" rows="15" cols="40"></textarea><br/>
+            
+            <form class="col-md-6 col-md-offset-3">
+                <label for="nom">Votre nom:</label><br/>
+                <input id="nom" type="text" name="name" class="form-control"/><br/>
+                <label for="mail">Votre mail:</label><br/>
+                <input id="mail" type="email" name="mail" class="form-control"/><br/>
+                <label for="message">Votre message:</label><br/>
+                <textarea id="message" name="message" rows="15" cols="40" class="form-control"></textarea><br/>
                 <input type="submit" value="Envoyer!"/>
             </form>
+            
         </div>
         
         <div class="row">
-            <h3 class="text-center">Où nous trouver</h3>
-            <div class="col-md-offset-1 col-md-4">
+            <h3 class="h3-contact text-center">Où nous trouver</h3>
+            <div class="col-md-6 col-md-offset-3 text-center">
                 <p>32 rue du vélodrome à Pontchâteau (Loire-Atlantique)</p>
                 <p>Du lundi au vendredi de 9h à 12h et de 14h à 19h et le samedi de 9h à 12h.</p>
                 <p>02 40 01 61 69</p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6 col-md-offset-3 google-map">
                 <div style='overflow:hidden;height:440px;width:700px;'> <div id='gmap_canvas' style='height:440px;width:700px;'></div><div><small><a href="http://embedgooglemaps.com">									google maps carte							</a></small></div><div><small><a href="http://youtubeembedcode.com">embed youtube</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(47.431279412515984,-2.077201838623073),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(47.431279412515984,-2.077201838623073)});infowindow = new google.maps.InfoWindow({content:'<strong>Clinique Vétérinaire du Docteur Wintz</strong><br>32 Rue du Vélodrome, 44160 Pontchâteau<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
             </div>
         </div>
+        
+        <!-- pied de page -->
+        <footer class="row">
+            <div class="bloc-footer col-md-4">
+                <p>
+                    123 Véto clinique vétérinaire vous accueille du lundi au vendredi de 9h à 12h et de 14h à 19h et le samedi de 9h à 12h.</p><p>Les urgences sont assurées 24h/24 sur simple appel téléphonique.</p><p>tél : 02 99 55 55 55 - 06 55 55 55 55</p>
+                </p>
+
+                <p>
+                <a href="https://www.facebook.com/"><i class="fa fa-2x fa-facebook icone-prestation"></i></a>
+                <a href="https://twitter.com/"><i class="fa fa-2x fa-twitter icone-prestation"></i></a>
+                <a href="https://plus.google.com/"><i class="fa fa-2x fa-google-plus-official icone-prestation"></i></a>
+                </p>
+
+                <button type="button" class="btn btn-default">Plan d'accès</button>
+            </div>
+
+            <div class="bloc-footer col-md-4">
+                <p>Fil d'actualitées à gérer en Javascript</p>
+            </div>
+
+            <div class="bloc-footer col-md-4">
+                    <p>123 Véto :</p>
+                    <p><a href="index.html">Accueil</a></p>
+                    <p><a href="conseil.html">Fiches conseil</a></p>
+                    <p><a href="prestation.html">Prestation & tarifs</a></p>
+                    <p><a href="#">Espace vente</a></p>
+                    <p><a href="contact.html">Contact & rendez-vous</a></p>
+                    <p><a href="#">Mentions légales</a></p>
+            </div>
+    </footer>
     </div>
 </body>
 </html>
