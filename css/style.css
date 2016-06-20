@@ -39,9 +39,9 @@ h3 {
 }
 
 h4 {
-  margin: 10px auto 10px auto;
-  font-family: "Open" sans-serif;
-  color: rgba(10, 113, 180, 0.8)
+    margin: 10px auto 10px auto;
+    font-family: "Open" sans-serif;
+    color: rgba(10, 113, 180, 0.8)
 }
 
 header p {
@@ -61,8 +61,13 @@ i {
 }
 
 /* ================================================== */
+
+
 /* ===================== LAYOUT ===================== */
+
+
 /* ================================================== */
+
 header {
     margin: 0 auto;
     padding: 110px 0 60px 0;
@@ -89,52 +94,58 @@ header .logo {
 }
 
 footer {
-  height: 420px;
+ height: 420px;
 }
 
 .bloc-footer {
-  padding: 50px;
-  background-color: #143143;
-  height: 100%;
+ padding: 50px;
+ background-color: #143143 ;
+ height: 100%;
 }
 
 .bloc-footer p, h4  {
-  color: white;
-  text-align: center;
+ color: white;
+ text-align: center;
 }
 
 .bloc-footer button {
-  background-color: rgba(10, 113, 180, 0.8);
-  border: none;
-  color: white;
+ background-color: rgba(10, 113, 180, 0.8);
+ border: none;
+ color: white;
 }
 
 #myModalLabel {
-  color: rgba(10, 113, 180, 0.8);
+ color: rgba(10, 113, 180, 0.8);
 }
 
 .modal-body h4 {
-  color: rgba(10, 113, 180, 0.8);
+ color: rgba(10, 113, 180, 0.8);
 }
 
-
-
-
 /* ================================================== */
+
+
 /* ===================== MODULE ===================== */
+
+
 /* ================================================== */
+
 /* --- virer les margins des col-* en cas de besoin --- */
+
 .no-padding > [class*='col-'] {
-    padding-right:0;
-    padding-left:0;
+    padding-right: 0;
+    padding-left: 0;
 }
+
 
 /* --- navigation principale --- */
+
 .navbar-default {
     background-color: #f2f2f2;
     border-color: #00a7ca;
     background-image: none;
     font-weight: 700;
+    z-index: 9998;
 }
 
 .navbar-default .navbar-brand {
@@ -166,9 +177,9 @@ footer {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #fff;
-  background-color: #143143;
-  background-image: none;
+    color: #fff;
+    background-color: #143143;
+    background-image: none;
 }
 
 .navbar-default .navbar-nav > .open > a,
@@ -201,26 +212,24 @@ footer {
     color: #003c4b;
 }
 
-
 .navbar-default .navbar-link:hover {
     color: #fff;
 }
 
 @media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #003c4b;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #fff;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: #fff;
-    background-color: #00a7ca;
-  }
-
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #003c4b;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: #fff;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #fff;
+        background-color: #00a7ca;
+    }
 }
 
 .separator-header {
@@ -228,13 +237,6 @@ footer {
     height: 2px;
     background-color: #fff;
     margin: 0 auto 20px auto;
-}
-
-.separator-footer {
-    width: 150px;
-    height: 1px;
-    background-color: #fff;
-    margin: 15px auto 15px auto;
 }
 
 .fa {
@@ -247,9 +249,9 @@ footer {
 
 
 /* === fiches conseils === */
+
 .hover {
     box-sizing: border-box;
-    background-color: rgb(255, 0, 0);
     cursor: default;
     transition: all 0.4s ease-in-out;
 }
@@ -267,12 +269,9 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.2);
-    
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
-    
-    
     border: 1px solid #fff;
     border-color: rgba(0, 0, 0, 0.3);
     opacity: 0;
@@ -317,21 +316,22 @@ footer {
     text-align: center;
 }
 
+
 /* --- Styles prestations ---*/
 
 .prestation {
-  padding: 100px 0px 100px 0px;
+    padding: 100px 0px 100px 0px;
 }
 
 .article-prestation {
-  margin-top: 50px;
-  margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .prestation p {
-  margin: 0 0 20px 0;
-  text-align: justify;
-  font-size: 14px;
+    margin: 0 0 20px 0;
+    text-align: justify;
+    font-size: 14px;
 }
 
 .nav-prestations {
@@ -344,17 +344,25 @@ footer {
 
 
 /* ================================================== */
+
+
 /* ====================== STATE ===================== */
+
+
 /* ================================================== */
 
-a {
-  text-decoration: none;
-  color: #F58900;
-  font-family: "Open" sans-serif;
-  font-weight: 700; 
+a,
+a i {
+    text-decoration: none;
+    color: #F58900;
+    font-family: "Open" sans-serif;
+    font-weight: 700;
+    transition: 0.2s;
 }
 
-a:hover {
-  text-decoration: none;
-  color: rgba(10, 113, 180, 0.8);
+a:hover,
+a:hover i {
+    text-decoration: none;
+    color: rgba(10, 113, 180, 0.8);
+    transition: 0.2s;
 }

@@ -1,9 +1,10 @@
-<!DOCTYPE>
+<!DOCTYPE HTML>
 <html>
+
 <head>
     <title>123 VETO</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- styles css / bootstrap -->
     <link rel="stylesheet" href="css/bootstrap-theme.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
@@ -12,18 +13,17 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/navbar-transparent.js"></script>
-    <script type="text/javascript" src="js/navbar-prestation.js"></script>
-    <script type="text/javascript" src="js/scroll-fluid.js"></script>
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
     <!-- fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'/>
-    <link rel="stylesheet" href="css/font-awesome.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="css/font-awesome.css" />
 </head>
-
+    
 <body>
-    <div id="nav" class="container-fluid">
+    <div class="container-fluid">
         <!-- menu de navigation -->
         <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
+            <div class="container-fluid nav-style">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                         <span class="icon-bar"></span>
@@ -33,11 +33,11 @@
                     <a class="navbar-brand" href="#"><strong>123 VETO</strong></a>
                 </div>
                 <ul class="nav navbar-nav navbar-right" id="myNavbar">
-                    <li><a href="index.html" onclick="location.href='index.html';">ACCUEIL</a></li>
-                    <li class="active"><a href="conseil.html" onclick="location.href='conseil.html';">FICHES CONSEIL</a></li>
-                    <li><a href="prestation.html" onclick="location.href='prestation.html';">PRESTATION & TARIFS</a></li>
-                    <li><a href="#" onclick="location.href='#';">ESPACE VENTE</a></li>
-                    <li><a href="contact.html" onclick="location.href='contact.html';">CONTACT</a></li>
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="conseil.html">FICHES CONSEIL</a></li>
+                    <li><a href="prestation.html">PRESTATION & TARIFS</a></li>
+                    <li><a href="#">ESPACE VENTE</a></li>
+                    <li class="active"><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
@@ -46,120 +46,43 @@
         <header class="row">
             <div class="logo"></div>
 
-            <h1 id="startchange">123 VETO - Clinique Vétérinaire</h1>
+            <h1>123 VETO - Clinique Vétérinaire</h1>
 
             <div class="separator-header"></div>
 
             <p class="text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas.</p>
         </header>
-
-        <!-- section nav icones conseil-->
-        <section class="row text-center">
-            <div class="section-header">
-                <h2 class="text-center">Fiches Conseils</h2>
+        
+        <div class="row text-center section-header">
+            <h2 id="startchange">NOUS CONTACTER</h2>
+        </div>
+        
+        <div class="row pad-70">
+            
+            <form class="col-md-6 col-md-offset-3">
+                <label for="nom">Votre nom:</label><br/>
+                <input id="nom" type="text" name="name" class="form-control"/><br/>
+                <label for="mail">Votre mail:</label><br/>
+                <input id="mail" type="email" name="mail" class="form-control"/><br/>
+                <label for="message">Votre message:</label><br/>
+                <textarea id="message" name="message" rows="15" cols="40" class="form-control"></textarea><br/>
+                <input type="submit" value="Envoyer!"/>
+            </form>
+            
+        </div>
+        
+        <div class="row pad-70">
+            <h3 class="h3-contact text-center">Où nous trouver</h3>
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <p>32 rue du vélodrome à Pontchâteau (Loire-Atlantique)</p>
+                <p>Du lundi au vendredi de 9h à 12h et de 14h à 19h et le samedi de 9h à 12h.</p>
+                <p>02 40 01 61 69</p>
             </div>
-        </section>
-
-        <nav class="row nav-prestations">
-            <div class="col-md-1 col-xs-1">
-                <a href="#dent"><i class="fa fa-2x fa-user-md"></i></a>
-                <a href="#yeux-oreilles"><i class="fa fa-2x fa-eye"></i></a>
-                <a href="#pelage"><i class="fa fa-2x fa-paw"></i></a>
-                <a href="#parasite"><i class="fa fa-2x fa-bug"></i></a>
-                <a href="#vaccin-chien"><i class="fa fa-2x fa-plus-square"></i></a>
-                <a href="#vaccin-chat"><i class="fa fa-2x fa-medkit"></i></a>
-                <a href="#id"><i class="fa fa-2x fa-info-circle"></i></a>
-                <a href="#education"><i class="fa fa-2x fa-book"></i></a>
-                <a href="#nav"><i class="fa fa-2x fa-arrow-circle-up"></i></a>
+            <div class="col-md-6 col-md-offset-3 google-map">
+                <div style='overflow:hidden;height:440px;width:700px;'> <div id='gmap_canvas' style='height:440px;width:630px;'></div><div><small><a href="http://embedgooglemaps.com">									google maps carte							</a></small></div><div><small><a href="http://youtubeembedcode.com">embed youtube</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(47.431279412515984,-2.077201838623073),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(47.431279412515984,-2.077201838623073)});infowindow = new google.maps.InfoWindow({content:'<strong>Clinique Vétérinaire du Docteur Wintz</strong><br>32 Rue du Vélodrome, 44160 Pontchâteau<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
             </div>
-        </nav>
-        <!--<div class="separator-objet"></div>-->
-
-        <section id="navbar-prestation" class="row prestation">
-
-            <div id="dent" class="col-md-offset-2 col-md-8 article-prestation">
-                <div class="col-md-4">
-                    <img class="img-responsive img-circle" src="images/example-01.jpg" alt="chat">
-                </div>
-                <div class="col-md-8">
-                    <h3><i class="fa fa-user-md"></i> Hygiène dentaire</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
-                </div>
-            </div>
-
-            <div id="yeux-oreilles" class="col-md-offset-2 col-md-8 article-prestation">
-                <div class="col-md-4">
-                    <img class="img-responsive img-circle" src="images/pension-nac.jpg" alt="chat">
-                </div>
-                <div class="col-md-8">
-                    <h3><i class="fa fa-eye"></i> Hygiène des yeux et des oreilles</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
-                </div>
-            </div>
-
-            <div id="pelage" class="col-md-offset-2 col-md-8 article-prestation">
-                <div class="col-md-4">
-                    <img class="img-responsive img-circle" src="images/example-01.jpg" alt="chat">
-                </div>
-                <div class="col-md-8">
-                    <h3><i class="fa fa-paw"></i> Entretien du pelage</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
-                </div>
-            </div>
-
-            <div id="parasite" class="col-md-offset-2 col-md-8 article-prestation">
-                <div class="col-md-4">
-                    <img class="img-responsive img-circle" src="images/pension-nac.jpg" alt="chat">
-                </div>
-                <div class="col-md-8">
-                    <h3><i class="fa fa-bug"></i> Parasites externes et internes</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
-                </div>
-            </div>
-
-            <div id="vaccin-chien" class="col-md-offset-2 col-md-8 article-prestation">
-                <div class="col-md-4">
-                    <img class="img-responsive img-circle" src="images/example-01.jpg" alt="chat">
-                </div>
-                <div class="col-md-8">
-                    <h3><i class="fa fa-plus-square"></i> Pourquoi vacciner votre chien ?</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
-                </div>
-            </div>
-
-            <div id="vaccin-chat" class="col-md-offset-2 col-md-8 article-prestation">
-                <div class="col-md-4">
-                    <img class="img-responsive img-circle" src="images/pension-nac.jpg" alt="chat">
-                </div>
-                <div class="col-md-8">
-                    <h3><i class="fa fa-medkit"></i> Pourquoi vacciner votre chat ?</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
-                </div>
-            </div>
-
-            <div id="id" class="col-md-offset-2 col-md-8 article-prestation">
-                <div class="col-md-4">
-                    <img class="img-responsive img-circle" src="images/example-01.jpg" alt="chat">
-                </div>
-                <div class="col-md-8">
-                    <h3><i class="fa fa-info-circle"></i> Pourquoi et comment faire identifier vos animaux ?</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
-                </div>
-            </div>
-
-            <div id="education" class="col-md-offset-2 col-md-8 article-prestation">
-                <div class="col-md-4">
-                    <img class="img-responsive img-circle" src="images/example-01.jpg" alt="chat">
-                </div>
-                <div class="col-md-8">
-                    <h3><i class="fa fa-book"></i> Éducation</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
-                </div>
-            </div>
-
-        </section>
-
-
+        </div>
+        
         <!-- pied de page -->
     <footer class="row">
             <div class="bloc-footer col-md-4">
@@ -289,5 +212,4 @@
     </footer>
     </div>
 </body>
-
 </html>
