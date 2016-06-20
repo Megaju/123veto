@@ -37,10 +37,6 @@ h3 {
     color: #143143;
 }
 
-.h3-contact {
-    padding: 20px;
-}
-
 h4 {
     margin: 10px auto 10px auto;
     font-family: "Open" sans-serif;
@@ -63,9 +59,6 @@ i {
     color: #F58900;
 }
 
-form {
-    margin: 30px;
-}
 
 /* ================================================== */
 
@@ -101,45 +94,33 @@ header .logo {
 }
 
 footer {
-<<<<<<< HEAD
-    background-color: #143143;
-    color: white;
+ height: 420px;
 }
 
 .bloc-footer {
-    padding: 50px;
-=======
-  height: 420px;
-}
-
-.bloc-footer {
-  padding: 50px;
-  background-color: #143143;
-  height: 100%;
+ padding: 50px;
+ background-color: #143143 ;
+ height: 100%;
 }
 
 .bloc-footer p, h4  {
-  color: white;
-  text-align: center;
+ color: white;
+ text-align: center;
 }
 
 .bloc-footer button {
-  background-color: rgba(10, 113, 180, 0.8);
-  border: none;
-  color: white;
+ background-color: rgba(10, 113, 180, 0.8);
+ border: none;
+ color: white;
 }
 
 #myModalLabel {
-  color: rgba(10, 113, 180, 0.8);
->>>>>>> 73ef8e5fed323f34c184d718c5e2dc60606f9736
+ color: rgba(10, 113, 180, 0.8);
 }
 
 .modal-body h4 {
-  color: rgba(10, 113, 180, 0.8);
+ color: rgba(10, 113, 180, 0.8);
 }
-
-
-
 
 /* ================================================== */
 
@@ -258,13 +239,6 @@ footer {
     margin: 0 auto 20px auto;
 }
 
-.separator-footer {
-    width: 150px;
-    height: 1px;
-    background-color: #fff;
-    margin: 15px auto 15px auto;
-}
-
 .fa {
     padding: 0 0 20px 0;
 }
@@ -368,9 +342,6 @@ footer {
     z-index: 99;
 }
 
-.google-map {
-    padding: 30px;
-}
 
 /* ================================================== */
 
