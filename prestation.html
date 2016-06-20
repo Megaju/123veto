@@ -22,26 +22,24 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
     <div class="container-fluid">
         <!-- menu de navigation -->
-        <nav id="nav" class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
+        <nav id="nav" class="navbar navbar-default navbar-fixed-top container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><strong>123 VETO</strong></a>
+                    <a class="navbar-brand" href="index.html" onclick="window.open(this.href);return true;"><strong>123 VETO</strong></a>
                 </div>
                 <ul class="nav navbar-nav navbar-right" id="myNavbar">
-                    <li><a href="index.html">ACCUEIL</a></li>
-                    <li><a href="conseil.html">FICHES CONSEIL</a></li>
-                    <li class="active"><a href="prestation.html">PRESTATION & TARIFS</a></li>
-                    <li><a href="#">ESPACE VENTE</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="index.html" onclick="location.href='index.html';">ACCUEIL</a></li>
+                    <li><a href="conseil.html" onclick="location.href='conseil.html';">FICHES CONSEIL</a></li>
+                    <li class="active"><a href="prestation.html" onclick="location.href='prestation.html';">PRESTATION & TARIFS</a></li>
+                    <li><a href="#" onclick="location.href='#';">ESPACE VENTE</a></li>
+                    <li><a href="contact.html" onclick="location.href='contact.html';">CONTACT</a></li>
                 </ul>
-            </div>
         </nav>
-
+        
         <!-- en-tête du site -->
         <header class="row">
             <div class="logo"></div>
