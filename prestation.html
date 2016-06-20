@@ -1,10 +1,9 @@
-<!DOCTYPE HTML>
+<!DOCTYPE>
 <html>
-
 <head>
     <title>123 VETO</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!-- styles css / bootstrap -->
     <link rel="stylesheet" href="css/bootstrap-theme.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
@@ -12,16 +11,19 @@
     <!-- <Script JS> -->
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/navbar-transparent.js"></script>
+    <script type="text/javascript" src="js/navbar-prestation.js"></script>
+    <script type="text/javascript" src="js/scroll-fluid.js"></script>
     <!-- fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css' />
-    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="css/font-awesome.css"/>
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div id="nav" class="container-fluid">
         <!-- menu de navigation -->
         <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid nav-style">
+            <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                         <span class="icon-bar"></span>
@@ -31,10 +33,11 @@
                     <a class="navbar-brand" href="#"><strong>123 VETO</strong></a>
                 </div>
                 <ul class="nav navbar-nav navbar-right" id="myNavbar">
-                    <li class="active"><a href="#">HOME</a></li>
-                    <li><a href="#">FICHES CONSEIL</a></li>
-                    <li><a href="#">PRESTATION & TARIFS</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="conseil.html">FICHES CONSEIL</a></li>
+                    <li class="active"><a href="prestation.html">PRESTATION & TARIFS</a></li>
+                    <li><a href="#">ESPACE VENTE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
@@ -43,65 +46,176 @@
         <header class="row">
             <div class="logo"></div>
 
-            <h1>123 VETO - Clinique Vétérinaire</h1>
+            <h1 id="startchange">123 VETO - Clinique Vétérinaire</h1>
 
             <div class="separator-header"></div>
 
             <p class="text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas.</p>
         </header>
 
-        <!-- section présentation de l'entreprise -->
+        <!-- section nav icones prestation-->
         <section class="row text-center">
-            <div fond-orange" class="section-header fond-orange">
+            <div class="section-header">
                 <h2 class="text-center">TARIFS ET PRESTATIONS</h2>
             </div>
+        </section>
 
-            <div class="col-md-6 pad-70">
-                <div class="hovereffect">
-                <i class="fa fa-5x fa-stethoscope icone_prestation"></i>
-                <h3>CONSULTATION</h3>
-                <div class="overlay">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+        <nav class="row nav-prestations">
+            <div class="col-md-1 col-xs-1">
+                <a href="#consultation"><i class="fa fa-2x fa-stethoscope"></i></a>
+                <a href="#imagerie"><i class="fa fa-2x fa-camera"></i></a>
+                <a href="#analyse"><i class="fa fa-2x fa-medkit"></i></a>
+                <a href="#chirurgie"><i class="fa fa-2x fa-heartbeat"></i></a>
+                <a href="#hospitalisation"><i class="fa fa-2x fa-hospital-o"></i></a>
+                <a href="#nac"><i class="fa fa-2x fa-paw"></i></a>
+                <a href="#tarifs"><i class="fa fa-2x fa-eur"></i></a>
+                <a href="#nav"><i class="fa fa-2x fa-arrow-circle-up"></i></a>
+            </div>
+        </nav>
+        <!--<div class="separator-objet"></div>-->
+
+        <section id="navbar-prestation" class="row prestation">
+
+            <div id="consultation" class="col-md-offset-2 col-md-8 article-prestation">
+                <div class="col-md-4">
+                    <img class="img-responsive img-circle" src="images/example-01.jpg" alt="chat">
                 </div>
+                <div class="col-md-8">
+                    <h3><i class="fa fa-stethoscope"></i> CONSULTATION</h3>
+                    <small>À la différence de l'homme, nos compagnons ne parlent pas pendant la consultation, c'est à vous de bien noter les moindres signes ou changements et de nous en faire part.</small>
+                    <h4>La consultation vaccinale :</h4>
+                    <p>C'est LE rendez-vous annuel de votre compagnon chez le vétérinaire. En plus de l'injection des valences vaccinales, un examen de santé minutieux et complet sera toujours fait. C'est le moment de faire part de vos interrogations ou inquiétudes avec le docteur vétérinaire et l'occasion pour celui-ci de déceler toute anomalie concernant la santé de votre chien ou de votre chat. Il est important de vérifier l'état d'embonpoint, les yeux, les oreilles, les dents, la peau, la mobilité de votre animal, mais aussi la couleur des muqueuses, la fréquence cardiaque, effectuer une palpation des ganglions et des organes abdominaux... 
+                    N'hésitez pas lors de cette consultation à nous faire part de tout ce qui vous semble avoir changé à propos de votre compagnon.En effet, une baisse de forme ou d'appétit, une augmentation de la prise de boisson, peut vous sembler liée à son âge et non alarmant alors que ces indices pourraient nous orienter vers une pathologie plus ou moins grave.</p>
+
+                    <h4>La consultation dermatologique :</h4>
+                    <p>Elle peut être sollicitée lorsque l'animal présente des démangeaisons, rougeurs, croûtes, zones dépilées, possède un pelage gras ou nauséabond... Ce rendez-vous nécessite plus de temps qu'une consultation classique car votre vétérinaire effectuera le plus fréquement des prélèvements pour quelques examens complémentaires (microscope) afin de déceler la cause de ces symptômes.</p>
+
+                    <h4>La consultation ophtalmologique :</h4>
+                    <p>Un oeil rouge, qui pleure, purulent, fermé ou même gonflé necessite une consultation au plus vite. L'automédication est fortement déconseillée car si par exemple des corticoïdes sont appliqués sur un ulcère de la cornée, votre animal peut définitivement perdre la vue. Votre docteur vétérinaire est là pour vous prescrire un traitement adapté et sans risque.</p>
+
+                    <h4>La consultation cardiologique :</h4>
+                    <p>Votre animal vous semble plus essouflé qu'à l'ordinaire? Il se met à tousser lors d'ennervement ou excitation? Il est possible qu'il ait un trouble cardiaque. Désormais la médecine vétérinaire possède divers traitements faciles à administrer et très bien tolérés. Ces derniers peuvent être mis en place à long terme pour soutenir votre compagnon et allonger son espérance de vie. Lors de cette consultation une radiographie est souvent effectuée afin entre autres, d'observer la taille du coeur de votre chien ou de votre chat. Une fois le traitement mis en place, des bilans sanguins vous seront proposés régulièrement pour vérifier que le traitement est bien suporté par votre compagnon.</p>
                 </div>
             </div>
 
-            <div class="col-md-6 pad-70">
-                <i class="fa fa-5x fa-user-md"></i>
-                <h3>IMAGERIE</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+            <div id="imagerie" class="col-md-offset-2 col-md-8 article-prestation">
+                <div class="col-md-4">
+                    <img class="img-responsive img-circle" src="images/pension-nac.jpg" alt="chat">
+                </div>
+                <div class="col-md-8">
+                    <h3><i class="fa fa-camera"></i> IMAGERIE</h3>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias.</small>
+                    <h4>L'imagerie c'est top !</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                </div>
             </div>
 
-            <div class="col-md-6 pad-70">
-                <i class="fa fa-5x fa-medkit"></i>
-                <h3>ANALYSE SANGUINE</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+            <div id="analyse" class="col-md-offset-2 col-md-8 article-prestation">
+                <div class="col-md-4">
+                    <img class="img-responsive img-circle" src="images/example-01.jpg" alt="chat">
+                </div>
+                <div class="col-md-8">
+                    <h3><i class="fa fa-medkit"></i> Analyse sanguine</h3>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias.</small>
+                    <h4>Les analyses sanguines c'est top !</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+
+                    <h4>Les analyses sanguines c'est top !</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                </div>
             </div>
 
-            <div class="col-md-6 pad-70">
-                <i class="fa fa-5x fa-heartbeat"></i>
-                <h3>CHIRURGIE</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+            <div id="chirurgie" class="col-md-offset-2 col-md-8 article-prestation">
+                <div class="col-md-4">
+                    <img class="img-responsive img-circle" src="images/pension-nac.jpg" alt="chat">
+                </div>
+                <div class="col-md-8">
+                    <h3><i class="fa fa-heartbeat"></i> CHIRURGIE</h3>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small>
+                    <h4>La chirurgie c'est top !</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+
+                    <h4>La chirurgie c'est top !</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+
+                    <h4>La chirurgie c'est top !</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                </div>
             </div>
 
-            <div class="col-md-6 pad-70">
-                <i class="fa fa-5x fa-h-square"></i>
-                <h3>HOSPITALISATION</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+            <div id="hospitalisation" class="col-md-offset-2 col-md-8 article-prestation">
+                <div class="col-md-4">
+                    <img class="img-responsive img-circle" src="images/example-01.jpg" alt="chat">
+                </div>
+                <div class="col-md-8">
+                    <h3><i class="fa fa-hospital-o"></i> HOSPITALISATION</h3>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small>
+                    <h4>L'hospitalisation c'est top !</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+
+                    <h4>L'hospitalisation c'est top !</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                </div>
             </div>
 
-            <div class="col-md-6 pad-70">
-                <i class="fa fa-5x fa-paw"></i>
-                <h3>NAC</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+            <div id="nac" class="col-md-offset-2 col-md-8 article-prestation">
+                <div class="col-md-4">
+                    <img class="img-responsive img-circle" src="images/pension-nac.jpg" alt="chat">
+                </div>
+                <div class="col-md-8">
+                    <h3><i class="fa fa-paw"></i> NAC</h3>
+                    <small>Les nouveaux animaux de compagnies.</small>
+                    <h4>Les nacs c'est top !</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                </div>
             </div>
+
+            <div id="tarifs" class="col-md-offset-2 col-md-8 article-prestation">
+                <div class="col-md-4">
+                    <img class="img-responsive img-circle" src="images/example-01.jpg" alt="chat">
+                </div>
+                <div class="col-md-8">
+                    <h3><i class="fa fa-eur"></i> Tarifs</h3>
+                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small>
+                    <h4>Lorem Impsoum !</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                </div>
+            </div>
+
+
         </section>
 
 
         <!-- pied de page -->
-        <footer>
+        <footer class="row">
+            <div class="bloc-footer col-md-4">
+                <p>
+                    123 Véto clinique vétérinaire vous accueille du lundi au vendredi de 9h à 12h et de 14h à 19h et le samedi de 9h à 12h.</p><p>Les urgences sont assurées 24h/24 sur simple appel téléphonique.</p><p>tél : 02 99 55 55 55 - 06 55 55 55 55</p>
+                </p>
 
-        </footer>
+                <p>
+                <a href="https://www.facebook.com/"><i class="fa fa-2x fa-facebook icone-prestation"></i></a>
+                <a href="https://twitter.com/"><i class="fa fa-2x fa-twitter icone-prestation"></i></a>
+                <a href="https://plus.google.com/"><i class="fa fa-2x fa-google-plus-official icone-prestation"></i></a>
+                </p>
+
+                <button type="button" class="btn btn-default">Plan d'accès</button>
+            </div>
+
+            <div class="bloc-footer col-md-4">
+                <p>Fil d'actualitées à gérer en Javascript</p>
+            </div>
+
+            <div class="bloc-footer col-md-4">
+                    <p>123 Véto :</p>
+                    <p><a href="index.html">Accueil</a></p>
+                    <p><a href="conseil.html">Fiches conseil</a></p>
+                    <p><a href="prestation.html">Prestation & tarifs</a></p>
+                    <p><a href="#">Espace vente</a></p>
+                    <p><a href="contact.html">Contact & rendez-vous</a></p>
+                    <p><a href="#">Mentions légales</a></p>
+            </div>
+    </footer>
     </div>
 </body>
 
