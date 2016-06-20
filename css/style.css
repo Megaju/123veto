@@ -90,11 +90,7 @@ header .logo {
 
 footer {
     background-color: #143143;
-    height: 350px;
-    text-align: justify;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     color: white;
 }
 
