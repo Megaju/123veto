@@ -1,9 +1,9 @@
-<!DOCTYPE HTML>
+<!DOCTYPE>
 <html>
 <head>
-    <title>123 VETO - Conseils</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>123 VETO</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!-- styles css / bootstrap -->
     <link rel="stylesheet" href="css/bootstrap-theme.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
@@ -11,16 +11,19 @@
     <!-- <Script JS> -->
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/navbar-transparent.js"></script>
+    <script type="text/javascript" src="js/navbar-prestation.js"></script>
+    <script type="text/javascript" src="js/scroll-fluid.js"></script>
     <!-- fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css' />
-    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="css/font-awesome.css"/>
 </head>
-    
+
 <body>
-    <div class="container-fluid">
+    <div id="nav" class="container-fluid">
         <!-- menu de navigation -->
         <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid nav-style">
+            <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                         <span class="icon-bar"></span>
@@ -38,120 +41,156 @@
                 </ul>
             </div>
         </nav>
-        
+
         <!-- en-tête du site -->
         <header class="row">
             <div class="logo"></div>
 
-            <h1>123 VETO - Clinique Vétérinaire</h1>
+            <h1 id="startchange">123 VETO - Clinique Vétérinaire</h1>
 
             <div class="separator-header"></div>
 
             <p class="text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas.</p>
         </header>
-        
-        <!-- section menu fiches conseils -->
+
+        <!-- section nav icones conseil-->
         <section class="row text-center">
-            <div id="fond-orange" class="section-header">
-                <h2>Nos différents conseils</h2>
-            </div>
-            <a href="#dent"><div class="col-md-3 pad-40">
-                <i class="fa fa-5x fa-info-circle"></i>
-                <h3>Hygiène dentaire</h3>
-            </div></a>
-            <a href="#yeux_oreilles"><div class="col-md-3 pad-40">
-                <i class="fa fa-5x fa-stethoscope"></i>
-                <h3>Hygiène des yeux et des oreilles</h3>
-            </div></a>
-            <a href="#pelage"><div class="col-md-3 pad-40">
-                <i class="fa fa-5x fa-heart"></i>
-                <h3>Entretien du pelage</h3>
-            </div>
-            <a href="#parasite"><div class="col-md-3 pad-40">
-                <i class="fa fa-5x fa-paw"></i>
-                <h3>Parasites internes et externes</h3>
-            </div></a>
-            <a href="#vaccin_chien"><div class="col-md-3 pad-40">
-                <i class="fa fa-5x fa-info-circle"></i>
-                <h3>Pourquoi vacciner votre chien ?</h3>
-            </div></a>
-            <a href="#vaccin_chat"><div class="col-md-3 pad-40">
-                <i class="fa fa-5x fa-stethoscope"></i>
-                <h3>Pourquoi vacciner votre chat ?</h3>
-            </div></a>
-            <a href="#id"><div class="col-md-3 pad-40">
-                <i class="fa fa-5x fa-heart"></i>
-                <h3>Pourquoi et comment identifier vos animaux ?</h3>
-            </div></a>
-            <a href="#education"><div class="col-md-3 pad-40">
-                <i class="fa fa-5x fa-paw"></i>
-                <h3>Éducation</h3>
-            </div></a>
-        </section>
-        
-        <!-- section hygiène dentaire -->
-        <section class="row text-center" id="dent">
             <div class="section-header">
-                <h2>Hygiène dentaire</h2>
+                <h2 class="text-center">Fiches Conseils</h2>
             </div>
-            <p class="col-md-offset-1 col-md-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, dolor libero nisi odit? Ullam voluptatibus maiores architecto obcaecati. Quo sed amet sequi veritatis quaerat, earum asperiores inventore molestiae aut quod.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, dolor libero nisi odit? Ullam voluptatibus maiores architecto obcaecati. Quo sed amet sequi veritatis quaerat, earum asperiores inventore molestiae aut quod.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, dolor libero nisi odit? Ullam voluptatibus maiores architecto obcaecati. Quo sed amet sequi veritatis quaerat, earum asperiores inventore molestiae aut quod.</p>
         </section>
-        
-        <!-- section hygiène des yeux & oreilles -->
-        <section class="row text-center" id="yeux_oreilles">
-            <div class="section-header" id="fond-orange">
-                <h2>Hygiène des yeux et des oreilles</h2>
+
+        <nav class="row nav-prestations">
+            <div class="col-md-1 col-xs-1">
+                <a href="#dent"><i class="fa fa-2x fa-user-md"></i></a>
+                <a href="#yeux-oreilles"><i class="fa fa-2x fa-eye"></i></a>
+                <a href="#pelage"><i class="fa fa-2x fa-paw"></i></a>
+                <a href="#parasite"><i class="fa fa-2x fa-bug"></i></a>
+                <a href="#vaccin-chien"><i class="fa fa-2x fa-plus-square"></i></a>
+                <a href="#vaccin-chat"><i class="fa fa-2x fa-medkit"></i></a>
+                <a href="#id"><i class="fa fa-2x fa-info-circle"></i></a>
+                <a href="#education"><i class="fa fa-2x fa-book"></i></a>
+                <a href="#nav"><i class="fa fa-2x fa-arrow-circle-up"></i></a>
             </div>
-            <p class="col-md-offset-1 col-md-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, dolor libero nisi odit? Ullam voluptatibus maiores architecto obcaecati. Quo sed amet sequi veritatis quaerat, earum asperiores inventore molestiae aut quod.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, dolor libero nisi odit? Ullam voluptatibus maiores architecto obcaecati. Quo sed amet sequi veritatis quaerat, earum asperiores inventore molestiae aut quod.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, dolor libero nisi odit? Ullam voluptatibus maiores architecto obcaecati. Quo sed amet sequi veritatis quaerat, earum asperiores inventore molestiae aut quod.</p>
-        </section>
-        
-        <!-- section entretien du pelage -->
-        <section class="row text-center" id="pelage">
-            <div class="section-header">
-                <h2>Entretien du pelage</h2>
+        </nav>
+        <!--<div class="separator-objet"></div>-->
+
+        <section id="navbar-prestation" class="row prestation">
+
+            <div id="dent" class="col-md-offset-2 col-md-8 article-prestation">
+                <div class="col-md-4">
+                    <img class="img-responsive img-circle" src="images/example-01.jpg" alt="chat">
+                </div>
+                <div class="col-md-8">
+                    <h3><i class="fa fa-user-md"></i> Hygiène dentaire</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                </div>
             </div>
-            <p class="col-md-offset-1 col-md-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, dolor libero nisi odit? Ullam voluptatibus maiores architecto obcaecati. Quo sed amet sequi veritatis quaerat, earum asperiores inventore molestiae aut quod.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, dolor libero nisi odit? Ullam voluptatibus maiores architecto obcaecati. Quo sed amet sequi veritatis quaerat, earum asperiores inventore molestiae aut quod.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, dolor libero nisi odit? Ullam voluptatibus maiores architecto obcaecati. Quo sed amet sequi veritatis quaerat, earum asperiores inventore molestiae aut quod.</p>
-        </section>
-        
-        <!-- section parasites -->
-        <section class="row text-center" id="parasite">
-            <div class="section-header" id="fond-orange">
-                <h2>Parasites externes et internes</h2>
+
+            <div id="yeux-oreilles" class="col-md-offset-2 col-md-8 article-prestation">
+                <div class="col-md-4">
+                    <img class="img-responsive img-circle" src="images/pension-nac.jpg" alt="chat">
+                </div>
+                <div class="col-md-8">
+                    <h3><i class="fa fa-eye"></i> Hygiène des yeux et des oreilles</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                </div>
             </div>
-            <p class="col-md-offset-1 col-md-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, dolor libero nisi odit? Ullam voluptatibus maiores architecto obcaecati. Quo sed amet sequi veritatis quaerat, earum asperiores inventore molestiae aut quod.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, dolor libero nisi odit? Ullam voluptatibus maiores architecto obcaecati. Quo sed amet sequi veritatis quaerat, earum asperiores inventore molestiae aut quod.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, dolor libero nisi odit? Ullam voluptatibus maiores architecto obcaecati. Quo sed amet sequi veritatis quaerat, earum asperiores inventore molestiae aut quod.</p>
-        </section>
-        
-        <!-- section vaccin chien -->
-        <section class="row text-center" id="vaccin_chien">
-            <div class="section-header">
-                <h2>Pourquoi vacciner votre chien ?</h2>
+
+            <div id="pelage" class="col-md-offset-2 col-md-8 article-prestation">
+                <div class="col-md-4">
+                    <img class="img-responsive img-circle" src="images/example-01.jpg" alt="chat">
+                </div>
+                <div class="col-md-8">
+                    <h3><i class="fa fa-paw"></i> Entretien du pelage</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                </div>
             </div>
-            <p class="col-md-offset-1 col-md-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, dolor libero nisi odit? Ullam voluptatibus maiores architecto obcaecati. Quo sed amet sequi veritatis quaerat, earum asperiores inventore molestiae aut quod.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, dolor libero nisi odit? Ullam voluptatibus maiores architecto obcaecati. Quo sed amet sequi veritatis quaerat, earum asperiores inventore molestiae aut quod.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, dolor libero nisi odit? Ullam voluptatibus maiores architecto obcaecati. Quo sed amet sequi veritatis quaerat, earum asperiores inventore molestiae aut quod.</p>
-        </section>
-            
-        <!-- section vaccin chat -->
-        <section class="row text-center" id="vaccin_chat">
-            <div class="section-header" id="fond-orange">
-                <h2>Pourquoi vacciner votre chat ?</h2>
+
+            <div id="parasite" class="col-md-offset-2 col-md-8 article-prestation">
+                <div class="col-md-4">
+                    <img class="img-responsive img-circle" src="images/pension-nac.jpg" alt="chat">
+                </div>
+                <div class="col-md-8">
+                    <h3><i class="fa fa-bug"></i> Parasites externes et internes</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                </div>
             </div>
-            <p class="col-md-offset-1 col-md-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, dolor libero nisi odit? Ullam voluptatibus maiores architecto obcaecati. Quo sed amet sequi veritatis quaerat, earum asperiores inventore molestiae aut quod.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, dolor libero nisi odit? Ullam voluptatibus maiores architecto obcaecati. Quo sed amet sequi veritatis quaerat, earum asperiores inventore molestiae aut quod.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, dolor libero nisi odit? Ullam voluptatibus maiores architecto obcaecati. Quo sed amet sequi veritatis quaerat, earum asperiores inventore molestiae aut quod.</p>
-        </section>
-            
-        <!-- section identification -->
-        <section class="row text-center" id="id">
-            <div class="section-header">
-                <h2>Pourquoi et comment identifier vos animaux ?</h2>
+
+            <div id="vaccin-chien" class="col-md-offset-2 col-md-8 article-prestation">
+                <div class="col-md-4">
+                    <img class="img-responsive img-circle" src="images/example-01.jpg" alt="chat">
+                </div>
+                <div class="col-md-8">
+                    <h3><i class="fa fa-plus-square"></i> Pourquoi vacciner votre chien ?</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                </div>
             </div>
-            <p class="col-md-offset-1 col-md-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, dolor libero nisi odit? Ullam voluptatibus maiores architecto obcaecati. Quo sed amet sequi veritatis quaerat, earum asperiores inventore molestiae aut quod.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, dolor libero nisi odit? Ullam voluptatibus maiores architecto obcaecati. Quo sed amet sequi veritatis quaerat, earum asperiores inventore molestiae aut quod.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, dolor libero nisi odit? Ullam voluptatibus maiores architecto obcaecati. Quo sed amet sequi veritatis quaerat, earum asperiores inventore molestiae aut quod.</p>
-        </section>
-            
-        <!-- section education -->
-        <section class="row text-center" id="education">
-            <div class="section-header" id="fond-orange">
-                <h2>Éducation</h2>
+
+            <div id="vaccin-chat" class="col-md-offset-2 col-md-8 article-prestation">
+                <div class="col-md-4">
+                    <img class="img-responsive img-circle" src="images/pension-nac.jpg" alt="chat">
+                </div>
+                <div class="col-md-8">
+                    <h3><i class="fa fa-medkit"></i> Pourquoi vacciner votre chat ?</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                </div>
             </div>
-            <p class="col-md-offset-1 col-md-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, dolor libero nisi odit? Ullam voluptatibus maiores architecto obcaecati. Quo sed amet sequi veritatis quaerat, earum asperiores inventore molestiae aut quod.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, dolor libero nisi odit? Ullam voluptatibus maiores architecto obcaecati. Quo sed amet sequi veritatis quaerat, earum asperiores inventore molestiae aut quod.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, dolor libero nisi odit? Ullam voluptatibus maiores architecto obcaecati. Quo sed amet sequi veritatis quaerat, earum asperiores inventore molestiae aut quod.</p>
+
+            <div id="id" class="col-md-offset-2 col-md-8 article-prestation">
+                <div class="col-md-4">
+                    <img class="img-responsive img-circle" src="images/example-01.jpg" alt="chat">
+                </div>
+                <div class="col-md-8">
+                    <h3><i class="fa fa-info-circle"></i> Pourquoi et comment faire identifier vos animaux ?</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                </div>
+            </div>
+
+            <div id="education" class="col-md-offset-2 col-md-8 article-prestation">
+                <div class="col-md-4">
+                    <img class="img-responsive img-circle" src="images/example-01.jpg" alt="chat">
+                </div>
+                <div class="col-md-8">
+                    <h3><i class="fa fa-book"></i> Éducation</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                </div>
+            </div>
+
         </section>
+
+
+        <!-- pied de page -->
+        <footer class="row">
+            <div class="bloc-footer col-md-4">
+                <p>
+                    123 Véto clinique vétérinaire vous accueille du lundi au vendredi de 9h à 12h et de 14h à 19h et le samedi de 9h à 12h.</p><p>Les urgences sont assurées 24h/24 sur simple appel téléphonique.</p><p>tél : 02 99 55 55 55 - 06 55 55 55 55</p>
+                </p>
+
+                <p>
+                <a href="https://www.facebook.com/"><i class="fa fa-2x fa-facebook icone-prestation"></i></a>
+                <a href="https://twitter.com/"><i class="fa fa-2x fa-twitter icone-prestation"></i></a>
+                <a href="https://plus.google.com/"><i class="fa fa-2x fa-google-plus-official icone-prestation"></i></a>
+                </p>
+
+                <button type="button" class="btn btn-default">Plan d'accès</button>
+            </div>
+
+            <div class="bloc-footer col-md-4">
+                <p>Fil d'actualitées à gérer en Javascript</p>
+            </div>
+
+            <div class="bloc-footer col-md-4">
+                    <p>123 Véto :</p>
+                    <p><a href="index.html">Accueil</a></p>
+                    <p><a href="conseil.html">Fiches conseil</a></p>
+                    <p><a href="prestation.html">Prestation & tarifs</a></p>
+                    <p><a href="#">Espace vente</a></p>
+                    <p><a href="contact.html">Contact & rendez-vous</a></p>
+                    <p><a href="#">Mentions légales</a></p>
+            </div>
+    </footer>
     </div>
 </body>
+
 </html>
