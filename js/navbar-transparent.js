@@ -16,6 +16,8 @@ $(document).ready(function () {
     }
 });
 
+
+
 $(document).ready(function () {
     var scroll_start = 0;
     var startchange = $('#consultation');
