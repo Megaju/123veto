@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    margin-right: 0px;
 }
 
 h1,
@@ -58,7 +59,6 @@ img.avatar {
 i {
     color: #F58900;
 }
-
 
 /* ================================================== */
 
@@ -115,14 +115,6 @@ footer {
  background-color: rgba(10, 113, 180, 0.8);
  border: none;
  color: white;
-}
-
-#myModalLabel {
- color: rgba(10, 113, 180, 0.8);
-}
-
-.modal-body h4 {
- color: rgba(10, 113, 180, 0.8);
 }
 
 /* ================================================== */
@@ -250,12 +242,22 @@ footer {
     padding: 70px;
 }
 
+
 .btn-m-70 {
     margin-bottom: 70px;
 }
 
 .btn:hover a {
     color: #337ab7;
+}
+
+
+#myModalLabel {
+ color: rgba(10, 113, 180, 0.8);
+}
+
+.modal-body h4 {
+ color: rgba(10, 113, 180, 0.8);
 }
 
 
@@ -327,6 +329,9 @@ footer {
     text-align: center;
 }
 
+.pad-map {
+    padding-top: 50px;
+}
 
 /* --- Styles prestations ---*/
 
