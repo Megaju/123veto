@@ -75,12 +75,15 @@ header {
 }
 
 header .logo {
-    width: 450px;
-    height: 240px;
+    width: 25%;
     margin: 0 auto;
-    background-image: url(../images/logo-veto.svg);
-    background-size: 100%;
-    background-position: center center;
+}
+/* --- logo en xs --- */
+@media (max-width: 767px) {
+    header .logo {
+    width: 75%;
+    margin: 0 auto;
+}
 }
 
 .section-header {
@@ -245,6 +248,14 @@ footer {
 
 .pad-70 {
     padding: 70px;
+}
+
+.btn-m-70 {
+    margin-bottom: 70px;
+}
+
+.btn:hover a {
+    color: #337ab7;
 }
 
 
