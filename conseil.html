@@ -14,6 +14,7 @@
     <script type="text/javascript" src="js/navbar-transparent.js"></script>
     <script type="text/javascript" src="js/navbar-prestation.js"></script>
     <script type="text/javascript" src="js/scroll-fluid.js"></script>
+    <script type="text/javascript" src="js/accordeons.js"></script>
     <!-- fonts -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'/>
     <link rel="stylesheet" href="css/font-awesome.css"/>
@@ -22,62 +23,59 @@
 <body>
     <div id="nav" class="container-fluid">
         <!-- menu de navigation -->
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
+        <nav class="navbar navbar-default navbar-fixed-top container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><strong>123 VETO</strong></a>
+                    
+                    <!-- test sans cette partie pour un menu bien centré
+                    <a class="navbar-brand" href="index.html" onclick="window.open(this.href);return true;"><strong>123 VETO</strong></a> -->
+                    
                 </div>
                 <ul class="nav navbar-nav navbar-right" id="myNavbar">
+                   
                     <li><a href="index.html" onclick="location.href='index.html';">ACCUEIL</a></li>
+                    
+                    <li><a href="prestation.html" onclick="location.href='prestation.html';">PRESTATION</a></li>
+                    
                     <li class="active"><a href="conseil.html" onclick="location.href='conseil.html';">FICHES CONSEIL</a></li>
-                    <li><a href="prestation.html" onclick="location.href='prestation.html';">PRESTATION & TARIFS</a></li>
+                    
                     <li><a href="#" onclick="location.href='#';">ESPACE VENTE</a></li>
+                    
                     <li><a href="contact.html" onclick="location.href='contact.html';">CONTACT</a></li>
+                    
                 </ul>
-            </div>
         </nav>
 
         <!-- en-tête du site -->
-        <header class="row">
-            <div class="logo">
-                <img src="images/logo-veto.svg" alt="" class="img-responsive">
-            </div>
-
-            <h1 id="startchange">123 VETO - Clinique Vétérinaire</h1>
-
-            <div class="separator-header"></div>
-
-            <p class="text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas.</p>
-        </header>
-
-        <!-- section nav icones conseil-->
-        <section class="row text-center">
+        <section id="startchange"class="row text-center page-sans-header">
             <div class="section-header">
-                <h2 class="text-center">Fiches Conseils</h2>
+                <h2 class="text-center">FICHES CONSEILS</h2>
             </div>
         </section>
 
-        <nav class="row nav-prestations">
-            <div class="col-md-1 col-xs-1">
-                <a href="#dent"><i class="fa fa-2x fa-user-md"></i></a>
-                <a href="#yeux-oreilles"><i class="fa fa-2x fa-eye"></i></a>
-                <a href="#pelage"><i class="fa fa-2x fa-paw"></i></a>
-                <a href="#parasite"><i class="fa fa-2x fa-bug"></i></a>
-                <a href="#vaccin-chien"><i class="fa fa-2x fa-plus-square"></i></a>
-                <a href="#vaccin-chat"><i class="fa fa-2x fa-medkit"></i></a>
-                <a href="#id"><i class="fa fa-2x fa-info-circle"></i></a>
-                <a href="#education"><i class="fa fa-2x fa-book"></i></a>
-                <a href="#nav"><i class="fa fa-2x fa-arrow-circle-up"></i></a>
+        <!-- section nav icones conseil-->
+        <section class="row prestation">    
+            <div class="text-center">
+                <a href="" onclick="affich_dent()"><i class="fa fa-3x fa-user-md"></i></a>
+                <a href="" onclick="affich_yeux()"><i class="fa fa-3x fa-eye"></i></a>
+                <a href="" onclick="affich_pelage()"><i class="fa fa-3x fa-paw"></i></a>
+                <a href="" onclick="affich_parasite()"><i class="fa fa-3x fa-bug"></i></a>
+                <a href="" onclick="affich_vaccinChien()"><i class="fa fa-3x fa-plus-square"></i></a>
+                <a href="" onclick="affich_vaccinChat()"><i class="fa fa-3x fa-medkit"></i></a>
+                <a href="" onclick="affich_id()"><i class="fa fa-3x fa-info-circle"></i></a>
+                <a href="" onclick="affich_education()"><i class="fa fa-3x fa-book"></i></a>
+                <h3 class="text-center">Dentition - Yeux / Oreilles - Pelage - Parasite - Vaccin / Chien - Vaccin / Chat - Identification -Éducation</h3>
+                <div class="separator-prestation"></div>
             </div>
+        </section>
         </nav>
         <!--<div class="separator-objet"></div>-->
 
-        <section id="navbar-prestation" class="row prestation">
+        <section id="navbar-prestation" class="row prestation2">
 
             <div id="dent" class="col-md-offset-2 col-md-8 article-prestation">
                 <div class="col-md-4">

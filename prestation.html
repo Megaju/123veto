@@ -30,14 +30,23 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html" onclick="window.open(this.href);return true;"><strong>123 VETO</strong></a>
+                    
+                    <!-- test sans cette partie pour un menu bien centré
+                    <a class="navbar-brand" href="index.html" onclick="window.open(this.href);return true;"><strong>123 VETO</strong></a> -->
+                    
                 </div>
                 <ul class="nav navbar-nav navbar-right" id="myNavbar">
+                   
                     <li><a href="index.html" onclick="location.href='index.html';">ACCUEIL</a></li>
+                    
+                    <li class="active"><a href="prestation.html" onclick="location.href='prestation.html';">PRESTATION</a></li>
+                    
                     <li><a href="conseil.html" onclick="location.href='conseil.html';">FICHES CONSEIL</a></li>
-                    <li class="active"><a href="prestation.html" onclick="location.href='prestation.html';">PRESTATION & TARIFS</a></li>
+                    
                     <li><a href="#" onclick="location.href='#';">ESPACE VENTE</a></li>
+                    
                     <li><a href="contact.html" onclick="location.href='contact.html';">CONTACT</a></li>
+                    
                 </ul>
         </nav>
         
@@ -51,7 +60,7 @@
 
         <!--<div class="separator-objet"></div>-->
 	<section class="row prestation">
-		<div class="col-md-offset-4">
+		<div class="text-center">
 			<a href="" onclick="affich_consultation()"><i class="fa fa-3x fa-stethoscope text-align" ></i></a> 
 			<a href="" onclick="affich_imagerie()"><i class="fa fa-3x fa-camera"></i></a>
 			<a href="" onclick="affich_analyse()"><i class="fa fa-3x fa-medkit"></i></a>

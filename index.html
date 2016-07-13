@@ -25,24 +25,31 @@
 <body>
     <div class="container-fluid">
         <!-- menu de navigation -->
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#" onclick="window.open(this.href);return true;"><strong>123 VETO</strong></a>
-                </div>
-                <ul class="nav navbar-nav navbar-right" id="myNavbar">
-                    <li class="active"><a href="index.html" onclick="location.href='index.html';">ACCUEIL</a></li>
-                    <li><a href="conseil.html" onclick="location.href='conseil.html';">FICHES CONSEIL</a></li>
-                    <li><a href="prestation.html" onclick="location.href='prestation.html';">PRESTATION & TARIFS</a></li>
-                    <li><a href="#" onclick="location.href='#';">ESPACE VENTE</a></li>
-                    <li><a href="contact.html" onclick="location.href='contact.html';">CONTACT</a></li>
-                </ul>
+        <nav class="navbar navbar-default navbar-fixed-top container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <!-- test sans cette partie pour un menu bien centré
+                    <a class="navbar-brand" href="index.html" onclick="window.open(this.href);return true;"><strong>123 VETO</strong></a> -->
+
             </div>
+            <ul class="nav navbar-nav" id="myNavbar">
+
+                <li class="active"><a href="index.html" onclick="location.href='index.html';">ACCUEIL</a></li>
+
+                <li><a href="prestation.html" onclick="location.href='prestation.html';">PRESTATION</a></li>
+
+                <li><a href="conseil.html" onclick="location.href='conseil.html';">FICHES CONSEIL</a></li>
+
+                <li><a href="#" onclick="location.href='#';">ESPACE VENTE</a></li>
+
+                <li><a href="contact.html" onclick="location.href='contact.html';">CONTACT</a></li>
+
+            </ul>
         </nav>
 
         <!-- en-tête du site -->
@@ -56,9 +63,47 @@
 
             <div class="separator-header"></div>
 
+<<<<<<< HEAD
             <p class="text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">123 Véto vous accueille lundi au vendredi de 9h à 12h et de 14h à 19h et le samedi de 9h à 12h.
             Les urgences sont assurées 24h/24 7 jours sur 7 sur appel téléphonique au 02 40 01 61 69</p>
+=======
+            <p class="text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">123 Véto vous accueille du lundi au vendredi de 9h à 12h et de 14h à
+19h et le samedi de 9h à 12h</p>
+       
+           <p class="text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">Les urgences sont assurées 24h/24 7 jours sur 7 sur appel téléphonique
+au 02 40 01 61 69</p>
+>>>>>>> 86e6c7fc82d6da2f858137786f156408d9b83155
         </header>
+        
+        <!--section équipe-->
+        <section class="row">
+
+            <div class="section-header">
+                <h2 class="text-center text-capitalize">Notre équipe</h2>
+            </div>
+
+            <div class="col-md-6 pad-35">
+                <div class="col-md-12">
+                    <img class="img-responsive img-circle avatar" src="images/equip_Dr_Eric%20Wintz.JPG" alt="" />
+                </div>
+                <div class="col-md-12">
+                    <h3 class="text-center text-uppercase">Dr Eric Wintz</h3>
+                    <p class="text-center">Dr Eric Wintz Diplômé de l’école vétérinaire de Nantes en 1990, il se passionne pour la dermatologie et la cardiologie. Le Dr Wintz possède quatre chats Leelas (européenne), Gribouille (européen), Hannah (Mane Coon), et Joey (Ragdoll), des Platis, deux lapins nains Neige et Teddy ainsi que Lexie, chihuahua.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 pad-15-35">
+                <div class="col-md-12">
+                    <img class="img-responsive img-circle avatar" src="images/equip_Dr_Aur%C3%A9lie_Mayoussier.JPG" alt="" />
+                </div>
+                <div class="col-md-12">
+                    <h3 class="text-center text-uppercase">Aurélie Mayoussier</h3>
+                    <p class="text-center">Dr Aurélie Mayoussier Diplômée de l’école vétérinaire de MaisonsAlfort en 2008, elle se passionne pour la médecine de l’élevage et de la reproduction et la médecine des NAC.</p>
+                    <p class="text-center">Le Dr Mayoussier possède deux chats Pratchett et Bubule ainsi que Bambou, chien loup de Saarloos.</p>
+                </div>
+            </div>
+
+        </section>
 
         <!-- section présentation de l'entreprise -->
         <section id="startchange" class="row text-center">
@@ -83,6 +128,7 @@
             </div>
         </section>
 
+<<<<<<< HEAD
         <!--section équipe-->
         <section class="row">
 
@@ -111,6 +157,9 @@
             </div>
 
         </section>
+=======
+        
+>>>>>>> 86e6c7fc82d6da2f858137786f156408d9b83155
 
         <!-- section fiches conseils -->
         <section class="row no-padding">
@@ -303,15 +352,17 @@
             <div class="bloc-footer col-md-4">
                 <H4>Contact</H4>
                 <div class="separator-footer"></div>
-                <p>123 Véto clinique vétérinaire vous accueille du lundi au vendredi de 9h à 12h et de 14h à 19h et le samedi de 9h à 12h. <a href="contact.html"><i class="fa fa-1x fa-map"></i></a></p><p>Les urgences sont assurées 24h/24 sur simple appel téléphonique.</p><p>tél : 02 99 55 55 55 - 06 55 55 55 55</p>
+                <p>123 Véto clinique vétérinaire vous accueille du lundi au vendredi de 9h à 12h et de 14h à 19h et le samedi de 9h à 12h. <a href="contact.html"><i class="fa fa-1x fa-map"></i></a></p>
+                <p>Les urgences sont assurées 24h/24 sur simple appel téléphonique.</p>
+                <p>tél : 02 99 55 55 55 - 06 55 55 55 55</p>
                 </p>
 
                 <p>
-                <a href="https://www.facebook.com/"><i class="fa fa-2x fa-facebook icone-prestation"></i></a>
-                <a href="https://twitter.com/"><i class="fa fa-2x fa-twitter icone-prestation"></i></a>
-                <a href="https://plus.google.com/"><i class="fa fa-2x fa-google-plus-official icone-prestation"></i></a></p>
+                    <a href="https://www.facebook.com/"><i class="fa fa-2x fa-facebook icone-prestation"></i></a>
+                    <a href="https://twitter.com/"><i class="fa fa-2x fa-twitter icone-prestation"></i></a>
+                    <a href="https://plus.google.com/"><i class="fa fa-2x fa-google-plus-official icone-prestation"></i></a></p>
 
-                </div>
+            </div>
 
             <div class="bloc-footer col-md-4">
                 <h4>Actualités</h4>
@@ -322,7 +373,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                 </p>
                 <p><i class="fa fa-2x fa-chevron-circle-left" aria-hidden="true"></i>
-                <i class="fa fa-2x fa-chevron-circle-right" aria-hidden="true"></i></p>
+                    <i class="fa fa-2x fa-chevron-circle-right" aria-hidden="true"></i></p>
                 <div class="separator-footer"></div>
 
 
@@ -330,19 +381,19 @@
             </div>
 
             <div class="bloc-footer col-md-4">
-                    <h4>123 Véto :</h4>
-                    <div class="separator-footer"></div>
-                    <p><a href="index.html">Accueil</a></p>
-                    <p><a href="conseil.html">Fiches conseil</a></p>
-                    <p><a href="prestation.html">Prestation & tarifs</a></p>
-                    <p><a href="#">Espace vente</a></p>
-                    <p><a href="contact.html">Contact & rendez-vous</a></p>
-                    <div class="separator-footer"></div>
+                <h4>123 Véto :</h4>
+                <div class="separator-footer"></div>
+                <p><a href="index.html">Accueil</a></p>
+                <p><a href="conseil.html">Fiches conseil</a></p>
+                <p><a href="prestation.html">Prestation & tarifs</a></p>
+                <p><a href="#">Espace vente</a></p>
+                <p><a href="contact.html">Contact & rendez-vous</a></p>
+                <div class="separator-footer"></div>
 
-                    <!-- Button mentions légales -->
-                    <button type="button" class="btn btn-default center-block btn-sm" data-toggle="modal" data-target="#myModal">Mentions légales</button>
+                <!-- Button mentions légales -->
+                <button type="button" class="btn btn-default center-block btn-sm" data-toggle="modal" data-target="#myModal">Mentions légales</button>
 
-                    <!-- form mentions légales -->
+                <!-- form mentions légales -->
                 <div class="modal " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">

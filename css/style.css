@@ -78,12 +78,20 @@ i {
 
 header {
     margin: 0 auto;
+<<<<<<< HEAD
     padding: 45px 0 50px 0;
+=======
+    padding: 55px 0 30px 0;
+>>>>>>> 86e6c7fc82d6da2f858137786f156408d9b83155
     background-color: rgba(10, 113, 180, 0.8);
 }
 
 header .logo {
+<<<<<<< HEAD
     width: 30%;
+=======
+    width: 10%;
+>>>>>>> 86e6c7fc82d6da2f858137786f156408d9b83155
     margin: 0 auto;
 }
 /* --- logo en xs --- */
@@ -132,6 +140,9 @@ footer {
 
 
 /* ================================================== */
+#myNavbar {
+    margin: 0 25%;
+}
 
 /* --- virer les margins des col-* en cas de besoin --- */
 
@@ -248,6 +259,10 @@ footer {
 
 .pad-70 {
     padding: 70px;
+}
+
+.pad-15-35 {
+    padding: 15px 35px;
 }
 
 
@@ -410,9 +425,9 @@ a:hover i {
 }
 
 
-/* ================================================== */
-/* =================== ID PRESTATIONS =============== */
-/* ================================================== */
+/* =============================================== */
+/* =========== ID PRESTATIONS / CONSEILS========== */
+/* =============================================== */
 
 #consultation {
     display:block;
@@ -430,5 +445,34 @@ a:hover i {
     display:none;
 }
 #nac {
+    display:none;
+}
+
+
+#dent {
+    display:block;
+}
+#yeux-oreilles {
+    display:none;
+}
+#pelage {
+    display:none;
+}
+#parasite {
+    display:none;
+}
+#vaccin-chien {
+    display:none;
+}
+#vaccin-chat {
+    display:none;
+}
+#vaccin-chat {
+    display:none;
+}
+#id {
+    display:none;
+}
+#education {
     display:none;
 }
