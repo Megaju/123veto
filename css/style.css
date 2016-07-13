@@ -70,12 +70,12 @@ i {
 
 header {
     margin: 0 auto;
-    padding: 110px 0 60px 0;
+    padding: 55px 0 30px 0;
     background-color: rgba(10, 113, 180, 0.8);
 }
 
 header .logo {
-    width: 25%;
+    width: 10%;
     margin: 0 auto;
 }
 /* --- logo en xs --- */
@@ -124,6 +124,9 @@ footer {
 
 
 /* ================================================== */
+#myNavbar {
+    margin: 0 25%;
+}
 
 /* --- virer les margins des col-* en cas de besoin --- */
 
@@ -240,6 +243,10 @@ footer {
 
 .pad-70 {
     padding: 70px;
+}
+
+.pad-15-35 {
+    padding: 15px 35px;
 }
 
 
