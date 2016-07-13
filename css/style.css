@@ -21,11 +21,12 @@ h6 {
 }
 
 h1 {
+    margin: 0 0 25px 0;
+    padding: 0 0 25px 0;
     font-size: 30px;
     text-transform: uppercase;
-    text-align: center;
     color: #fff;
-    margin: 0 0 15px 0
+    border-bottom: 2px solid #fff;
 }
 
 h2 {
@@ -68,16 +69,67 @@ i {
 
 /* ================================================== */
 
+/* --- header --- */
 header {
-    margin: 0 auto;
-    padding: 55px 0 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    margin: 50px auto 0 auto;
+    padding: 30px 0;
     background-color: rgba(10, 113, 180, 0.8);
+    background-image: url(../images/facade.JPG);
+    background-size: 100%;
+    background-position: center center;
 }
 
-header .logo {
-    width: 10%;
-    margin: 0 auto;
+.header-corp-1 {
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
 }
+
+.header-corp-2 {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.header-corp-3 {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(55, 145, 255, 0.5);
+}
+
+.logo-img {
+    width: 150px;
+    height: 150px;
+    background-image: url(../images/logo-veto.svg);
+    background-size: 150%;
+    background-position: center center;
+}
+
+header p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.separator-header {
+    width: 75%;
+    height: 2px;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+
 /* --- logo en xs --- */
 @media (max-width: 767px) {
     header .logo {
@@ -228,13 +280,6 @@ footer {
         color: #fff;
         background-color: #00a7ca;
     }
-}
-
-.separator-header {
-    width: 150px;
-    height: 2px;
-    background-color: #fff;
-    margin: 0 auto 20px auto;
 }
 
 .fa {
