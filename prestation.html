@@ -42,20 +42,8 @@
         </nav>
         
         <!-- en-tête du site -->
-        <header class="row">
-            <div class="logo">
-                <img src="images/logo-veto.svg" alt="" class="img-responsive">
-            </div>
-
-            <h1 id="startchange">123 VETO - Clinique Vétérinaire</h1>
-
-            <div class="separator-header"></div>
-
-            <p class="text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas.</p>
-        </header>
-
         <!-- section nav icones prestation-->
-        <section class="row text-center">
+        <section id="startchange"class="row text-center page-sans-header">
             <div class="section-header">
                 <h2 class="text-center">TARIFS ET PRESTATIONS</h2>
             </div>
@@ -63,18 +51,20 @@
 
         <!--<div class="separator-objet"></div>-->
 	<section class="row prestation">
-		<div>
-			<a href="" onclick="affich_consultation()"><i class="fa fa-3x fa-stethoscope" ></i></a> 
+		<div class="col-md-offset-4">
+			<a href="" onclick="affich_consultation()"><i class="fa fa-3x fa-stethoscope text-align" ></i></a> 
 			<a href="" onclick="affich_imagerie()"><i class="fa fa-3x fa-camera"></i></a>
 			<a href="" onclick="affich_analyse()"><i class="fa fa-3x fa-medkit"></i></a>
 			<a href="" onclick="affich_chirurgie()"><i class="fa fa-3x fa-heartbeat"></i></a>
 			<a href="" onclick="affich_hospitalisation()"><i class="fa fa-3x fa-hospital-o"></i></a>
 			<a href="" onclick="affich_nac()"><i class="fa fa-3x fa-paw"></i></div></a>
+			<h3 class="text-center">Consultation - Imagerie - Analyse - Chirurgie - Hospitalisation - Nac</h3>
+			<div class="separator-prestation"></div>
 	</section>
 
-        <section id="navbar-prestation" class="row prestation">
+        <section id="navbar-prestation" class="row prestation2 center-block">
 
-            <div id="consultation" class="col-md-offset-2 col-md-8 article-prestation" style="display:none">
+            <div id="consultation" class="col-md-offset-2 col-md-8 article-prestation">
                 <div class="col-md-4">
                     <img class="img-responsive img-circle" src="images/example-01.jpg" alt="chat">
                 </div>
@@ -96,7 +86,7 @@
                 </div>
             </div>
 
-            <div id="imagerie" class="col-md-offset-2 col-md-8 article-prestation" style="display:none">
+            <div id="imagerie" class="col-md-offset-2 col-md-8 article-prestation">
                 <div class="col-md-4">
                     <img class="img-responsive img-circle" src="images/pension-nac.jpg" alt="chat">
                 </div>
@@ -105,10 +95,11 @@
                     <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias.</small>
                     <h4>L'imagerie c'est top !</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
                 </div>
             </div>
 
-            <div id="analyse" class="col-md-offset-2 col-md-8 article-prestation" style="display:none">
+            <div id="analyse" class="col-md-offset-2 col-md-8 article-prestation">
                 <div class="col-md-4">
                     <img class="img-responsive img-circle" src="images/example-01.jpg" alt="chat">
                 </div>
@@ -120,10 +111,11 @@
 
                     <h4>Les analyses sanguines c'est top !</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
                 </div>
             </div>
 
-            <div id="chirurgie" class="col-md-offset-2 col-md-8 article-prestation" style="display:none">
+            <div id="chirurgie" class="col-md-offset-2 col-md-8 article-prestation">
                 <div class="col-md-4">
                     <img class="img-responsive img-circle" src="images/pension-nac.jpg" alt="chat">
                 </div>
@@ -141,7 +133,7 @@
                 </div>
             </div>
 
-            <div id="hospitalisation" class="col-md-offset-2 col-md-8 article-prestation" style="display:none">
+            <div id="hospitalisation" class="col-md-offset-2 col-md-8 article-prestation">
                 <div class="col-md-4">
                     <img class="img-responsive img-circle" src="images/example-01.jpg" alt="chat">
                 </div>
@@ -156,7 +148,7 @@
                 </div>
             </div>
 
-            <div id="nac" class="col-md-offset-2 col-md-8 article-prestation" style="display:none">
+            <div id="nac" class="col-md-offset-2 col-md-8 article-prestation">
                 <div class="col-md-4">
                     <img class="img-responsive img-circle" src="images/pension-nac.jpg" alt="chat">
                 </div>
@@ -164,6 +156,7 @@
                     <h3><i class="fa fa-paw"></i> NAC</h3>
                     <small>Les nouveaux animaux de compagnies.</small>
                     <h4>Les nacs c'est top !</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
                 </div>
             </div>
@@ -214,7 +207,7 @@
                     <div class="separator-footer"></div>
 
                     <!-- Button mentions légales -->
-                    <button type="button" class="btn btn-default center-block btn-sm" data-toggle="modal" data-target="#myModal">Mentions légales</button>
+                    <button type="button" class="center-block" data-toggle="modal" data-target="#myModal">Mentions légales</button>
 
                     <!-- form mentions légales -->
                 <div class="modal " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

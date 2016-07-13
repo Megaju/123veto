@@ -61,6 +61,13 @@ i {
     color: #F58900;
 }
 
+.icone-prestation {
+    padding: 20px;
+}
+
+.page-sans-header {
+    margin-top: 50px;
+}
 /* ================================================== */
 
 
@@ -337,7 +344,22 @@ footer {
 /* --- Styles prestations ---*/
 
 .prestation {
-    padding: 100px 0px 100px 0px;
+    padding: 60px 0px 0px 0px;
+}
+
+.prestation2 {
+    padding: 0px 0px 0px 0px;
+}
+
+.prestation h3{
+    font-size: 1.3em;
+}
+
+.separator-prestation {
+    width: 150px;
+    height: 2px;
+    background-color: #143143;
+    margin: 30px auto 20px auto;
 }
 
 .article-prestation {
@@ -375,11 +397,38 @@ a i {
     font-family: "Open" sans-serif;
     font-weight: 700;
     transition: 0.2s;
+    padding: 15px;
+    
 }
 
 a:hover,
 a:hover i {
-    text-decoration: none;
+    text-de
+    coration: none;
     color: rgba(10, 113, 180, 0.8);
     transition: 0.2s;
+}
+
+
+/* ================================================== */
+/* =================== ID PRESTATIONS =============== */
+/* ================================================== */
+
+#consultation {
+    display:block;
+}
+#imagerie {
+    display:none;
+}
+#analyse {
+    display:none;
+}
+#chirurgie {
+    display:none;
+}
+#hospitalisation {
+    display:none;
+}
+#nac {
+    display:none;
 }
