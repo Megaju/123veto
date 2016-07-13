@@ -14,6 +14,7 @@
     <script type="text/javascript" src="js/navbar-transparent.js"></script>
     <script type="text/javascript" src="js/navbar-prestation.js"></script>
     <script type="text/javascript" src="js/scroll-fluid.js"></script>
+    <script type="text/javascript" src="js/accordeons.js"></script>
     <!-- fonts -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'/>
     <link rel="stylesheet" href="css/font-awesome.css"/>
@@ -59,7 +60,7 @@
                 <h2 class="text-center">TARIFS ET PRESTATIONS</h2>
             </div>
         </section>
-
+<!--
         <nav class="row nav-prestations">
             <div class="col-md-1 col-xs-1">
                 <a href="#consultation"><i class="fa fa-2x fa-stethoscope"></i></a>
@@ -71,12 +72,21 @@
                 <a href="#tarifs"><i class="fa fa-2x fa-eur"></i></a>
                 <a href="#nav"><i class="fa fa-2x fa-arrow-circle-up"></i></a>
             </div>
-        </nav>
+        </nav>    -->
         <!--<div class="separator-objet"></div>-->
+	<section class="row prestation">
+		<div>
+			<a href="" onclick="affich_consultation()"><i class="fa fa-3x fa-stethoscope" ></i></a> 
+			<a href="" onclick="affich_imagerie()"><i class="fa fa-3x fa-camera"></i></a>
+			<a href="" onclick="affich_analyse()"><i class="fa fa-3x fa-medkit"></i></a>
+			<a href="" onclick="affich_chirurgie()"><i class="fa fa-3x fa-heartbeat"></i></a>
+			<a href="" onclick="affich_hospitalisation()"><i class="fa fa-3x fa-hospital-o"></i></a>
+			<a href="" onclick="affich_nac()"><i class="fa fa-3x fa-paw"></i></div></a>
+	</section>
 
         <section id="navbar-prestation" class="row prestation">
 
-            <div id="consultation" class="col-md-offset-2 col-md-8 article-prestation">
+            <div id="consultation" class="col-md-offset-2 col-md-8 article-prestation" style="display:none">
                 <div class="col-md-4">
                     <img class="img-responsive img-circle" src="images/example-01.jpg" alt="chat">
                 </div>
@@ -98,7 +108,7 @@
                 </div>
             </div>
 
-            <div id="imagerie" class="col-md-offset-2 col-md-8 article-prestation">
+            <div id="imagerie" class="col-md-offset-2 col-md-8 article-prestation" style="display:none">
                 <div class="col-md-4">
                     <img class="img-responsive img-circle" src="images/pension-nac.jpg" alt="chat">
                 </div>
@@ -110,7 +120,7 @@
                 </div>
             </div>
 
-            <div id="analyse" class="col-md-offset-2 col-md-8 article-prestation">
+            <div id="analyse" class="col-md-offset-2 col-md-8 article-prestation" style="display:none">
                 <div class="col-md-4">
                     <img class="img-responsive img-circle" src="images/example-01.jpg" alt="chat">
                 </div>
@@ -125,7 +135,7 @@
                 </div>
             </div>
 
-            <div id="chirurgie" class="col-md-offset-2 col-md-8 article-prestation">
+            <div id="chirurgie" class="col-md-offset-2 col-md-8 article-prestation" style="display:none">
                 <div class="col-md-4">
                     <img class="img-responsive img-circle" src="images/pension-nac.jpg" alt="chat">
                 </div>
@@ -143,7 +153,7 @@
                 </div>
             </div>
 
-            <div id="hospitalisation" class="col-md-offset-2 col-md-8 article-prestation">
+            <div id="hospitalisation" class="col-md-offset-2 col-md-8 article-prestation" style="display:none">
                 <div class="col-md-4">
                     <img class="img-responsive img-circle" src="images/example-01.jpg" alt="chat">
                 </div>
@@ -158,7 +168,7 @@
                 </div>
             </div>
 
-            <div id="nac" class="col-md-offset-2 col-md-8 article-prestation">
+            <div id="nac" class="col-md-offset-2 col-md-8 article-prestation" style="display:none">
                 <div class="col-md-4">
                     <img class="img-responsive img-circle" src="images/pension-nac.jpg" alt="chat">
                 </div>
@@ -170,7 +180,7 @@
                 </div>
             </div>
 
-            <div id="tarifs" class="col-md-offset-2 col-md-8 article-prestation">
+            <div id="tarifs" class="col-md-offset-2 col-md-8 article-prestation" style="display:none">
                 <div class="col-md-4">
                     <img class="img-responsive img-circle" src="images/example-01.jpg" alt="chat">
                 </div>
@@ -184,7 +194,6 @@
 
 
         </section>
-
 
         <!-- pied de page -->
     <footer class="row">
