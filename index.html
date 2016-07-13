@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="css/bootstrap-theme.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/datepicker.css" />
+    <link rel="stylesheet" href="less/datepicker.less" />
     <!-- <Script JS> -->
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/navbar-transparent.js"></script>
     <script type="text/javascript" src="js/scroll-fluid.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
     <!-- fonts -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="css/font-awesome.css" />
@@ -49,10 +52,12 @@
             </div>
 
             <h1>123 VETO - Clinique Vétérinaire</h1>
+            <h1>Dr Wintz et Dr Mayoussier</h1>
 
             <div class="separator-header"></div>
 
-            <p class="text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas.</p>
+            <p class="text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">123 Véto vous accueille lundi au vendredi de 9h à 12h et de 14h à 19h et le samedi de 9h à 12h.
+            Les urgences sont assurées 24h/24 7 jours sur 7 sur appel téléphonique au 02 40 01 61 69</p>
         </header>
 
         <!-- section présentation de l'entreprise -->
@@ -90,8 +95,8 @@
                     <img class="img-responsive img-circle avatar" src="images/example-01.jpg" alt="" />
                 </div>
                 <div class="col-md-12">
-                    <h3 class="text-center text-uppercase">Nom Prénom</h3>
-                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam doloribus saepe unde nesciunt reprehenderit esse vitae ea placeat est, tempora. Unde quaerat impedit ullam assumenda non necessitatibus ex neque voluptates!</p>
+                    <h3 class="text-center text-uppercase">Dr Eric Wintz</h3>
+                    <p class="text-center">Dr Eric Wintz Diplômé de l’école vétérinaire de Nantes en 1990, il se passionne pour la dermatologie et la cardiologie. Le Dr Wintz possède quatre chats Leelas (européenne), Gribouille (européen), Hannah (Mane Coon), et Joey (Ragdoll), des Platis, deux lapins nains Neige et Teddy ainsi que Lexie, chihuahua</p>
                 </div>
             </div>
 
@@ -100,8 +105,8 @@
                     <img class="img-responsive img-circle avatar" src="images/veto.jpg" alt="" />
                 </div>
                 <div class="col-md-12">
-                    <h3 class="text-center text-uppercase">Nom Prénom</h3>
-                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam doloribus saepe unde nesciunt reprehenderit esse vitae ea placeat est, tempora. Unde quaerat impedit ullam assumenda non necessitatibus ex neque voluptates!</p>
+                    <h3 class="text-center text-uppercase">Dr Aurélie Mayoussier</h3>
+                    <p class="text-center">Dr Aurélie Mayoussier Diplômée de l’école vétérinaire de Maisons- Alfort en 2008, elle se passionne pour la médecine de l’élevage et de la reproduction et la médecine des NAC. Le Dr Mayoussier possède deux chats Pratchett et Bubule ainsi que Bambou, chien loup de Saarloos.</p>
                 </div>
             </div>
 
@@ -262,7 +267,37 @@
             </div>
 
         </section>
+        
+        <!--section contact-->
+</section>
+        <section class="row text-center">
 
+            <div class="section-header">
+                <h2 class="text-center text-capitalize">Prise de rendez-vous</h2>
+            </div>
+
+        <div class="row1 pad-70">
+
+
+    <img src="images/pension-nac2.jpg" alt="">
+
+<div class="container">
+    <div class="row">
+        <div class='col-sm-6'>
+            <input type='text' class="form-control" id='datetimepicker4' />
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker4').datetimepicker();
+            });
+        </script>
+    </div>
+</div>
+                </div>
+
+            </div>
+
+        </section>
         <!-- pied de page -->
         <footer class="row">
             <div class="bloc-footer col-md-4">

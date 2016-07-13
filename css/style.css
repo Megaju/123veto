@@ -48,6 +48,7 @@ header p {
     color: #fff;
     font-weight: 300;
     line-height: 30px;
+    white-space: pre;
 }
 
 img.avatar {
@@ -70,12 +71,12 @@ i {
 
 header {
     margin: 0 auto;
-    padding: 110px 0 60px 0;
+    padding: 45px 0 50px 0;
     background-color: rgba(10, 113, 180, 0.8);
 }
 
 header .logo {
-    width: 25%;
+    width: 30%;
     margin: 0 auto;
 }
 /* --- logo en xs --- */
