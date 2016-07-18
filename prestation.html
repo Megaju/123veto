@@ -15,6 +15,7 @@
     <script type="text/javascript" src="js/navbar-prestation.js"></script>
     <script type="text/javascript" src="js/scroll-fluid.js"></script>
     <script type="text/javascript" src="js/accordeons.js"></script>
+    <script type="text/javascript" src="js/navbar.js"></script>
     <!-- fonts -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'/>
     <link rel="stylesheet" href="css/font-awesome.css"/>
@@ -23,69 +24,101 @@
 <body id="nav" data-spy="scroll" data-target=".navbar" data-offset="50">
     <div class="container-fluid">
         <!-- menu de navigation -->
-        <nav class="navbar navbar-default navbar-fixed-top container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    
-                    <!-- test sans cette partie pour un menu bien centré
-                    <a class="navbar-brand" href="index.html" onclick="window.open(this.href);return true;"><strong>123 VETO</strong></a> -->
-                    
-                </div>
-                <ul class="nav navbar-nav navbar-right" id="myNavbar">
-                   
-                    <li><a href="index.html" onclick="location.href='index.html';">ACCUEIL</a></li>
-                    
-                    <li class="active"><a href="prestation.html" onclick="location.href='prestation.html';">PRESTATION</a></li>
-                    
-                    <li><a href="conseil.html" onclick="location.href='conseil.html';">FICHES CONSEIL</a></li>
-                    
-                    <li><a href="#" onclick="location.href='#';">ESPACE VENTE</a></li>
-                    
-                    <li><a href="contact.html" onclick="location.href='contact.html';">CONTACT</a></li>
-                    
-                </ul>
+        <nav>
+            <div class="unfold-menu" onclick="unfoldMenu()">
+                <span class="unfold-deco"></span>
+                <span class="unfold-deco"></span>
+                <span class="unfold-deco"></span>
+            </div>
+            <ul id="menu">
+                <li onclick="location.href='index.html';"><a href="#">Accueil</a></li>
+                
+                <li class="active" onclick="location.href='prestation.html';"><a href="#">Prestation</a></li>
+                
+                <li onclick="location.href='conseil.html';"><a href="#">Fiches conseil</a></li>
+                
+                <li onclick="location.href='vente.html';"><a href="#">Espace vente</a></li>
+                
+                <li onclick="location.href='contact.html';"><a href="#">Contact</a></li>
+            </ul>
         </nav>
         
         <!-- en-tête du site -->
-        <header class="row">
-            <div class="logo">
-                <img src="images/logo-veto.svg" alt="" class="img-responsive">
-            </div>
-
-            <h1 id="startchange">123 VETO - Clinique Vétérinaire</h1>
-
-            <div class="separator-header"></div>
-
-            <p class="text-center col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas.</p>
-        </header>
-
         <!-- section nav icones prestation-->
-        <section class="row text-center">
+        <section id="startchange"class="row text-center page-sans-header">
             <div class="section-header">
-                <h2 class="text-center">TARIFS ET PRESTATIONS</h2>
+                <h2 class="text-center">NOS PRESTATIONS</h2>
             </div>
         </section>
 
         <!--<div class="separator-objet"></div>-->
-	<section class="row prestation">
-		<div>
-			<a href="" onclick="affich_consultation()"><i class="fa fa-3x fa-stethoscope" ></i></a> 
-			<a href="" onclick="affich_imagerie()"><i class="fa fa-3x fa-camera"></i></a>
-			<a href="" onclick="affich_analyse()"><i class="fa fa-3x fa-medkit"></i></a>
-			<a href="" onclick="affich_chirurgie()"><i class="fa fa-3x fa-heartbeat"></i></a>
-			<a href="" onclick="affich_hospitalisation()"><i class="fa fa-3x fa-hospital-o"></i></a>
-			<a href="" onclick="affich_nac()"><i class="fa fa-3x fa-paw"></i></div></a>
-	</section>
+	<section class="row text-center">
 
-        <section id="navbar-prestation" class="row prestation">
+            <div class="row1 pad-70">
 
-            <div id="consultation" class="col-md-offset-2 col-md-8 article-prestation" style="display:none">
+                <!-- bloc 1/6 -->
+                <div class="col-xs-12 col-sm-4 col-md-2">
+                    <div class="col-md-12">
+                        <i class="fa fa-stethoscope fa-5x"></i>
+                    </div>
+                    <div class="col-md-12">
+                        <button class="btn btn-default btn-m-70" onclick="affich_consultation()"><a href="#">Consultation</a></button>
+                    </div>
+                </div>
+                <!-- bloc 1/6 -->
+                <div class="col-xs-12 col-sm-4 col-md-2">
+                    <div class="col-md-12">
+                        <i class="fa fa-camera fa-5x"></i>
+                    </div>
+                    <div class="col-md-12">
+                        <button class="btn btn-default btn-m-70" onclick="affich_imagerie()"><a href="#">Imagerie</a></button>
+                    </div>
+                </div>
+                <!-- bloc 1/6 -->
+                <div class="col-xs-12 col-sm-4 col-md-2">
+                    <div class="col-md-12">
+                        <i class="fa fa-medkit fa-5x"></i>
+                    </div>
+                    <div class="col-md-12">
+                        <button class="btn btn-default btn-m-70" onclick="affich_analyse()"><a href="#">Analyse sanguine</a></button>
+                    </div>
+                </div>
+                <!-- bloc 1/6 -->
+                <div class="col-xs-12 col-sm-4 col-md-2">
+                    <div class="col-md-12">
+                        <i class="fa fa-heartbeat fa-5x"></i>
+                    </div>
+                    <div class="col-md-12">
+                        <button class="btn btn-default btn-m-70" onclick="affich_chirurgie()"><a href="#">Chirurgie</a></button>
+                    </div>
+                </div>
+                <!-- bloc 1/6 -->
+                <div class="col-xs-12 col-sm-4 col-md-2">
+                    <div class="col-md-12">
+                        <i class="fa fa-hospital-o fa-5x"></i>
+                    </div>
+                    <div class="col-md-12">
+                        <button class="btn btn-default btn-m-70" onclick="affich_hospitalisation()"><a href="#">Hospitalisation</a></button>
+                    </div>
+                </div>
+                <!-- bloc 1/6 -->
+                <div class="col-xs-12 col-sm-4 col-md-2">
+                    <div class="col-md-12">
+                        <i class="fa fa-paw fa-5x"></i>
+                    </div>
+                    <div class="col-md-12">
+                        <button class="btn btn-default btn-m-70" onclick="affich_nac()"><a href="#">NAC</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="separator-prestation"></div>
+	
+        <section id="navbar-prestation" class="row prestation2 center-block">
+
+            <div id="consultation" class="col-md-offset-2 col-md-8 article-prestation">
                 <div class="col-md-4">
-                    <img class="img-responsive img-circle" src="images/example-01.jpg" alt="chat">
+                    <img class="img-responsive img-circle" src="images/Consultation_3.JPG" alt="chat">
                 </div>
                 <div class="col-md-8">
                     <h3><i class="fa fa-stethoscope"></i> CONSULTATION</h3>
@@ -105,21 +138,22 @@
                 </div>
             </div>
 
-            <div id="imagerie" class="col-md-offset-2 col-md-8 article-prestation" style="display:none">
+            <div id="imagerie" class="col-md-offset-2 col-md-8 article-prestation">
                 <div class="col-md-4">
-                    <img class="img-responsive img-circle" src="images/pension-nac.jpg" alt="chat">
+                    <img class="img-responsive img-circle" src="images/radiologie_2.JPG" alt="chat">
                 </div>
                 <div class="col-md-8">
                     <h3><i class="fa fa-camera"></i> IMAGERIE</h3>
                     <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias.</small>
                     <h4>L'imagerie c'est top !</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
                 </div>
             </div>
 
-            <div id="analyse" class="col-md-offset-2 col-md-8 article-prestation" style="display:none">
+            <div id="analyse" class="col-md-offset-2 col-md-8 article-prestation">
                 <div class="col-md-4">
-                    <img class="img-responsive img-circle" src="images/example-01.jpg" alt="chat">
+                    <img class="img-responsive img-circle" src="images/Labo_analyse_microscopique.JPG" alt="chat">
                 </div>
                 <div class="col-md-8">
                     <h3><i class="fa fa-medkit"></i> Analyse sanguine</h3>
@@ -129,12 +163,13 @@
 
                     <h4>Les analyses sanguines c'est top !</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
                 </div>
             </div>
 
-            <div id="chirurgie" class="col-md-offset-2 col-md-8 article-prestation" style="display:none">
+            <div id="chirurgie" class="col-md-offset-2 col-md-8 article-prestation">
                 <div class="col-md-4">
-                    <img class="img-responsive img-circle" src="images/pension-nac.jpg" alt="chat">
+                    <img class="img-responsive img-circle" src="images/chirurgie_1.JPG" alt="chat">
                 </div>
                 <div class="col-md-8">
                     <h3><i class="fa fa-heartbeat"></i> CHIRURGIE</h3>
@@ -150,9 +185,9 @@
                 </div>
             </div>
 
-            <div id="hospitalisation" class="col-md-offset-2 col-md-8 article-prestation" style="display:none">
+            <div id="hospitalisation" class="col-md-offset-2 col-md-8 article-prestation">
                 <div class="col-md-4">
-                    <img class="img-responsive img-circle" src="images/example-01.jpg" alt="chat">
+                    <img class="img-responsive img-circle" src="images/Chatterie.JPG" alt="chat">
                 </div>
                 <div class="col-md-8">
                     <h3><i class="fa fa-hospital-o"></i> HOSPITALISATION</h3>
@@ -165,14 +200,15 @@
                 </div>
             </div>
 
-            <div id="nac" class="col-md-offset-2 col-md-8 article-prestation" style="display:none">
+            <div id="nac" class="col-md-offset-2 col-md-8 article-prestation">
                 <div class="col-md-4">
-                    <img class="img-responsive img-circle" src="images/pension-nac.jpg" alt="chat">
+                    <img class="img-responsive img-circle" src="images/NAC.JPG" alt="chat">
                 </div>
                 <div class="col-md-8">
                     <h3><i class="fa fa-paw"></i> NAC</h3>
                     <small>Les nouveaux animaux de compagnies.</small>
                     <h4>Les nacs c'est top !</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
                 </div>
             </div>
@@ -223,7 +259,7 @@
                     <div class="separator-footer"></div>
 
                     <!-- Button mentions légales -->
-                    <button type="button" class="btn btn-default center-block btn-sm" data-toggle="modal" data-target="#myModal">Mentions légales</button>
+                    <button type="button" class="center-block" data-toggle="modal" data-target="#myModal">Mentions légales</button>
 
                     <!-- form mentions légales -->
                 <div class="modal " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

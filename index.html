@@ -9,11 +9,15 @@
     <link rel="stylesheet" href="css/bootstrap-theme.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/datepicker.css" />
+    <link rel="stylesheet" href="less/datepicker.less" />
     <!-- <Script JS> -->
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/navbar-transparent.js"></script>
     <script type="text/javascript" src="js/scroll-fluid.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="js/navbar.js"></script>
     <!-- fonts -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="css/font-awesome.css" />
@@ -21,7 +25,7 @@
 
 <body>
     <div class="container-fluid">
-        <!-- mene de navigation -->
+        <!-- menu de navigation -->
         <nav>
             <div class="unfold-menu" onclick="unfoldMenu()">
                 <span class="unfold-deco"></span>
@@ -29,26 +33,18 @@
                 <span class="unfold-deco"></span>
             </div>
             <ul id="menu">
-                <li class="active"><a href="index.html">Accueil</a></li>
-                <li><a href="prestation.html">Prestation</a></li>
-                <li><a href="conseil.html">Fiches conseil</a></li>
-                <li><a href="vente.html">Espace vente</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li class="active" onclick="location.href='index.html';"><a href="#">Accueil</a></li>
+                
+                <li onclick="location.href='prestation.html';"><a href="#">Prestation</a></li>
+                
+                <li onclick="location.href='conseil.html';"><a href="#">Fiches conseil</a></li>
+                
+                <li onclick="location.href='vente.html';"><a href="#">Espace vente</a></li>
+                
+                <li onclick="location.href='contact.html';"><a href="#">Contact</a></li>
             </ul>
         </nav>
-
-        <script type="text/javascript">
-            var unfold = true;
-            function unfoldMenu() {
-                if (unfold === false) {
-                    unfold = true;
-                    document.getElementById('menu').style.display = 'none';
-                } else {
-                    unfold = false;
-                    document.getElementById('menu').style.display = 'block';
-                }
-            }
-        </script>
+        
 
         <!-- en-tête du site -->
         <header class="row">
@@ -123,7 +119,6 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime.</p>
             </div>
         </section>
-
 
 
         <!-- section fiches conseils -->
@@ -282,6 +277,8 @@
 
         </section>
 
+
+        </section>
         <!-- pied de page -->
         <footer class="row">
             <div class="bloc-footer col-md-4">

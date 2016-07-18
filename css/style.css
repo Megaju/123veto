@@ -49,6 +49,7 @@ header p {
     color: #fff;
     font-weight: 300;
     line-height: 30px;
+    white-space: pre;
 }
 
 img.avatar {
@@ -61,6 +62,13 @@ i {
     color: #F58900;
 }
 
+.icone-prestation {
+    padding: 20px;
+}
+
+.page-sans-header {
+    margin-top: 50px;
+}
 
 /* ================================================== */
 
@@ -74,6 +82,8 @@ i {
 /* --- header --- */
 
 header {
+    margin: 0 auto;
+    padding: 45px 0 50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,6 +94,11 @@ header {
     background-image: url(../images/facade.JPG);
     background-size: 100%;
     background-position: center center;
+}
+
+header .logo {
+    width: 30%;
+    margin: 0 auto;
 }
 
 .header-corp-1 {
@@ -398,7 +413,28 @@ ul li:hover a {
 /* --- Styles prestations ---*/
 
 .prestation {
-    padding: 100px 0px 100px 0px;
+    padding: 60px 0px 0px 0px;
+}
+
+.prestation2 {
+    padding: 0px 0px 0px 0px;
+}
+
+.prestation h3{
+    font-size: 1.3em;
+}
+
+.article-prestation h4 {
+    color: #F58900;
+    padding-top: 15px;
+    text-align: left;
+}
+
+.separator-prestation {
+    width: 150px;
+    height: 2px;
+    background-color: #143143;
+    margin: 30px auto 20px auto;
 }
 
 .article-prestation {
@@ -436,6 +472,8 @@ a i {
     font-family: "Open" sans-serif;
     font-weight: 700;
     transition: 0.2s;
+    padding: 15px;
+    
 }
 
 a:hover,
@@ -443,4 +481,67 @@ a:hover i {
     text-decoration: none;
     color: rgba(10, 113, 180, 0.8);
     transition: 0.2s;
+}
+
+
+/* =============================================== */
+/* =========== ID PRESTATIONS / CONSEILS========== */
+/* =============================================== */
+
+#consultation {
+    display:block;
+}
+#imagerie {
+    display:none;
+}
+#analyse {
+    display:none;
+}
+#chirurgie {
+    display:none;
+}
+#hospitalisation {
+    display:none;
+}
+#nac {
+    display:none;
+}
+
+
+#dent {
+    display:block;
+}
+#yeux-oreilles {
+    display:none;
+}
+#pelage {
+    display:none;
+}
+#parasite {
+    display:none;
+}
+#vaccin-chien {
+    display:none;
+}
+#vaccin-chat {
+    display:none;
+}
+#vaccin-chat {
+    display:none;
+}
+#id {
+    display:none;
+}
+#education {
+    display:none;
+}
+
+#medicament {
+    display: block;
+}
+#alimentation {
+    display: none;
+}
+#index {
+    display: none;
 }
