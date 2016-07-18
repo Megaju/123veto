@@ -166,7 +166,7 @@ footer {
 
 .bloc-footer {
     padding: 50px;
-    background-color: #143143;
+    background-color: #143;
     height: 100%;
 }
 
@@ -213,8 +213,7 @@ nav {
     margin: 0 -15px;
     /* pour le container-fluid bootstrap */
     background-color: #fff;
-    border-bottom: 1px solid #159;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #143143;
     z-index: 1;
 }
 
@@ -233,14 +232,14 @@ ul li {
 }
 
 ul li a {
-    color: #159;
+    color: #143143;
     transition: .2s;
     cursor: pointer;
 }
 
 ul li.active,
 ul li:hover {
-    background-color: #159;
+    background-color: #143143;
     transition: .2s;
 }
 
@@ -271,7 +270,7 @@ ul li:hover a {
         height: 30px;
         margin: 0;
         line-height: 30px;
-        border-bottom: 1px solid #159;
+        border-bottom: 1px solid #143143;
     }
     .unfold-menu {
         display: block;
@@ -287,7 +286,7 @@ ul li:hover a {
         display: block;
         width: 25px;
         height: 2px;
-        background-color: #159;
+        background-color: #143143;
         margin: auto;
         margin-top: 3px;
         transition: .2s;
@@ -300,7 +299,7 @@ ul li:hover a {
         transition: .2s;
     }
     .unfold-menu:hover {
-        background-color: #159;
+        background-color: #143143;
         transition: .2s;
     }
 }
