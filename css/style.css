@@ -415,6 +415,12 @@ footer {
     font-size: 1.3em;
 }
 
+.article-prestation h4 {
+    color: #F58900;
+    padding-top: 15px;
+    text-align: left;
+}
+
 .separator-prestation {
     width: 150px;
     height: 2px;
@@ -463,8 +469,7 @@ a i {
 
 a:hover,
 a:hover i {
-    text-de
-    coration: none;
+    text-decoration: none;
     color: rgba(10, 113, 180, 0.8);
     transition: 0.2s;
 }
@@ -520,4 +525,14 @@ a:hover i {
 }
 #education {
     display:none;
+}
+
+#medicament {
+    display: block;
+}
+#alimentation {
+    display: none;
+}
+#index {
+    display: none;
 }

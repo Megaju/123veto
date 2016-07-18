@@ -1,0 +1,220 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>123 VETO</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- styles css / bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap-theme.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <Script JS> -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/navbar-transparent.js"></script>
+    <script type="text/javascript" src="js/navbar-prestation.js"></script>
+    <script type="text/javascript" src="js/scroll-fluid.js"></script>
+    <script type="text/javascript" src="js/accordeons.js"></script>
+    <!-- fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+</head>
+
+<body id="nav" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div class="container-fluid">
+        <!-- menu de navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <!-- test sans cette partie pour un menu bien centré
+                    <a class="navbar-brand" href="index.html" onclick="window.open(this.href);return true;"><strong>123 VETO</strong></a> -->
+
+            </div>
+            <ul class="nav navbar-nav navbar-right" id="myNavbar">
+
+                <li><a href="index.html" onclick="location.href='index.html';">ACCUEIL</a></li>
+
+                <li class="active"><a href="prestation.html" onclick="location.href='prestation.html';">PRESTATION</a></li>
+
+                <li><a href="conseil.html" onclick="location.href='conseil.html';">FICHES CONSEIL</a></li>
+
+                <li><a href="#" onclick="location.href='#';">ESPACE VENTE</a></li>
+
+                <li><a href="contact.html" onclick="location.href='contact.html';">CONTACT</a></li>
+
+            </ul>
+        </nav>
+
+        <!-- en-tête du site -->
+        <!-- section nav icones prestation-->
+        <section id="startchange" class="row text-center page-sans-header">
+            <div class="section-header">
+                <h2 class="text-center">ESPACES DE VENTE</h2>
+            </div>
+        </section>
+
+        <!--<div class="separator-objet"></div>-->
+        <section class="row prestation">
+            <div class="text-center">
+                <a href="" onclick="affich_chirurgie()"><i class="fa fa-3x fa-medkit"></i></a>
+                <a href="" onclick="affich_hospitalisation()"><i class="fa fa-3x fa-heart"></i></a>
+                <a href="" onclick="affich_nac()"><i class="fa fa-3x fa-list "></i></div></a>
+                <h3 class="text-center">MÉDICAMENT - ALIMENTATION - INDEX</h3>
+                <div class="separator-prestation"></div>
+        </section>
+
+        <section id="navbar-prestation" class="row prestation2 center-block">
+
+            <div id="medicament" class="col-md-offset-2 col-md-8 article-prestation">
+                <div class="col-md-4">
+                    <img class="img-responsive img-circle" src="images/Espace_Vente.JPG" alt="chat">
+                </div>
+                <div class="col-md-8">
+                    <h3><i class="fa fa-medkit"></i> SERVICE MÉDICAMENT</h3>
+                    <h4>Les médicaments c'est top :</h4>
+                    <p>Différents produits nettoyants pour les yeux, les oreilles, shampoing, produits d'hygiène dentaire ont été sélectionnés. Vous trouverez également des antipuces, antitiques, et vermifuge adaptés à votre animal</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                </div>
+            </div>
+            
+            <div id="alimentation" class="col-md-offset-2 col-md-8 article-prestation">
+                <div class="col-md-4">
+                    <img class="img-responsive img-circle" src="images/pension-nac.jpg" alt="chat">
+                </div>
+                <div class="col-md-8">
+                    <h3><i class="fa fa-heart"></i> ALIMENTATION</h3>
+                    <small>L'alimentation, la base pour la santé de votre animal</small>
+                    <h4>L'alimentation c'est top !</h4>
+                    <p>Différentes gammes d'aliments pour votre animal de compagnie (chien, chat, NAC).
+N'hésitez pas à demander conseil afin de trouver l'aliment physiologique adapté à votre animal en fonction de sa taille, sa race.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                </div>
+            </div>
+
+           <div id="index" class="col-md-offset-2 col-md-8 article-prestation">
+    <div class="col-md-4">
+        <img class="img-responsive img-circle" src="images/Espace_Vente.JPG" alt="chat">
+    </div>
+    <div class="col-md-8">
+        <h3><i class="fa fa-list "></i> INDEX</h3>
+        <h4>Les listes c'est pratique :</h4>
+        <ul class="list-group">
+            <li class="list-group-item">First item</li>
+            <li class="list-group-item">Second item</li>
+            <li class="list-group-item">Third item</li>
+            <li class="list-group-item">First item</li>
+            <li class="list-group-item">Second item</li>
+            <li class="list-group-item">Third item</li>
+            <li class="list-group-item">First item</li>
+            <li class="list-group-item">Second item</li>
+            <li class="list-group-item">Third item</li>
+            <li class="list-group-item">First item</li>
+            <li class="list-group-item">Second item</li>
+            <li class="list-group-item">Third item</li>
+            <li class="list-group-item">First item</li>
+            <li class="list-group-item">Second item</li>
+            <li class="list-group-item">Third item</li>
+            <li class="list-group-item">First item</li>
+            <li class="list-group-item">Second item</li>
+            <li class="list-group-item">Third item</li>
+            <li class="list-group-item">First item</li>
+            <li class="list-group-item">Second item</li>
+            <li class="list-group-item">Third item</li>
+        </ul>
+    </div>
+</section>
+
+        <!-- pied de page -->
+        <footer class="row">
+            <div class="bloc-footer col-md-4">
+                <H4>Contact</H4>
+                <div class="separator-footer"></div>
+                <p>123 Véto clinique vétérinaire vous accueille du lundi au vendredi de 9h à 12h et de 14h à 19h et le samedi de 9h à 12h. <a href="contact.html"><i class="fa fa-1x fa-map"></i></a></p>
+                <p>Les urgences sont assurées 24h/24 sur simple appel téléphonique.</p>
+                <p>tél : 02 99 55 55 55 - 06 55 55 55 55</p>
+                </p>
+
+                <p>
+                    <a href="https://www.facebook.com/"><i class="fa fa-2x fa-facebook icone-prestation"></i></a>
+                    <a href="https://twitter.com/"><i class="fa fa-2x fa-twitter icone-prestation"></i></a>
+                    <a href="https://plus.google.com/"><i class="fa fa-2x fa-google-plus-official icone-prestation"></i></a></p>
+
+            </div>
+
+            <div class="bloc-footer col-md-4">
+                <h4>Actualités</h4>
+                <div class="separator-footer"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                </p>
+                <div class="separator-footer"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                </p>
+                <p><i class="fa fa-2x fa-chevron-circle-left" aria-hidden="true"></i>
+                    <i class="fa fa-2x fa-chevron-circle-right" aria-hidden="true"></i></p>
+                <div class="separator-footer"></div>
+
+
+
+            </div>
+
+            <div class="bloc-footer col-md-4">
+                <h4>123 Véto :</h4>
+                <div class="separator-footer"></div>
+                <p><a href="index.html">Accueil</a></p>
+                <p><a href="conseil.html">Fiches conseil</a></p>
+                <p><a href="prestation.html">Prestation & tarifs</a></p>
+                <p><a href="#">Espace vente</a></p>
+                <p><a href="contact.html">Contact & rendez-vous</a></p>
+                <div class="separator-footer"></div>
+
+                <!-- Button mentions légales -->
+                <button type="button" class="center-block" data-toggle="modal" data-target="#myModal">Mentions légales</button>
+
+                <!-- form mentions légales -->
+                <div class="modal " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Mentions légales</h4>
+                            </div>
+                            <div class="modal-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                                <h4>Lorem ipsum</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                <br></br>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                <br></br>
+
+                                <h4>Lorem ipsum</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                <br></br>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                <br></br>
+
+                                <h4>Lorem ipsum</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                <br></br>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                <br></br>
+
+                                <h4>Lorem ipsum</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                <br></br>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                <br></br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        </div>
+</body>
+
+</html>
