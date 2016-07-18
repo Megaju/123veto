@@ -211,7 +211,7 @@ nav {
     width: 100%;
     height: 50px;
     margin: 0 -15px;
-    /* pour le container-fluid bootstrap */
+    text-transform: uppercase;
     background-color: #fff;
     border-bottom: 1px solid #143143;
     z-index: 1;
@@ -269,6 +269,7 @@ ul li:hover a {
         display: block;
         height: 30px;
         margin: 0;
+        text-align: center;
         line-height: 30px;
         border-bottom: 1px solid #143143;
     }
