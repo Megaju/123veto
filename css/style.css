@@ -433,7 +433,7 @@ ul li:hover a {
     width: 150px;
     height: 2px;
     background-color: #143143;
-    margin: 30px auto 20px auto;
+    margin: 50px auto 20px auto;
 }
 
 .article-prestation {
@@ -455,6 +455,9 @@ ul li:hover a {
     z-index: 99;
 }
 
+.fa-prestation {
+    padding-top: 40px;
+}
 
 /* ================================================== */
 
