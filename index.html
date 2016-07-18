@@ -39,16 +39,14 @@
 
         <script type="text/javascript">
             var unfold = true;
-            
             function unfoldMenu() {
-                if (unfold === true) {
-                    unfold = false;
+                if (unfold === false) {
+                    unfold = true;
                     document.getElementById('menu').style.display = 'none';
                 } else {
-                    unfold = true;
+                    unfold = false;
                     document.getElementById('menu').style.display = 'block';
                 }
-                
             }
         </script>
 
