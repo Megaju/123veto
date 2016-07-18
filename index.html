@@ -21,37 +21,40 @@
 
 <body>
     <div class="container-fluid">
-        <!-- menu de navigation -->
-        <nav class="navbar navbar-default navbar-fixed-top container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-                <!-- test sans cette partie pour un menu bien centré
-                    <a class="navbar-brand" href="index.html" onclick="window.open(this.href);return true;"><strong>123 VETO</strong></a> -->
-
+        <!-- mene de navigation -->
+        <nav>
+            <div class="unfold-menu" onclick="unfoldMenu()">
+                <span class="unfold-deco"></span>
+                <span class="unfold-deco"></span>
+                <span class="unfold-deco"></span>
             </div>
-            <ul class="nav navbar-nav" id="myNavbar">
-
-                <li class="active"><a href="index.html" onclick="location.href='index.html';">ACCUEIL</a></li>
-
-                <li><a href="prestation.html" onclick="location.href='prestation.html';">PRESTATION</a></li>
-
-                <li><a href="conseil.html" onclick="location.href='conseil.html';">FICHES CONSEIL</a></li>
-
-                <li><a href="#" onclick="location.href='#';">ESPACE VENTE</a></li>
-
-                <li><a href="contact.html" onclick="location.href='contact.html';">CONTACT</a></li>
-
+            <ul id="menu">
+                <li class="active"><a href="index.html">Accueil</a></li>
+                <li><a href="prestation.html">Prestation</a></li>
+                <li><a href="conseil.html">Fiches conseil</a></li>
+                <li><a href="vente.html">Espace vente</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
+        <script type="text/javascript">
+            var unfold = true;
+            
+            function unfoldMenu() {
+                if (unfold === true) {
+                    unfold = false;
+                    document.getElementById('menu').style.display = 'none';
+                } else {
+                    unfold = true;
+                    document.getElementById('menu').style.display = 'block';
+                }
+                
+            }
+        </script>
+
         <!-- en-tête du site -->
         <header class="row">
-            <div class="header-corp-2">
+            <div class="header-corp-1">
                 <!-- logo -->
                 <div class="logo-img pull-right"></div>
 

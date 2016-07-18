@@ -61,6 +61,7 @@ i {
     color: #F58900;
 }
 
+
 /* ================================================== */
 
 
@@ -69,7 +70,9 @@ i {
 
 /* ================================================== */
 
+
 /* --- header --- */
+
 header {
     display: flex;
     justify-content: center;
@@ -122,20 +125,14 @@ header p {
     font-weight: 500;
 }
 
-.separator-header {
-    width: 75%;
-    height: 2px;
-    background-color: #fff;
-    margin: 20px 0;
-}
-
 
 /* --- logo en xs --- */
+
 @media (max-width: 767px) {
     header .logo {
-    width: 75%;
-    margin: 0 auto;
-}
+        width: 75%;
+        margin: 0 auto;
+    }
 }
 
 .section-header {
@@ -149,25 +146,27 @@ header p {
 }
 
 footer {
- height: 420px;
+    height: 420px;
 }
 
 .bloc-footer {
- padding: 50px;
- background-color: #143143 ;
- height: 100%;
+    padding: 50px;
+    background-color: #143143;
+    height: 100%;
 }
 
-.bloc-footer p, h4  {
- color: white;
- text-align: center;
+.bloc-footer p,
+h4 {
+    color: white;
+    text-align: center;
 }
 
 .bloc-footer button {
- background-color: rgba(10, 113, 180, 0.8);
- border: none;
- color: white;
+    background-color: rgba(10, 113, 180, 0.8);
+    border: none;
+    color: white;
 }
+
 
 /* ================================================== */
 
@@ -176,9 +175,11 @@ footer {
 
 
 /* ================================================== */
+
 #myNavbar {
     margin: 0 25%;
 }
+
 
 /* --- virer les margins des col-* en cas de besoin --- */
 
@@ -188,99 +189,109 @@ footer {
 }
 
 
-/* --- navigation principale --- */
+/* === menu de navigation === */
 
-.navbar-default {
-    background-color: #f2f2f2;
-    border-color: #00a7ca;
-    background-image: none;
-    font-weight: 700;
-    z-index: 9998;
+nav {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    margin: 0 -15px;
+    /* pour le container-fluid bootstrap */
+    background-color: #fff;
+    border-bottom: 1px solid #159;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
-.navbar-default .navbar-brand {
-    color: #00a7ca;
-    transition: 0.2s;
+ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
 }
 
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-    color: #003c4b;
-    transition: 0.2s;
+ul li {
+    display: inline;
+    padding: 0 25px;
+    line-height: 50px;
+    cursor: pointer;
 }
 
-.navbar-default .navbar-text {
-    color: #003c4b;
+ul li a {
+    color: #159;
+    transition: .2s;
+    cursor: pointer;
 }
 
-.navbar-default .navbar-nav > li > a {
-    color: #003c4b;
-    transition: 0.2s;
+ul li.active,
+ul li:hover {
+    background-color: #159;
+    transition: .2s;
 }
 
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    color: #00a7ca;
-    transition: 0.2s;
-}
-
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
+ul li.active a,
+ul li:hover a {
     color: #fff;
-    background-color: #143143;
-    background-image: none;
+    transition: .4s;
 }
 
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:hover,
-.navbar-default .navbar-nav > .open > a:focus {
-    color: #fff;
-    background-color: #00a7ca;
-    background-image: none;
+
+/* -- on vire le menu déroulant -- */
+
+.unfold-menu,
+.unfold-deco {
+    display: none;
 }
 
-.navbar-default .navbar-toggle {
-    border-color: #00a7ca;
-}
-
-.navbar-default .navbar-toggle:hover,
-.navbar-default .navbar-toggle:focus {
-    background-color: #00a7ca;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #003c4b;
-}
-
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-    border-color: #003c4b;
-}
-
-.navbar-default .navbar-link {
-    color: #003c4b;
-}
-
-.navbar-default .navbar-link:hover {
-    color: #fff;
-}
-
-@media (max-width: 767px) {
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-        color: #003c4b;
+@media(max-width:670px) {
+    ul {
+        display: none;
+        width: 100%;
+        padding: 0;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-        color: #fff;
+    ul li {
+        display: block;
+        height: 30px;
+        margin: 0;
+        line-height: 30px;
+        border-bottom: 1px solid #159;
     }
-    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-        color: #fff;
-        background-color: #00a7ca;
+    .unfold-menu {
+        display: block;
+        width: 50px;
+        height: 49px;
+        margin: 0 auto;
+        padding-top: 19px;
+        background-color: #eee;
+        cursor: pointer;
+        transition: .2s;
+    }
+    .unfold-deco {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: #159;
+        margin: auto;
+        margin-top: 3px;
+        transition: .2s;
+    }
+    .unfold-deco:first-child {
+        margin-top: 0px;
+    }
+    .unfold-menu:hover .unfold-deco {
+        background-color: #eee;
+        transition: .2s;
+    }
+    .unfold-menu:hover {
+        background-color: #159;
+        transition: .2s;
     }
 }
+
+
+/* /end nav */
 
 .fa {
     padding: 0 0 20px 0;
@@ -294,7 +305,6 @@ footer {
     padding: 15px 35px;
 }
 
-
 .btn-m-70 {
     margin-bottom: 70px;
 }
@@ -303,13 +313,12 @@ footer {
     color: #337ab7;
 }
 
-
 #myModalLabel {
- color: rgba(10, 113, 180, 0.8);
+    color: rgba(10, 113, 180, 0.8);
 }
 
 .modal-body h4 {
- color: rgba(10, 113, 180, 0.8);
+    color: rgba(10, 113, 180, 0.8);
 }
 
 
@@ -384,6 +393,7 @@ footer {
 .pad-map {
     padding-top: 50px;
 }
+
 
 /* --- Styles prestations ---*/
 
