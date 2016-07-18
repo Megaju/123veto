@@ -142,3 +142,22 @@ function affich_education() {
 	document.getElementById("id").style.display="none";
 	document.getElementById("education").style.display="block";
 };
+
+//accordeon vente
+function affich_medicament() {
+	document.getElementById("medicament").style.display="block";
+	document.getElementById("alimentation").style.display="none";
+	document.getElementById("index").style.display="none";
+};
+
+function affich_alimentation() {
+	document.getElementById("medicament").style.display="none";
+	document.getElementById("alimentation").style.display="block";
+	document.getElementById("index").style.display="none";
+};
+
+function affich_index() {
+	document.getElementById("medicament").style.display="none";
+	document.getElementById("alimentation").style.display="none";
+	document.getElementById("index").style.display="block";
+};
