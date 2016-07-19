@@ -165,7 +165,14 @@ header p {
     line-height: 90px;
 }
 
+footer {
+    height : 50px;
+    background-color: #143143;
+}
 
+footer h4 {
+    color: #eee;
+}
 
 /* ================================================== */
 
