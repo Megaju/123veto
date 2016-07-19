@@ -70,6 +70,7 @@ i {
     margin-top: 50px;
 }
 
+
 /* ================================================== */
 
 
@@ -191,8 +192,30 @@ h4 {
 
 /* ================================================== */
 
-#myNavbar {
-    margin: 0 25%;
+
+/* --- carousel --- */
+
+.carousel {
+    background-color: #143143;
+}
+
+.carousel h3 {
+    color: #eee;
+}
+
+.item {
+    height: 300px;
+}
+
+.item img {
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 
@@ -420,7 +443,7 @@ ul li:hover a {
     padding: 0px 0px 0px 0px;
 }
 
-.prestation h3{
+.prestation h3 {
     font-size: 1.3em;
 }
 
@@ -460,6 +483,7 @@ ul li:hover a {
     padding-top: 40px;
 }
 
+
 /* ================================================== */
 
 
@@ -476,7 +500,6 @@ a i {
     font-weight: 700;
     transition: 0.2s;
     padding: 15px;
-    
 }
 
 a:hover,
@@ -488,63 +511,33 @@ a:hover i {
 
 
 /* =============================================== */
+
+
 /* =========== ID PRESTATIONS / CONSEILS========== */
+
+
 /* =============================================== */
 
-#consultation {
-    display:block;
-}
-#imagerie {
-    display:none;
-}
-#analyse {
-    display:none;
-}
-#chirurgie {
-    display:none;
-}
-#hospitalisation {
-    display:none;
-}
-#nac {
-    display:none;
-}
-
-
-#dent {
-    display:block;
-}
-#yeux-oreilles {
-    display:none;
-}
-#pelage {
-    display:none;
-}
-#parasite {
-    display:none;
-}
-#vaccin-chien {
-    display:none;
-}
-#vaccin-chat {
-    display:none;
-}
-#vaccin-chat {
-    display:none;
-}
-#id {
-    display:none;
-}
-#education {
-    display:none;
-}
-
+#consultation,
+#dent,
 #medicament {
     display: block;
 }
-#alimentation {
-    display: none;
-}
+
+#imagerie,
+#analyse,
+#chirurgie,
+#hospitalisation,
+#nac,
+#yeux-oreilles,
+#yeux-oreilles,
+#pelage,
+#parasite,
+#vaccin-chien,
+#vaccin-chat,
+#id,
+#education,
+#alimentation,
 #index {
     display: none;
 }
