@@ -93,3 +93,29 @@
     }
 }
     }
+
+
+
+/* Footer */
+footer {
+    height: 420px;
+}
+
+.bloc-footer {
+    padding: 50px;
+    background-color: #143143;
+    height: 100%;
+}
+
+.bloc-footer p,
+h4 {
+    color: white;
+    text-align: center;
+}
+
+.bloc-footer button {
+    background-color: rgba(10, 113, 180, 0.8);
+    border: none;
+    color: white;
+}
+
