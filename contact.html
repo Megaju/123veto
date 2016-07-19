@@ -48,7 +48,7 @@
         
         <div class="row pad-70">
             
-            <form class="col-md-6 col-md-offset-3">
+            <form class="col-md-5 formulaire">
                 <label for="nom">Votre nom:</label><br/>
                 <input id="nom" type="text" name="name" class="form-control"/><br/>
                 <label for="mail">Votre mail:</label><br/>
@@ -57,18 +57,14 @@
                 <textarea id="message" name="message" rows="15" cols="40" class="form-control"></textarea><br/>
                 <input type="submit" value="Envoyer" class="btn btn-default center-block"/>
             </form>
-            
-        </div>
-        
-        <div class="row pad-70">
-            <h3 class="h3-contact text-center">Où nous trouver</h3>
-            <div class="col-md-6 col-md-offset-3 text-center">
+
+            <div class="col-md-6 text-center col-md-offset-1 map">
+                <h3 class="h3-contact text-center">Où nous trouver</h3>
                 <p>32 rue du vélodrome à Pontchâteau (Loire-Atlantique)</p>
                 <p>Du lundi au vendredi de 9h à 12h et de 14h à 19h et le samedi de 9h à 12h.</p>
                 <p>02 40 01 61 69</p>
-            </div>
-            <div class="col-md-6 col-md-offset-3 google-map pad-map">
-                <div style='overflow:hidden;height:440px;width:700px;'> <div id='gmap_canvas' style='height:440px;width:630px;'></div><div><small><a href="http://embedgooglemaps.com">									google maps carte							</a></small></div><div><small><a href="http://youtubeembedcode.com">embed youtube</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(47.431279412515984,-2.077201838623073),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(47.431279412515984,-2.077201838623073)});infowindow = new google.maps.InfoWindow({content:'<strong>Clinique Vétérinaire du Docteur Wintz</strong><br>32 Rue du Vélodrome, 44160 Pontchâteau<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+
+                <div style='overflow:hidden;height:340px;width:600px;'> <div id='gmap_canvas' style='height:440px;width:630px;'></div><div><small><a href="http://embedgooglemaps.com">									google maps carte							</a></small></div><div><small><a href="http://youtubeembedcode.com">embed youtube</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(47.431279412515984,-2.077201838623073),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(47.431279412515984,-2.077201838623073)});infowindow = new google.maps.InfoWindow({content:'<strong>Clinique Vétérinaire du Docteur Wintz</strong><br>32 Rue du Vélodrome, 44160 Pontchâteau<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
             </div>
         </div>
         
