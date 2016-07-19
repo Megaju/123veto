@@ -439,8 +439,8 @@ ul li:hover a {
     padding: 60px 0px 0px 0px;
 }
 
-.prestation2 {
-    padding: 0px 0px 0px 0px;
+.espace-footer {
+    padding: 0px 0px 70px 0px;
 }
 
 .prestation h3 {
@@ -451,6 +451,16 @@ ul li:hover a {
     color: #F58900;
     padding-top: 15px;
     text-align: left;
+}
+
+.article-prestation a {
+    text-decoration: none;
+    padding: 5px 15px 0px 0px;
+    
+}
+
+.article-prestation a:hover {
+    color:rgba(10, 113, 180, 0.8);
 }
 
 .separator-prestation {
@@ -479,10 +489,26 @@ ul li:hover a {
     z-index: 99;
 }
 
-.fa-prestation {
-    padding-top: 40px;
+.fa-separator {
+    padding-top:40px;
 }
 
+
+/* --- Styles conseil ---*/
+
+.list-group {
+    display: block;
+    margin-top: 15px;
+}
+
+.list-group li:hover {
+    background-color: #143143;
+    color: white;
+}
+
+.list-group-item {
+    padding: 0px 15px 0px 15px;
+}
 
 /* ================================================== */
 
