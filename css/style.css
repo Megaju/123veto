@@ -398,8 +398,8 @@ ul li:hover a {
     padding: 60px 0px 0px 0px;
 }
 
-.prestation2 {
-    padding: 0px 0px 0px 0px;
+.espace-footer {
+    padding: 0px 0px 70px 0px;
 }
 
 .prestation h3{
@@ -438,8 +438,18 @@ ul li:hover a {
     z-index: 99;
 }
 
-.fa-prestation {
-    padding-top: 40px;
+.fa-separator {
+    padding-top:40px;
+}
+
+/* --- Styles conseil ---*/
+
+liste-vente li {
+    color : red;
+    text-decoration: none;
+    padding: 300px;
+    margin: 100px;
+    
 }
 
 /* ================================================== */
