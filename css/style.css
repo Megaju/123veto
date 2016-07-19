@@ -237,7 +237,7 @@ nav {
     text-transform: uppercase;
     background-color: #fff;
     border-bottom: 1px solid #143143;
-    z-index: 1;
+    z-index: 99999;
 }
 
 ul {
