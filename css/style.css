@@ -70,6 +70,11 @@ i {
     margin-top: 50px;
 }
 
+.map {
+    padding-top: 15px;
+}
+
+
 /* ================================================== */
 
 
@@ -160,27 +165,6 @@ header p {
     line-height: 90px;
 }
 
-footer {
-    height: 420px;
-}
-
-.bloc-footer {
-    padding: 50px;
-    background-color: #143143;
-    height: 100%;
-}
-
-.bloc-footer p,
-h4 {
-    color: white;
-    text-align: center;
-}
-
-.bloc-footer button {
-    background-color: rgba(10, 113, 180, 0.8);
-    border: none;
-    color: white;
-}
 
 
 /* ================================================== */
@@ -191,8 +175,30 @@ h4 {
 
 /* ================================================== */
 
-#myNavbar {
-    margin: 0 25%;
+
+/* --- carousel --- */
+
+.carousel {
+    background-color: #143143;
+}
+
+.carousel h3 {
+    color: #eee;
+}
+
+.item {
+    height: 300px;
+}
+
+.item img {
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 
@@ -211,10 +217,10 @@ nav {
     width: 100%;
     height: 50px;
     margin: 0 -15px;
-    /* pour le container-fluid bootstrap */
+    text-transform: uppercase;
     background-color: #fff;
     border-bottom: 1px solid #143143;
-    z-index: 1;
+    z-index: 99999;
 }
 
 ul {
@@ -269,6 +275,7 @@ ul li:hover a {
         display: block;
         height: 30px;
         margin: 0;
+        text-align: center;
         line-height: 30px;
         border-bottom: 1px solid #143143;
     }
@@ -419,7 +426,7 @@ ul li:hover a {
     padding: 0px 0px 70px 0px;
 }
 
-.prestation h3{
+.prestation h3 {
     font-size: 1.3em;
 }
 
@@ -469,6 +476,7 @@ ul li:hover a {
     padding-top:40px;
 }
 
+
 /* --- Styles conseil ---*/
 
 .list-group {
@@ -484,7 +492,6 @@ ul li:hover a {
 .list-group-item {
     padding: 0px 15px 0px 15px;
 }
-
 
 /* ================================================== */
 
@@ -502,7 +509,6 @@ a i {
     font-weight: 700;
     transition: 0.2s;
     padding: 15px;
-    
 }
 
 a:hover,
@@ -514,63 +520,33 @@ a:hover i {
 
 
 /* =============================================== */
+
+
 /* =========== ID PRESTATIONS / CONSEILS========== */
+
+
 /* =============================================== */
 
-#consultation {
-    display:block;
-}
-#imagerie {
-    display:none;
-}
-#analyse {
-    display:none;
-}
-#chirurgie {
-    display:none;
-}
-#hospitalisation {
-    display:none;
-}
-#nac {
-    display:none;
-}
-
-
-#dent {
-    display:block;
-}
-#yeux-oreilles {
-    display:none;
-}
-#pelage {
-    display:none;
-}
-#parasite {
-    display:none;
-}
-#vaccin-chien {
-    display:none;
-}
-#vaccin-chat {
-    display:none;
-}
-#vaccin-chat {
-    display:none;
-}
-#id {
-    display:none;
-}
-#education {
-    display:none;
-}
-
+#consultation,
+#dent,
 #medicament {
     display: block;
 }
-#alimentation {
-    display: none;
-}
+
+#imagerie,
+#analyse,
+#chirurgie,
+#hospitalisation,
+#nac,
+#yeux-oreilles,
+#yeux-oreilles,
+#pelage,
+#parasite,
+#vaccin-chien,
+#vaccin-chat,
+#id,
+#education,
+#alimentation,
 #index {
     display: none;
 }
