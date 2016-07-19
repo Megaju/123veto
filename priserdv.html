@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>123 VETO</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- styles css / bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap-theme.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <Script JS> -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/navbar-transparent.js"></script>
+    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+    <script type="text/javascript" src="js/navbar.js"></script>
+    <!-- fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- menu de navigation -->
+        <nav>
+            <div class="unfold-menu" onclick="unfoldMenu()">
+                <span class="unfold-deco"></span>
+                <span class="unfold-deco"></span>
+                <span class="unfold-deco"></span>
+            </div>
+            <ul id="menu">
+                <li onclick="location.href='index.html';"><a href="#">Accueil</a></li>
+
+                <li onclick="location.href='prestation.html';"><a href="#">Prestation</a></li>
+
+                <li onclick="location.href='conseil.html';"><a href="#">Fiches conseil</a></li>
+
+                <li onclick="location.href='vente.html';"><a href="#">Espace vente</a></li>
+
+                <li class="active" onclick="location.href='contact.html';"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="row text-center section-header page-sans-header">
+            <h2 id="startchange">PRISE DE RENDEZ-VOUS</h2>
+        </div>
+
+        <div class="row pad-70">
+
+            <form class="col-md-4">
+                <label for="nom">Prénom et nom :</label>
+                <br/>
+                <input id="nom" type="text" name="name" class="form-control" />
+                <br/>
+                <label for="nom">Numero :</label>
+                <br/>
+                <input id="nom" type="text" name="name" class="form-control" />
+                <br/>
+
+                <div class="form-group">
+                    <label for="sel1">Vétérinaire :</label>
+                    <select class="form-control" id="sel1">
+                        <option>Dr Wintz</option>
+                        <option>Dr Mayoussier</option>
+                        <option>Indifférent</option>
+                    </select>
+                </div>
+            </form>
+
+
+            <form class="col-md-4">
+                <label for="nom">E-mail:</label>
+                <br/>
+                <input id="nom" type="text" name="name" class="form-control" />
+                <br/>
+                <label for="nom">Nom animal :</label>
+                <br/>
+                <input id="nom" type="text" name="name" class="form-control" />
+                <br/>
+                <div class="form-group">
+                    <label for="sel1">Type de RDV :</label>
+                    <select class="form-control" id="sel1">
+                        <option>vaccin (30min)</option>
+                        <option>consultation pédiatrique (45min)</option>
+                        <option>consultation pubertaire (30min)</option>
+                        <option>consultation sénior (30min)</option>
+                        <option>consultation NAC (30min)</option>
+                        <option>consultation médecine générale (30 min)</option>
+                        <option>consultation ophtalmologique (30min)</option>
+                        <option> consultation dermatologique (30min)</option>
+                        <option>consultation cardiologique (30min)</option>
+                        <option>consultation orthopédique (45min)</option>
+                        <option>stérilisation chatte (45 min))</option>
+                        <option>stérilisation chat (30min)</option>
+                        <option>stérilisation chienne (60 min)</option>
+                        <option>stérilisation chien (60min)</option>
+                        <option>stérilisation NAC (45min)</option>
+                        <option>contrôle (15min)contrôle d'analyse sanguine (30MIN), détartrage (45min)</option>
+                        <option>contrôle d'analyse sanguine (30MIN)</option>
+                        <option>détartrage (45min)</option>
+                    </select>
+                </div>
+            </form>
+
+        <form class="col-md-8">
+                <label for="message">Votre message:</label>
+                <br/>
+                <textarea id="message" name="message" rows="15" cols="40" class="form-control"></textarea>
+                <br/>
+                <input type="submit" value="Envoyer" class="btn btn-default center-block" />
+            </form>
+
+        </div>
+
+
+
+
+    </div>
+</body>
+
+</html>
