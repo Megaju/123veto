@@ -429,6 +429,16 @@ ul li:hover a {
     text-align: left;
 }
 
+.article-prestation a {
+    text-decoration: none;
+    padding: 5px 15px 0px 0px;
+    
+}
+
+.article-prestation a:hover {
+    color:rgba(10, 113, 180, 0.8);
+}
+
 .separator-prestation {
     width: 150px;
     height: 2px;
@@ -461,13 +471,20 @@ ul li:hover a {
 
 /* --- Styles conseil ---*/
 
-liste-vente li {
-    color : red;
-    text-decoration: none;
-    padding: 300px;
-    margin: 100px;
-    
+.list-group {
+    display: block;
+    margin-top: 15px;
 }
+
+.list-group li:hover {
+    background-color: #143143;
+    color: white;
+}
+
+.list-group-item {
+    padding: 0px 15px 0px 15px;
+}
+
 
 /* ================================================== */
 
