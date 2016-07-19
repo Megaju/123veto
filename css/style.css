@@ -166,6 +166,27 @@ header p {
 }
 
 
+/* --- style partie gauche et droite avec l'aside de prise
+de RDV --- */
+.part-left {
+    border-right: 1px solid #143143;
+}
+
+aside.part-right {
+    position: relative;
+    padding: 15px 15px 15px 60px;
+    text-align: center;
+    height: 100%;
+}
+
+.aside-separator {
+    width: 80%;
+    height: 1px;
+    background-color: #143143;
+    margin: 30px auto;
+}
+
+
 
 /* ================================================== */
 
