@@ -1,9 +1,10 @@
 <!DOCTYPE>
 <html>
+
 <head>
     <title>123 VETO</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- styles css / bootstrap -->
     <link rel="stylesheet" href="css/bootstrap-theme.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
@@ -17,8 +18,8 @@
     <script type="text/javascript" src="js/accordeons.js"></script>
     <script type="text/javascript" src="js/navbar.js"></script>
     <!-- fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'/>
-    <link rel="stylesheet" href="css/font-awesome.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="css/font-awesome.css" />
 </head>
 
 <body id="nav" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -32,271 +33,285 @@
             </div>
             <ul id="menu">
                 <li onclick="location.href='index.html';"><a href="#">Accueil</a></li>
-                
+
                 <li class="active" onclick="location.href='prestation.html';"><a href="#">Prestations</a></li>
-                
+
                 <li onclick="location.href='conseil.html';"><a href="#">Fiches conseil</a></li>
-                
+
                 <li onclick="location.href='vente.html';"><a href="#">Espace vente</a></li>
 
-		<li onclick="location.href='priserdv.html';"><a href="#">Prise de rdv</a></li>
-                
+                <li onclick="location.href='priserdv.html';"><a href="#">Prise de rdv</a></li>
+
                 <li onclick="location.href='contact.html';"><a href="#">Contact</a></li>
             </ul>
         </nav>
-        
-        <!-- en-tête du site -->
-        <!-- section nav icones prestation-->
-        <section id="startchange"class="row text-center page-sans-header">
-            <div class="section-header">
-                <h2 class="text-center">NOS PRESTATIONS</h2>
-            </div>
-        </section>
 
-        <!--<div class="separator-objet"></div>-->
-	<section class="row text-center">
 
-            <div class="row1 pad-70">
+        <div class="row">
+            <!-- ASIDE -->
+            <aside class="col-md-3 page-sans-header">
 
-                <!-- bloc 1/6 -->
-                <div class="col-xs-12 col-sm-4 col-md-2">
-                        <i class="fa fa-stethoscope fa-4x text-center"></i>
-                    <div class="col-md-12">
-                        <button class="btn btn-default" onclick="affich_consultation()"><a href="#">Consultation</a></button>
+                <h2>Prise de rendez-vous</h2>
+
+                <img src="images/calendrierex.png" alt="calendrier" class="img-responsive calendar" />
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod in nisi excepturi. Suscipit necessitatibus et.</p>
+
+                <button class="btn btn-default">Prendre rendez-vous</button>
+
+                <div class="aside-separator"></div>
+
+                <h2>Actualités</h2>
+
+                <article>
+                    <h3>Titre article</h3>
+                    <img src="images/Consultation_5.JPG" alt="" class="img-responsive">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Titre article</h3>
+                    <img src="images/Consultation_2.JPG" alt="" class="img-responsive">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Titre article</h3>
+                    <img src="images/chirurgie_1.JPG" alt="" class="img-responsive">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </article>
+
+                <div class="aside-separator"></div>
+
+
+                <p><strong>123 Véto clinique vétérinaire</strong> vous accueille du lundi au vendredi de <i class="text-info">9h à 12h</i> et de <i class="text-info">14h à 19h</i> et le samedi de <i class="text-info">9h à 12h</i>. <a href="contact.html"><i class="fa fa-1x fa-map"></i></a></p>
+                <p><strong>Les urgences</strong> sont assurées <i class="text-info">24h/24</i> sur simple appel téléphonique.</p>
+                <p>tél : <em>02 99 55 55 55 - 06 55 55 55 55</em></p>
+                </p>
+
+                <p>
+                    <a href="https://www.facebook.com/"><i class="fa fa-2x fa-facebook icone-prestation"></i></a>
+                    <a href="https://twitter.com/"><i class="fa fa-2x fa-twitter icone-prestation"></i></a>
+                    <a href="https://plus.google.com/"><i class="fa fa-2x fa-google-plus-official icone-prestation"></i></a>
+                </p>
+
+                <div class="aside-separator"></div>
+
+            </aside>
+
+            <div class="part-left col-md-9">
+                <!-- section nav icones prestation-->
+                <section id="startchange" class="row text-center page-sans-header">
+                    <div class="section-header">
+                        <h2 class="text-center">NOS PRESTATIONS</h2>
                     </div>
-                </div>
-                <!-- bloc 1/6 -->
-                <div class="col-xs-12 col-sm-4 col-md-2">
-                        <i class="fa fa-camera fa-4x text-center"></i>
-                    <div class="col-md-12">
-                        <button class="btn btn-default" onclick="affich_imagerie()"><a href="#">Imagerie</a></button>
+                </section>
+
+                <!--<div class="separator-objet"></div>-->
+                <section class="row text-center">
+
+                    <div class="pad-70">
+
+                        <!-- bloc 1/6 -->
+                        <div class="col-xs-12 col-sm-4 col-md-2">
+                            <i class="fa fa-stethoscope fa-4x text-center"></i>
+                            <div class="col-md-12">
+                                <button class="btn btn-default" onclick="affich_consultation()"><a href="#">Consultation</a></button>
+                            </div>
+                        </div>
+                        <!-- bloc 1/6 -->
+                        <div class="col-xs-12 col-sm-4 col-md-2">
+                            <i class="fa fa-camera fa-4x text-center"></i>
+                            <div class="col-md-12">
+                                <button class="btn btn-default" onclick="affich_imagerie()"><a href="#">Imagerie</a></button>
+                            </div>
+                        </div>
+                        <!-- bloc 1/6 -->
+                        <div class="col-xs-12 col-sm-4 col-md-2">
+                            <i class="fa fa-medkit fa-4x text-center"></i>
+                            <div class="col-md-12">
+                                <button class="btn btn-default" onclick="affich_analyse()"><a href="#">Analyses</a></button>
+                            </div>
+                        </div>
+                        <!-- bloc 1/6 -->
+                        <div class="col-xs-12 col-sm-4 col-md-2">
+                            <i class="fa fa-heartbeat fa-4x text-center"></i>
+                            <div class="col-md-12">
+                                <button class="btn btn-default" onclick="affich_chirurgie()"><a href="#">Chirurgie</a></button>
+                            </div>
+                        </div>
+                        <!-- bloc 1/6 -->
+                        <div class="col-xs-12 col-sm-4 col-md-2">
+                            <i class="fa fa-hospital-o fa-4x text-center"></i>
+                            <div class="col-md-12">
+                                <button class="btn btn-default" onclick="affich_hospitalisation()"><a href="#">Hospitalisation</a></button>
+                            </div>
+                        </div>
+                        <!-- bloc 1/6 -->
+                        <div class="col-xs-12 col-sm-4 col-md-2">
+                            <i class="fa fa-paw fa-4x text-center"></i>
+                            <div class="col-md-12">
+                                <button class="btn btn-default" onclick="affich_nac()"><a href="#">NAC</a></button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <!-- bloc 1/6 -->
-                <div class="col-xs-12 col-sm-4 col-md-2">
-                        <i class="fa fa-medkit fa-4x text-center"></i> 
-                    <div class="col-md-12">
-                        <button class="btn btn-default" onclick="affich_analyse()"><a href="#">Analyses</a></button>
+                </section>
+                <div class="separator-prestation"></div>
+
+                <section id="navbar-prestation" class="row espace-footer center-block">
+
+                    <div id="consultation" class="col-md-offset-1 col-md-10 article-prestation">
+                        <div class="col-md-4 col-md-offset-4">
+                            <img class="img-responsive img-circle" src="images/Consultation_3.JPG" alt="chat">
+                        </div>
+                        <div class="col-md-12">
+                            <h3><i class="fa fa-stethoscope"></i> CONSULTATION</h3>
+                            <small>À la différence de l'homme, nos compagnons ne parlent pas pendant la consultation, c'est à vous de bien noter les moindres signes ou changements et de nous en faire part.</small>
+                            <h4>La consultation vaccinale :</h4>
+                            <p>C'est LE rendez-vous annuel de votre compagnon chez le vétérinaire. En plus de l'injection des valences vaccinales, un examen de santé minutieux et complet sera toujours fait. C'est le moment de faire part de vos interrogations ou inquiétudes avec le docteur vétérinaire et l'occasion pour celui-ci de déceler toute anomalie concernant la santé de votre chien ou de votre chat. Il est important de vérifier l'état d'embonpoint, les yeux, les oreilles, les dents, la peau, la mobilité de votre animal, mais aussi la couleur des muqueuses, la fréquence cardiaque, effectuer une palpation des ganglions et des organes abdominaux...  N'hésitez pas lors de cette consultation à nous faire part de tout ce qui vous semble avoir changé à propos de votre compagnon.En effet, une baisse de forme ou d'appétit, une augmentation de la prise de boisson, peut vous sembler liée à son âge et non alarmant alors que ces indices pourraient nous orienter vers une pathologie plus ou moins grave.</p>
+
+                            <h4>La consultation dermatologique :</h4>
+                            <p>Elle peut être sollicitée lorsque l'animal présente des démangeaisons, rougeurs, croûtes, zones dépilées, possède un pelage gras ou nauséabond... Ce rendez-vous nécessite plus de temps qu'une consultation classique car votre vétérinaire effectuera le plus fréquement des prélèvements pour quelques examens complémentaires (microscope) afin de déceler la cause de ces symptômes.</p>
+
+                            <h4>La consultation ophtalmologique :</h4>
+                            <p>Un oeil rouge, qui pleure, purulent, fermé ou même gonflé necessite une consultation au plus vite. L'automédication est fortement déconseillée car si par exemple des corticoïdes sont appliqués sur un ulcère de la cornée, votre animal peut définitivement perdre la vue. Votre docteur vétérinaire est là pour vous prescrire un traitement adapté et sans risque.</p>
+
+                            <h4>La consultation cardiologique :</h4>
+                            <p>Votre animal vous semble plus essouflé qu'à l'ordinaire? Il se met à tousser lors d'ennervement ou excitation? Il est possible qu'il ait un trouble cardiaque. Désormais la médecine vétérinaire possède divers traitements faciles à administrer et très bien tolérés. Ces derniers peuvent être mis en place à long terme pour soutenir votre compagnon et allonger son espérance de vie. Lors de cette consultation une radiographie est souvent effectuée afin entre autres, d'observer la taille du coeur de votre chien ou de votre chat. Une fois le traitement mis en place, des bilans sanguins vous seront proposés régulièrement pour vérifier que le traitement est bien suporté par votre compagnon.</p>
+                        </div>
                     </div>
-                </div>
-                <!-- bloc 1/6 -->
-                <div class="col-xs-12 col-sm-4 col-md-2">
-                        <i class="fa fa-heartbeat fa-4x text-center"></i>
-                    <div class="col-md-12">
-                        <button class="btn btn-default" onclick="affich_chirurgie()"><a href="#">Chirurgie</a></button>
+
+                    <div id="imagerie" class="col-md-offset-1 col-md-10 article-prestation">
+                        <div class="col-md-4 col-md-offset-4">
+                            <img class="img-responsive img-circle" src="images/radiologie_2.JPG" alt="chat">
+                        </div>
+                        <div class="col-md-12">
+                            <h3><i class="fa fa-camera"></i> IMAGERIE</h3>
+                            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias.</small>
+                            <h4>L'imagerie c'est top !</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                        </div>
                     </div>
-                </div>
-                <!-- bloc 1/6 -->
-                <div class="col-xs-12 col-sm-4 col-md-2">
-                        <i class="fa fa-hospital-o fa-4x text-center"></i>
-                    <div class="col-md-12">
-                        <button class="btn btn-default" onclick="affich_hospitalisation()"><a href="#">Hospitalisation</a></button>
+
+                    <div id="analyse" class="col-md-offset-2 col-md-8 article-prestation">
+                        <div class="col-md-4">
+                            <img class="img-responsive img-circle" src="images/Labo_analyse_microscopique.JPG" alt="chat">
+                        </div>
+                        <div class="col-md-8">
+                            <h3><i class="fa fa-medkit"></i> Analyse sanguine</h3>
+                            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias.</small>
+                            <h4>Les analyses sanguines c'est top !</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+
+                            <h4>Les analyses sanguines c'est top !</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                        </div>
                     </div>
-                </div>
-                <!-- bloc 1/6 -->
-                <div class="col-xs-12 col-sm-4 col-md-2">
-                        <i class="fa fa-paw fa-4x text-center"></i>
-                    <div class="col-md-12">
-                        <button class="btn btn-default" onclick="affich_nac()"><a href="#">NAC</a></button>
+
+                    <div id="chirurgie" class="col-md-offset-2 col-md-8 article-prestation">
+                        <div class="col-md-4">
+                            <img class="img-responsive img-circle" src="images/chirurgie_1.JPG" alt="chat">
+                        </div>
+                        <div class="col-md-8">
+                            <h3><i class="fa fa-heartbeat"></i> CHIRURGIE</h3>
+                            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small>
+                            <h4>La chirurgie c'est top !</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+
+                            <h4>La chirurgie c'est top !</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+
+                            <h4>La chirurgie c'est top !</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <div class="separator-prestation"></div>
-	
-        <section id="navbar-prestation" class="row espace-footer center-block">
 
-            <div id="consultation" class="col-md-offset-2 col-md-8 article-prestation">
-                <div class="col-md-4">
-                    <img class="img-responsive img-circle" src="images/Consultation_3.JPG" alt="chat">
-                </div>
-                <div class="col-md-8">
-                    <h3><i class="fa fa-stethoscope"></i> CONSULTATION</h3>
-                    <small>À la différence de l'homme, nos compagnons ne parlent pas pendant la consultation, c'est à vous de bien noter les moindres signes ou changements et de nous en faire part.</small>
-                    <h4>La consultation vaccinale :</h4>
-                    <p>C'est LE rendez-vous annuel de votre compagnon chez le vétérinaire. En plus de l'injection des valences vaccinales, un examen de santé minutieux et complet sera toujours fait. C'est le moment de faire part de vos interrogations ou inquiétudes avec le docteur vétérinaire et l'occasion pour celui-ci de déceler toute anomalie concernant la santé de votre chien ou de votre chat. Il est important de vérifier l'état d'embonpoint, les yeux, les oreilles, les dents, la peau, la mobilité de votre animal, mais aussi la couleur des muqueuses, la fréquence cardiaque, effectuer une palpation des ganglions et des organes abdominaux... 
-                    N'hésitez pas lors de cette consultation à nous faire part de tout ce qui vous semble avoir changé à propos de votre compagnon.En effet, une baisse de forme ou d'appétit, une augmentation de la prise de boisson, peut vous sembler liée à son âge et non alarmant alors que ces indices pourraient nous orienter vers une pathologie plus ou moins grave.</p>
+                    <div id="hospitalisation" class="col-md-offset-2 col-md-8 article-prestation">
+                        <div class="col-md-4">
+                            <img class="img-responsive img-circle" src="images/Chatterie.JPG" alt="chat">
+                        </div>
+                        <div class="col-md-8">
+                            <h3><i class="fa fa-hospital-o"></i> HOSPITALISATION</h3>
+                            <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small>
+                            <h4>L'hospitalisation c'est top !</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
 
-                    <h4>La consultation dermatologique :</h4>
-                    <p>Elle peut être sollicitée lorsque l'animal présente des démangeaisons, rougeurs, croûtes, zones dépilées, possède un pelage gras ou nauséabond... Ce rendez-vous nécessite plus de temps qu'une consultation classique car votre vétérinaire effectuera le plus fréquement des prélèvements pour quelques examens complémentaires (microscope) afin de déceler la cause de ces symptômes.</p>
+                            <h4>L'hospitalisation c'est top !</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                        </div>
+                    </div>
 
-                    <h4>La consultation ophtalmologique :</h4>
-                    <p>Un oeil rouge, qui pleure, purulent, fermé ou même gonflé necessite une consultation au plus vite. L'automédication est fortement déconseillée car si par exemple des corticoïdes sont appliqués sur un ulcère de la cornée, votre animal peut définitivement perdre la vue. Votre docteur vétérinaire est là pour vous prescrire un traitement adapté et sans risque.</p>
-
-                    <h4>La consultation cardiologique :</h4>
-                    <p>Votre animal vous semble plus essouflé qu'à l'ordinaire? Il se met à tousser lors d'ennervement ou excitation? Il est possible qu'il ait un trouble cardiaque. Désormais la médecine vétérinaire possède divers traitements faciles à administrer et très bien tolérés. Ces derniers peuvent être mis en place à long terme pour soutenir votre compagnon et allonger son espérance de vie. Lors de cette consultation une radiographie est souvent effectuée afin entre autres, d'observer la taille du coeur de votre chien ou de votre chat. Une fois le traitement mis en place, des bilans sanguins vous seront proposés régulièrement pour vérifier que le traitement est bien suporté par votre compagnon.</p>
-                </div>
-            </div>
-
-            <div id="imagerie" class="col-md-offset-2 col-md-8 article-prestation">
-                <div class="col-md-4">
-                    <img class="img-responsive img-circle" src="images/radiologie_2.JPG" alt="chat">
-                </div>
-                <div class="col-md-8">
-                    <h3><i class="fa fa-camera"></i> IMAGERIE</h3>
-                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias.</small>
-                    <h4>L'imagerie c'est top !</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
-                </div>
+                    <div id="nac" class="col-md-offset-2 col-md-8 article-prestation">
+                        <div class="col-md-4">
+                            <img class="img-responsive img-circle" src="images/NAC.JPG" alt="chat">
+                        </div>
+                        <div class="col-md-8">
+                            <h3><i class="fa fa-paw"></i> NAC</h3>
+                            <small>Les nouveaux animaux de compagnies.</small>
+                            <h4>Les nacs c'est top !</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                        </div>
+                    </div>
+                </section>
             </div>
 
-            <div id="analyse" class="col-md-offset-2 col-md-8 article-prestation">
-                <div class="col-md-4">
-                    <img class="img-responsive img-circle" src="images/Labo_analyse_microscopique.JPG" alt="chat">
-                </div>
-                <div class="col-md-8">
-                    <h3><i class="fa fa-medkit"></i> Analyse sanguine</h3>
-                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias.</small>
-                    <h4>Les analyses sanguines c'est top !</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+            <!-- footer -->
+            <section class="row">
+                <footer class="col-md-12">
+                    <div class="text-center padding-footer">
+                        <p class="">123 VETO -
+                            <p>
+                                <p>©Copyright 2016-2016 Copyright Lise Solène Julien -</p>
+                                <!-- Trigger the modal-->
+                                <a class="" data-toggle="modal" data-target="#myModal">MENTIONS LÉGALES</a></div>
 
-                    <h4>Les analyses sanguines c'est top !</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
-                </div>
-            </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">MENTIONS LÉGALES</h4>
+                                </div>
+                                <div class="modal-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-            <div id="chirurgie" class="col-md-offset-2 col-md-8 article-prestation">
-                <div class="col-md-4">
-                    <img class="img-responsive img-circle" src="images/chirurgie_1.JPG" alt="chat">
-                </div>
-                <div class="col-md-8">
-                    <h3><i class="fa fa-heartbeat"></i> CHIRURGIE</h3>
-                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small>
-                    <h4>La chirurgie c'est top !</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                                    <h4>Lorem ipsum</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    <br></br>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    <br></br>
 
-                    <h4>La chirurgie c'est top !</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
+                                    <h4>Lorem ipsum</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    <br></br>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    <br></br>
 
-                    <h4>La chirurgie c'est top !</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
-                </div>
-            </div>
+                                    <h4>Lorem ipsum</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    <br></br>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    <br></br>
 
-            <div id="hospitalisation" class="col-md-offset-2 col-md-8 article-prestation">
-                <div class="col-md-4">
-                    <img class="img-responsive img-circle" src="images/Chatterie.JPG" alt="chat">
-                </div>
-                <div class="col-md-8">
-                    <h3><i class="fa fa-hospital-o"></i> HOSPITALISATION</h3>
-                    <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</small>
-                    <h4>L'hospitalisation c'est top !</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
-
-                    <h4>L'hospitalisation c'est top !</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
-                </div>
-            </div>
-
-            <div id="nac" class="col-md-offset-2 col-md-8 article-prestation">
-                <div class="col-md-4">
-                    <img class="img-responsive img-circle" src="images/NAC.JPG" alt="chat">
-                </div>
-                <div class="col-md-8">
-                    <h3><i class="fa fa-paw"></i> NAC</h3>
-                    <small>Les nouveaux animaux de compagnies.</small>
-                    <h4>Les nacs c'est top !</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam, harum quos id distinctio soluta at veniam praesentium. Dignissimos, ab, voluptas. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur maxime, laborum alias. Temporibus maxime. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sunt, excepturi ducimus ut exercitationem esse saepe facilis obcaecati magnam.</p>
-                </div>
-            </div>
-        </section>
-<section class="row">
-            <footer class="col-md-12">
-                <div class="text-center padding-footer"><p class="">123 VETO - <p><p>©Copyright 2016-2016 Copyright Lise Solène Julien -</p>
-                        <!-- Trigger the modal-->
-                        <a class="" data-toggle="modal" data-target="#myModal">MENTIONS LÉGALES</a></div>
-                        
-                        <!-- Modal -->
-                        <div class="modal fade" id="myModal" role="dialog">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                        <h4 class="modal-title">MENTIONS LÉGALES</h4>
-                                    </div>
-                                    <div class="modal-body">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-                            <h4>Lorem ipsum</h4>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            <br></br>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            <br></br>
-
-                            <h4>Lorem ipsum</h4>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            <br></br>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            <br></br>
-
-                            <h4>Lorem ipsum</h4>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            <br></br>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            <br></br>
-
-                            <h4>Lorem ipsum</h4>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            <br></br>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            <br></br></div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    </div>
+                                    <h4>Lorem ipsum</h4> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    <br></br>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    <br></br>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                 </div>
                             </div>
                         </div>
-            </footer>
-        </section>
-</div>
+                    </div>
+                </footer>
+            </section>
+        </div>
+    </div>
 </body>
 
 </html>
