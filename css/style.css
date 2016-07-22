@@ -154,7 +154,7 @@ header p {
 }
 
 section {
-    background-color: #fff;
+    
 }
 
 
@@ -216,6 +216,7 @@ footer a:hover {
 de RDV --- */
 .part-left {
     border-left: 1px solid #143143;
+    background-color: #fff;
 }
 
 aside {
