@@ -153,8 +153,10 @@ header p {
     font-weight: 500;
 }
 
-section {
-    
+.bloc-principal {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #143143;
 }
 
 
