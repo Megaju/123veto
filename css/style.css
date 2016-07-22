@@ -342,6 +342,14 @@ footer h4 {
     margin: auto;
 }
 
+.btn-padding-reset {
+    padding: 6px 0px;
+}
+
+.btn-padding-reset-index {
+    padding: 6px 0px;
+}
+
 
 /* --- virer les margins des col-* en cas de besoin --- */
 
@@ -529,6 +537,10 @@ ul li:hover a {
     transition: all 0.8s ease-in-out;
 }
 
+.typo-btn {
+    font-size: 3vh;
+}
+
 .overlay:hover {
     opacity: 1;
     transition: all 0.4s ease-in-out;
@@ -591,7 +603,7 @@ ul li:hover a {
     width: 150px;
     height: 2px;
     background-color: #143143;
-    margin: 50px auto 20px auto;
+    margin: 0px auto 20px auto;
 }
 
 .article-prestation {
