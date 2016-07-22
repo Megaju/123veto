@@ -79,7 +79,8 @@ i {
 }
 
 .map {
-    padding-top: 15px;
+    border: 1px solid #777;
+    margin: 0 auto;
 }
 
 
@@ -157,6 +158,21 @@ header p {
     padding-bottom: 30px;
     margin-bottom: 30px;
     border-bottom: 1px solid #143143;
+}
+
+
+/* règle un bug de padding dans la page contact.html, à revoir... */
+.reset-padding-contact {
+    padding: 0 !important;
+}
+
+/* style bloc contact + map */
+.style-map {
+    width: 80%;
+    border: 1px solid #476476;
+    padding: 20px;
+    margin: 30px auto;
+    background-color: #eee;
 }
 
 
