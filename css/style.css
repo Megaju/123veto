@@ -330,6 +330,10 @@ footer h4 {
     padding: 6px 0px;
 }
 
+.btn-padding-reset-index {
+    padding: 6px 0px;
+}
+
 
 /* --- virer les margins des col-* en cas de besoin --- */
 
@@ -515,6 +519,10 @@ ul li:hover a {
     border: 1px solid #fff;
     cursor: pointer;
     transition: all 0.8s ease-in-out;
+}
+
+.typo-btn {
+    font-size: 3vh;
 }
 
 .overlay:hover {
