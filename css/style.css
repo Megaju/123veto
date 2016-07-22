@@ -350,6 +350,10 @@ footer h4 {
     padding: 6px 0px;
 }
 
+button a {
+    padding: 0px;
+}
+
 
 /* --- virer les margins des col-* en cas de besoin --- */
 
@@ -468,7 +472,7 @@ ul li:hover a {
 }
 
 .pad-70 {
-    padding: 70px;
+    padding: 50px;
 }
 
 .pad-15-35 {
@@ -476,7 +480,7 @@ ul li:hover a {
 }
 
 .btn-m-70 {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 .btn:hover a {
@@ -537,10 +541,6 @@ ul li:hover a {
     transition: all 0.8s ease-in-out;
 }
 
-.typo-btn {
-    font-size: 3vh;
-}
-
 .overlay:hover {
     opacity: 1;
     transition: all 0.4s ease-in-out;
@@ -597,13 +597,6 @@ ul li:hover a {
 
 .article-prestation a:hover {
     color:rgba(10, 113, 180, 0.8);
-}
-
-.separator-prestation {
-    width: 150px;
-    height: 2px;
-    background-color: #143143;
-    margin: 0px auto 20px auto;
 }
 
 .article-prestation {
