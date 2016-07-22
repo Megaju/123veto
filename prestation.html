@@ -32,15 +32,15 @@
                 <span class="unfold-deco"></span>
             </div>
             <ul id="menu">
-                <li class="active" onclick="location.href='index.html';"><a href="#">Accueil</a></li>
+                <li onclick="location.href='index.html';"><a href="#">Accueil</a></li>
 
-                <li onclick="location.href='prestation.html';"><a href="#">Prestations</a></li>
+                <li class="active" onclick="location.href='prestation.html';"><a href="#">Prestations</a></li>
 
                 <li onclick="location.href='conseil.html';"><a href="#">Fiches conseil</a></li>
 
                 <li onclick="location.href='vente.html';"><a href="#">Espace vente</a></li>
 
-		<li onclick="location.href='priserdv.html';"><a href="#">Prise de rdv</a></li>
+                <li onclick="location.href='priserdv.html';"><a href="#">Prise de rdv</a></li>
 
                 <li onclick="location.href='contact.html';"><a href="#">Contact</a></li>
             </ul>
@@ -101,7 +101,7 @@
                 <div class="aside-separator"></div>
 
             </aside>
-            
+
             <!-- corps -->
             <div class="part-left col-md-9 bloc-principal">
                 <!-- section nav icones prestation-->
@@ -114,52 +114,53 @@
                 <!--<div class="separator-objet"></div>-->
                 <section class="row text-center">
 
-                    <div class="pad-70">
+                    <div class="pad-70 col-md-11">
 
                         <!-- bloc 1/6 -->
-                        <div class="col-xs-12 col-sm-4 col-md-2">
+                        <div class="col-xs-12 col-sm-4 col-md-offset-2 col-md-3">
                             <i class="fa fa-stethoscope fa-4x text-center"></i>
                             <div class="col-md-12">
-                                <button class="btn btn-default" onclick="affich_consultation()"><a href="#">Consultation</a></button>
+                                <button class="btn btn-padding-reset btn-default col-md-12" onclick="affich_consultation()"><a href="#">Consultation</a></button>
                             </div>
                         </div>
                         <!-- bloc 1/6 -->
-                        <div class="col-xs-12 col-sm-4 col-md-2">
+                        <div class="col-xs-12 col-sm-4 col-md-3">
                             <i class="fa fa-camera fa-4x text-center"></i>
                             <div class="col-md-12">
-                                <button class="btn btn-default" onclick="affich_imagerie()"><a href="#">Imagerie</a></button>
+                                <button class="btn btn-padding-reset btn-default col-md-12" onclick="affich_imagerie()"><a href="#">Imagerie</a></button>
                             </div>
                         </div>
                         <!-- bloc 1/6 -->
-                        <div class="col-xs-12 col-sm-4 col-md-2">
+                        <div class="col-xs-12 col-sm-4 col-md-3">
                             <i class="fa fa-medkit fa-4x text-center"></i>
                             <div class="col-md-12">
-                                <button class="btn btn-default" onclick="affich_analyse()"><a href="#">Analyses</a></button>
+                                <button class="btn btn-padding-reset btn-default col-md-12" onclick="affich_analyse()"><a href="#">Analyses</a></button>
                             </div>
                         </div>
                         <!-- bloc 1/6 -->
-                        <div class="col-xs-12 col-sm-4 col-md-2">
+                        <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-2 fa-separator ">
                             <i class="fa fa-heartbeat fa-4x text-center"></i>
                             <div class="col-md-12">
-                                <button class="btn btn-default" onclick="affich_chirurgie()"><a href="#">Chirurgie</a></button>
+                                <button class="btn btn-padding-reset btn-default col-md-12" onclick="affich_chirurgie()"><a href="#">Chirurgie</a></button>
                             </div>
                         </div>
                         <!-- bloc 1/6 -->
-                        <div class="col-xs-12 col-sm-4 col-md-2">
+                        <div class="col-xs-12 col-sm-4 col-md-3 fa-separator">
                             <i class="fa fa-hospital-o fa-4x text-center"></i>
                             <div class="col-md-12">
-                                <button class="btn btn-default" onclick="affich_hospitalisation()"><a href="#">Hospitalisation</a></button>
+                                <button class="btn btn-padding-reset btn-padding-reset btn-padding-reset btn-default col-md-12" onclick="affich_hospitalisation()"><a href="#">Hospitalisation</a></button>
                             </div>
                         </div>
                         <!-- bloc 1/6 -->
-                        <div class="col-xs-12 col-sm-4 col-md-2">
+                        <div class="col-xs-12 col-sm-4 col-md-3 fa-separator">
                             <i class="fa fa-paw fa-4x text-center"></i>
                             <div class="col-md-12">
-                                <button class="btn btn-default" onclick="affich_nac()"><a href="#">NAC</a></button>
+                                <button class="btn btn-padding-reset btn-default col-md-12" onclick="affich_nac()"><a href="#">NAC</a></button>
                             </div>
                         </div>
                     </div>
                 </section>
+
                 <div class="separator-prestation"></div>
 
                 <section id="navbar-prestation" class="row espace-footer center-block">
@@ -312,7 +313,7 @@
                 </footer>
             </section>
             <!-- /footer -->
-            
+
         </div>
     </div>
 </body>
