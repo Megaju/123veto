@@ -1,6 +1,5 @@
 /* ================================================== */
 
-
 /* ====================== BASE ====================== */
 
 
@@ -157,7 +156,6 @@ header p {
 .bloc-principal {
     padding-bottom: 30px;
     margin-bottom: 30px;
-    border-bottom: 1px solid #143143;
 }
 
 
@@ -233,7 +231,7 @@ footer a:hover {
 /* --- style partie gauche et droite avec l'aside de prise
 de RDV --- */
 .part-left {
-    border-left: 1px solid #143143;
+    border-left: 1px solid rgba(55, 145, 255, 0.4);;
     background-color: #fff;
 }
 
