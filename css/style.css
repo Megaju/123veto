@@ -1,6 +1,5 @@
 /* ================================================== */
 
-
 /* ====================== BASE ====================== */
 
 
@@ -9,7 +8,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
     margin-right: 0px;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2NkQAJn7v7/zwjjgzgmyoyMYAEYB8RmROaABAAJ6Q+sSxkb3QAAAABJRU5ErkJggg==);
 }
 
 h1,
@@ -157,7 +155,6 @@ header p {
 .bloc-principal {
     padding-bottom: 30px;
     margin-bottom: 30px;
-    border-bottom: 1px solid #143143;
 }
 
 
@@ -233,13 +230,13 @@ footer a:hover {
 /* --- style partie gauche et droite avec l'aside de prise
 de RDV --- */
 .part-left {
-    border-left: 1px solid #143143;
     background-color: #fff;
 }
 
 aside {
     padding: 0 25px;
     text-align: center;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIklEQVQIW2NkQAJn7v7/zwjjgzgmyoyMYAEYB8RmROaABAAJ6Q+sSxkb3QAAAABJRU5ErkJggg==);
 }
 
 aside h2 {
