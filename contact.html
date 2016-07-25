@@ -104,7 +104,7 @@
 
                 <div class="pad-50">
 
-                    <form class="col-md-12">
+                    <form class="col-md-10 col-md-offset-1">
                         <label for="nom">Votre nom:</label>
                         <br/>
                         <input id="nom" type="text" name="name" class="form-control" />
@@ -120,12 +120,12 @@
                         <input type="submit" value="Envoyer" class="btn btn-default center-block" />
                     </form>
 
-                    <div class="col-md-12 text-center style-map">
+                    <div class="col-md-10 col-md-offset-1 text-center style-map">
                         <h3 class="h3-contact text-center">Où nous trouver</h3>
                         <p>32 rue du vélodrome à Pontchâteau (Loire-Atlantique)</p>
                         <p>Du lundi au vendredi de 9h à 12h et de 14h à 19h et le samedi de 9h à 12h.</p>
                         <p>02 40 01 61 69</p>
-
+                        <!-- google map -->
                         <div class="map" style='overflow:hidden;height:382px;width:600px;'>
                             <div id='gmap_canvas' style='height:440px;width:630px;'></div>
                             <div><small><a href="http://embedgooglemaps.com">									google maps carte							</a></small></div>
@@ -137,6 +137,7 @@
                                 }
                             </style>
                         </div>
+                        <!-- js google map -->
                         <script type='text/javascript'>
                             function init_map() {
                                 var myOptions = {
