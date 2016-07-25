@@ -107,30 +107,12 @@ header .logo {
     margin: 0 auto;
 }
 
-.header-corp-1 {
+.header-corp {
     padding: 15px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.7);
-}
-
-.header-corp-2 {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.header-corp-3 {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(55, 145, 255, 0.5);
 }
 
 .logo-img {
