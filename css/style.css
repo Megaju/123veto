@@ -235,8 +235,6 @@ aside .btn-default:hover {
     transition: .2s;
 }
 
-
-
 .aside-separator {
     width: 80%;
     height: 1px;
@@ -269,12 +267,6 @@ dans l'aside */
 .calendar {
     border: 1px solid #abc;
     border-radius: 4px;
-}
-
-
-/* --- footer --- */
-footer h4 {
-    color: #eee;
 }
 
 
@@ -319,10 +311,6 @@ footer h4 {
 
 .btn-padding-reset-index {
     padding: 6px 0px;
-}
-
-button a {
-    padding: 0px;
 }
 
 
@@ -446,11 +434,7 @@ ul li:hover a {
     padding: 50px;
 }
 
-.pad-15-35 {
-    padding: 15px 35px;
-}
-
-.btn-m-70 {
+.btn-m-50 {
     margin-bottom: 50px;
 }
 
