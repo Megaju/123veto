@@ -10,12 +10,7 @@ body {
     margin-right: 0px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
@@ -466,7 +461,7 @@ ul li:hover a {
     padding: 0 0 20px 0;
 }
 
-.pad-70 {
+.pad-50 {
     padding: 50px;
 }
 
