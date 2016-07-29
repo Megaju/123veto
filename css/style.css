@@ -1,15 +1,22 @@
 /* ================================================== */
 
+
 /* ====================== BASE ====================== */
 
 
 /* ================================================== */
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin-right: 0px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
 }
 
@@ -28,7 +35,7 @@ h2 {
 header h2 {
     border-bottom: 2px solid #fff;
     color: #eee;
-    margin : 0 0 20px 0;
+    margin: 0 0 20px 0;
     padding: 0 0 15px 0px;
     font-size: 18px;
 }
@@ -115,6 +122,13 @@ header .logo {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
+@media (max-width: 768px) {
+    .header-corp {
+        padding: 10px 5px;
+        font-size: 12px;
+    }
+}
+
 .logo-img {
     width: 150px;
     height: 150px;
@@ -135,11 +149,14 @@ header p {
 
 
 /* règle un bug de padding dans la page contact.html, à revoir... */
+
 .reset-padding-contact {
     padding: 0 !important;
 }
 
+
 /* style bloc contact + map */
+
 .style-map {
     padding: 50px 0;
     margin-bottom: 50px;
@@ -184,16 +201,17 @@ footer p {
 
 footer a {
     padding: 0px;
-    color:white;
+    color: white;
     font-size: 0.8em;
     font-weight: 400;
 }
 
 footer a:hover {
     text-decoration: none;
-    color:#337ab7;
+    color: #337ab7;
     cursor: pointer;
 }
+
 
 /*============= Modal =============*/
 
@@ -201,8 +219,10 @@ footer a:hover {
     padding-top: 50px;
 }
 
+
 /* --- style partie gauche et droite avec l'aside de prise
 de RDV --- */
+
 .part-left {
     background-color: #fff;
 }
@@ -229,6 +249,7 @@ aside .btn-default {
     text-shadow: 0 0 0 #fff;
     transition: .2s;
 }
+
 aside .btn-default:hover {
     color: #456;
     background-color: #eee;
@@ -244,31 +265,37 @@ aside .btn-default:hover {
 
 
 /* styles des articles dans l'aside */
+
 aside article {
     padding: 10px;
     margin: 20px 10px;
     border: 1px solid #abc;
     background-color: rgba(0, 0, 0, 0.1);
 }
+
 aside article h3 {
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 700;
     margin: 5px 0;
 }
+
 aside article p {
     text-align: justify;
 }
+
 aside article img {
     margin: 20px 0;
 }
+
+
 /* la classe calendar disparaitra quand il y aura un vrai calendrier
 dans l'aside */
+
 .calendar {
     border: 1px solid #abc;
     border-radius: 4px;
 }
-
 
 
 /* ================================================== */
@@ -367,6 +394,17 @@ ul li:hover a {
     transition: .4s;
 }
 
+@media (min-width: 750px) {
+    ul#menu {
+        padding: 0;
+    }
+    
+    ul li {
+        padding: 0 10px;
+        font-size: 10px;
+    }
+}
+
 
 /* -- on vire le menu déroulant -- */
 
@@ -375,7 +413,7 @@ ul li:hover a {
     display: none;
 }
 
-@media(max-width:670px) {
+@media(max-width:768px) {
     ul {
         display: none;
         width: 100%;
@@ -432,6 +470,12 @@ ul li:hover a {
 
 .pad-50 {
     padding: 50px;
+}
+
+@media (max-width: 768px) {
+    .pad-50 {
+        padding: 20px;
+    }
 }
 
 .btn-m-50 {
@@ -547,11 +591,10 @@ ul li:hover a {
 .article-prestation a {
     text-decoration: none;
     padding: 5px 15px 0px 0px;
-    
 }
 
 .article-prestation a:hover {
-    color:rgba(10, 113, 180, 0.8);
+    color: rgba(10, 113, 180, 0.8);
 }
 
 .article-prestation {
@@ -574,7 +617,7 @@ ul li:hover a {
 }
 
 .fa-separator {
-    padding-top:40px;
+    padding-top: 40px;
 }
 
 
@@ -593,6 +636,7 @@ ul li:hover a {
 .list-group-item {
     padding: 0px 15px 0px 15px;
 }
+
 
 /* ================================================== */
 
