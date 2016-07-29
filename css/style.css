@@ -202,11 +202,14 @@ footer {
     background-color: #143143;
 }
 
+
+
 footer p {
     display: inline;
     color: white;
     margin: 0;
     font-size: 0.8em;
+    padding: 0px;
 }
 
 footer a {
