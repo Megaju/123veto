@@ -125,6 +125,26 @@ header {
     background-position: center center;
 }
 
+.logo-img2 {
+    right: 15px;
+    width: 25vw;
+    height: 25vh;
+    background-image: url(../images/logo-veto.svg);
+    background-size: 250%;
+    background-position: center center;
+    margin-top: 35px;
+}
+
+.headerxs h1 {
+    font-size: 2em;
+    margin-top: 10px; 
+}
+
+.headerxs h2 {
+    font-size: 1.5em;
+    margin-top: 5px; 
+}
+
 header p {
     margin: 0;
     font-weight: 500;
@@ -180,11 +200,14 @@ footer {
     background-color: #143143;
 }
 
+
+
 footer p {
     display: inline;
     color: white;
     margin: 0;
     font-size: 0.8em;
+    padding: 0px;
 }
 
 footer a {
@@ -686,6 +709,10 @@ a:hover i {
 
 @media (max-width: 768px) {
     /* base */
+    h1 {
+        margin: 0;
+    }
+    
     h2 {
         font-size: 16px;
     }
