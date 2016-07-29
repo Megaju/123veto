@@ -95,8 +95,6 @@ i {
 /* --- header --- */
 
 header {
-    margin: 0 auto;
-    padding: 45px 0 50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,21 +103,8 @@ header {
     padding: 30px 0;
     background-color: #143143;
     background-image: url(../images/facade.JPG);
-    background-size: 100%;
+    background-size: cover;
     background-position: center center;
-}
-
-
-/*header .logo {
-    width: 30%;
-    margin: 0 auto;
-}*/
-
-.logo {
-    width: 298px;
-    height: 210px;
-    background-image: url(../images/logo-veto.svg);
-    background-size: 100%;
 }
 
 .header-corp {
@@ -128,13 +113,6 @@ header {
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.7);
-}
-
-@media (max-width: 768px) {
-    .header-corp {
-        padding: 10px 5px;
-        font-size: 12px;
-    }
 }
 
 .logo-img {
@@ -706,4 +684,57 @@ a:hover i {
 #alimentation,
 #index {
     display: none;
+}
+
+
+/* ============== RESPONSIVE SMARTPHONE ============ */
+@media (max-width: 768px) {
+    /* base */
+    h2 {
+        font-size: 16px;
+    }
+    
+    /* header */
+    header {
+        display: block;
+        position: relative;
+        padding: 0;
+        margin: 0;
+        margin-top: 50px;
+    }
+    
+    header h2 {
+        margin-bottom: 0;
+    }
+    
+    header p {
+        
+    }
+    
+    .header-corp {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        padding: 0 10px;
+        font-size: 10px;
+    }
+    
+    .logo-img {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    /* détache le header du top */
+    .fix-xs {
+        margin-top: 55px;
+    }
+    
+    /* navigation */
+    nav {
+        max-height: 320px;
+    }
 }
