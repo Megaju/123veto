@@ -41,7 +41,7 @@ header h2 {
 }
 
 h3 {
-    margin: auto auto 10px auto;
+    margin: 40px auto 10px auto;
     font-family: "Open" sans-serif;
     color: #143143;
 }
@@ -474,7 +474,7 @@ ul li:hover a {
 /* /end nav */
 
 .fa {
-    padding: 0 0 20px 0;
+    padding: 0 0 2px 0;
 }
 
 .pad-50 {
