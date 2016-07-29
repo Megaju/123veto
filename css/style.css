@@ -459,10 +459,8 @@ ul li:hover a {
     padding: 50px;
 }
 
-@media (max-width: 768px) {
-    .pad-50 {
-        padding: 20px;
-    }
+.pad-35 {
+    padding: 35px;
 }
 
 .btn-m-50 {
@@ -685,12 +683,15 @@ a:hover i {
 
 
 /* ============== RESPONSIVE SMARTPHONE ============ */
+
 @media (max-width: 768px) {
     /* base */
     h2 {
         font-size: 16px;
     }
-    
+    .pad-50 {
+        padding: 5px;
+    }
     /* header */
     header {
         display: block;
@@ -699,15 +700,10 @@ a:hover i {
         margin: 0;
         margin-top: 50px;
     }
-    
     header h2 {
         margin-bottom: 0;
     }
-    
-    header p {
-        
-    }
-    
+    header p {}
     .header-corp {
         display: block;
         position: absolute;
@@ -716,7 +712,6 @@ a:hover i {
         padding: 0 10px;
         font-size: 10px;
     }
-    
     .logo-img {
         position: absolute;
         top: 5px;
@@ -724,12 +719,10 @@ a:hover i {
         width: 50px;
         height: 50px;
     }
-    
     /* détache le header du top */
     .fix-xs {
         margin-top: 55px;
     }
-    
     /* navigation */
     nav {
         max-height: 320px;
