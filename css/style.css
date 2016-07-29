@@ -109,9 +109,17 @@ header {
     background-position: center center;
 }
 
-header .logo {
+
+/*header .logo {
     width: 30%;
     margin: 0 auto;
+}*/
+
+.logo {
+    width: 298px;
+    height: 210px;
+    background-image: url(../images/logo-veto.svg);
+    background-size: 100%;
 }
 
 .header-corp {
@@ -130,10 +138,12 @@ header .logo {
 }
 
 .logo-img {
+    position: relative;
+    right: 15px;
     width: 150px;
     height: 150px;
     background-image: url(../images/logo-veto.svg);
-    background-size: 150%;
+    background-size: 220%;
     background-position: center center;
 }
 
@@ -398,7 +408,6 @@ ul li:hover a {
     ul#menu {
         padding: 0;
     }
-    
     ul li {
         padding: 0 10px;
         font-size: 10px;
