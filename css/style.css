@@ -143,6 +143,7 @@ header {
     background-size: 125%;
     background-position: center center;
     background-color:#143143;
+    background-repeat: no-repeat;
 }
 
 .headerxs h1 {
