@@ -135,6 +135,16 @@ header {
     margin-top: 15px;
 }
 
+.logo-img-aside {
+    position: relative;
+    width: 75%;
+    height: 198px;
+    background-image: url(../images/logo-veto.svg);
+    background-size: 125%;
+    background-position: center center;
+    background-color:#143143;
+}
+
 .headerxs h1 {
     font-size: 2em;
     margin-top: 0px;
