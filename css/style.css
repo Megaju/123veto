@@ -475,7 +475,7 @@ ul li:hover a {
 /* /end nav */
 
 .fa {
-    padding: 0 0 2px 0;
+    padding: 0 0 15px 0;
 }
 
 .pad-50 {
@@ -717,7 +717,7 @@ a:hover i {
         font-size: 16px;
     }
     .pad-50 {
-        padding: 5px;
+        padding: 30px 10px 30px 10px;
     }
     /* header */
     header {
