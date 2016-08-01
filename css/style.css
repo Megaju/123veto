@@ -127,22 +127,25 @@ header {
 
 .logo-img2 {
     right: 15px;
-    width: 25vw;
-    height: 25vh;
+    width: 150px;
+    height: 150px;
     background-image: url(../images/logo-veto.svg);
-    background-size: 250%;
+    background-size: 175%;
     background-position: center center;
-    margin-top: 35px;
+    margin-top: 15px;
 }
 
 .headerxs h1 {
     font-size: 2em;
-    margin-top: 10px; 
+    margin-top: 0px;
+    padding-bottom: 10px;
 }
 
 .headerxs h2 {
     font-size: 1.5em;
-    margin-top: 5px; 
+    margin-top: 0px; 
+    margin: 0;
+    border-bottom: 1px solid #fff;
 }
 
 header p {
@@ -727,10 +730,7 @@ a:hover i {
         margin: 0;
         margin-top: 50px;
     }
-    header h2 {
-        margin-bottom: 0;
-    }
-    header p {}
+
     .header-corp {
         display: block;
         position: absolute;
@@ -739,6 +739,7 @@ a:hover i {
         padding: 0 10px;
         font-size: 10px;
     }
+    
     .logo-img {
         position: absolute;
         top: 5px;
