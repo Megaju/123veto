@@ -161,3 +161,6 @@ function affich_index() {
 	document.getElementById("alimentation").style.display="none";
 	document.getElementById("index").style.display="block";
 };
+
+
+
