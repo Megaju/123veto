@@ -158,7 +158,6 @@ header p {
     margin-bottom: 30px;
 }
 
-
 /* règle un bug de padding dans la page contact.html, à revoir... */
 
 .reset-padding-contact {
@@ -198,7 +197,6 @@ header p {
 
 footer {
     width: 100%;
-    height: 40px;
     line-height: 40px;
     background-color: #143143;
 }
